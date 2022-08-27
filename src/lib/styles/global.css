@@ -1,5 +1,7 @@
 body {
   font-family: 'Poppins', Verdana, sans-serif;
+  color: var(--secondary);
+  background-color: var(--bg);
 }
 
 body > div {
