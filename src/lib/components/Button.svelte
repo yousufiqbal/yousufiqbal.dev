@@ -32,6 +32,7 @@
     padding: 7px 10px 7px 15px;
     text-transform: uppercase;
     font-size: 15px;
+    transition: all 500ms;
   }
   .primary {
     background-color: var(--primary);
