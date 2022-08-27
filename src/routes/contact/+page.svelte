@@ -21,7 +21,7 @@
     <Field label="Name" icon="ri:user-3-line" placeholder="How do I call you?" />
     <Field label="Email" type="email" inputmode="email" icon="ri:at-line" placeholder="Where do I reply you?" />
     <Field label="WhatsApp No." type="tel" inputmode="tel" icon="ri:whatsapp-line" placeholder="Good for quick chats" />
-    <Field label="Message" icon="ri:message-3-line" placeholder="What do you want to talk?" />
+    <Field textarea label="Message" icon="ri:message-3-line" placeholder="What do you want to talk?" />
   </Form>
 
   <Button name="Send Message" icon="ri:mail-send-line" />

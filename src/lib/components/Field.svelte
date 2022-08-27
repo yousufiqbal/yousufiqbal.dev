@@ -56,6 +56,12 @@
     border-radius: var(--radius);
     border: 1px solid var(--border);
   }
+  textarea {
+    min-height: 100px;
+    max-height: 500px;
+    resize: vertical;
+    word-break: break-all;
+  }
   input:focus, textarea:focus {
     border-color: var(--secondary);
   }
