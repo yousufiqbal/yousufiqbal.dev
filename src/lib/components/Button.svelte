@@ -28,7 +28,7 @@
     display: flex;
     align-items: center;
     border-radius: var(--radius);
-    gap: 5px;
+    gap: 10px;
     padding: 7px 10px 7px 15px;
     text-transform: uppercase;
     font-size: 15px;

@@ -26,6 +26,6 @@ import Message from "$lib/components/Message.svelte";
     <Field label="Message" icon="ri:message-3-line" placeholder="What do you want to talk?" />
   </Form>
 
-  <Button name="Send Message" icon="ri:send-plane-line" />
+  <Button name="Send Message" icon="ri:mail-send-line" />
   <div style="margin-bottom: 50px"></div>
 </Container>
