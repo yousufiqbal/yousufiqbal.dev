@@ -12,6 +12,6 @@ import Title from "$lib/components/Title.svelte";
 <Hero />
 
 <Section>
-  <Title icon="ri:line-chart-line" title="Benefits" above="Reasons to work with me" />
+  <Title icon="ri:line-chart-line" title="Benefits" above="9 Reasons to work with me" />
   <Benefits />
 </Section>

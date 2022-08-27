@@ -99,4 +99,9 @@
     /* border: 1px dashed green; */
     flex: 1;
   }
+  @media (min-width: 700px) {
+    .benefit {
+      padding: 30px;
+    }
+  }
  </style>
