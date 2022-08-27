@@ -1,6 +1,5 @@
 <script>
   import Button from "./Button.svelte";
-  import Container from "./Container.svelte";
   import Icon from '@iconify/svelte'
 </script>
 
@@ -23,15 +22,15 @@
         <div class="services">
           <div>
             <i><Icon icon="ri:check-line" /></i>
-            Personal Website
+            Personal Websites
           </div>
           <div>
             <i><Icon icon="ri:check-line" /></i>
-            Company & Business Website
+            Company & Business Websites
           </div>
           <div>
             <i><Icon icon="ri:check-line" /></i>
-            Design Files to live website
+            Design Files To Live Websites
           </div>
         </div>
         <div class="buttons">
@@ -50,7 +49,6 @@
     display: grid;
     place-items: center;
     margin-bottom: 50px;
-    /* height: calc(100vh - 100px); */
   }
   .hero {
     display: grid;
