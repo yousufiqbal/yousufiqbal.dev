@@ -44,4 +44,14 @@
   .outline {
     border: 1px solid var(--secondary);
   }
+  .ghost {
+    border: 1px solid transparent;
+  }
+  .secondary:hover, .outline:hover {
+    background-color: var(--primary);
+    color: var(--on-primary);
+  }
+  .ghost:hover {
+    border: 1px solid var(--secondary);
+  }
 </style>

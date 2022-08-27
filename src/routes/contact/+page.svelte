@@ -1,15 +1,13 @@
 <script>
-import Button from "$lib/components/Button.svelte";
-
+  import Button from "$lib/components/Button.svelte";
   import Container from "$lib/components/Container.svelte";
-import Content from "$lib/components/Content.svelte";
-import Field from "$lib/components/Field.svelte";
-import Form from "$lib/components/Form.svelte";
-import Message from "$lib/components/Message.svelte";
+  import Content from "$lib/components/Content.svelte";
+  import Field from "$lib/components/Field.svelte";
+  import Form from "$lib/components/Form.svelte";
   import Title from "$lib/components/Title.svelte";
 </script>
 
-<Container>
+<Container --mw="800px">
 
   <Title icon="ri:mail-send-line" title="Contact" above="Get In Touch" />
 

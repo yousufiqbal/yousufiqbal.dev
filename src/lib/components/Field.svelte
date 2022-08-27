@@ -56,6 +56,9 @@
     border-radius: var(--radius);
     border: 1px solid var(--border);
   }
+  input:focus, textarea:focus {
+    border-color: var(--secondary);
+  }
   .error {
     color: var(--failure);
   }

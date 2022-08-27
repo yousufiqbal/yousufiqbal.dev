@@ -5,7 +5,7 @@
 <style>
   form {
     display: grid;
-    gap: 40px;
+    gap: 30px;
     margin-bottom: 50px;
   }
 </style>

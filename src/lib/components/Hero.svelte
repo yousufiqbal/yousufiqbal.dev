@@ -35,7 +35,7 @@
         </div>
         <div class="buttons">
           <Button name="See Designs" icon="ri:arrow-right-s-line" type="secondary" />
-          <Button name="Hire Me" icon="ri:arrow-right-up-line" type="outline" />
+          <Button name="Hire Me" icon="ri:arrow-right-up-line" type="ghost" />
         </div>
       </div>
 
@@ -47,7 +47,7 @@
   .hero-wrapper {
     /* border: 1px dashed red; */
     display: grid;
-    place-items: center;
+    /* place-items: center; */
     margin-bottom: 50px;
   }
   .hero {
@@ -55,7 +55,8 @@
     justify-content: center;
     /* border: 1px dashed red; */
     gap: 30px;
-    /* max-width: 350px; */
+    max-width: 1200px;
+    margin: 0 auto;
     /* height: 100vh; */
   }
   .left {
@@ -126,7 +127,7 @@
       margin-top: 40px;
       justify-items: center;
       grid-template-columns: auto 1fr;
-      gap: 80px;
+      gap: 100px;
     }
     .left {
       align-self: center;
@@ -139,6 +140,10 @@
     }
   }
   @media (min-width: 1000px) {
+    .hero {
+      gap: 150px;
+
+    }
     .avatar {
       /* border: 1px solid red; */
       width: 200px;
