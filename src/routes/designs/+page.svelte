@@ -4,5 +4,5 @@
 </script>
 
 <Container>
-  <Title icon="ri:line-chart-line" title="Designs" above="All Original Artwork" />
+  <Title icon="ri:brush-line" title="Designs" above="All Original Artwork" />
 </Container>

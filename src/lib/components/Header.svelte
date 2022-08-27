@@ -9,8 +9,8 @@ import { prefetch } from '$app/navigation';
 
   export let links = [
     { name: 'Home', href: '/', icon: 'ri:home-3-line' },
-    { name: 'Designs', href: '/designs', icon: 'ph:paint-brush-bold' },
-    { name: 'Services', href: '/services', icon: 'ri:hand-heart-line' },
+    { name: 'Designs', href: '/designs', icon: 'ri:brush-line' },
+    { name: 'Services', href: '/services', icon: 'ri:list-check-2' },
     { name: 'Contact', href: '/contact', icon: 'ri:mail-send-line' },
   ]
 
@@ -94,6 +94,8 @@ import { prefetch } from '$app/navigation';
     /* border: 1px dashed blue; */
   }
   .navigation {
+    position: sticky;
+    top: 0;
     display: flex;
     grid-area: navigation;
     /* border: 1px dashed green; */

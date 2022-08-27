@@ -20,9 +20,9 @@
 
 <style>
   .title {
+    /* border: 1px dashed red; */
     text-transform: capitalize;
     display: grid;
-    border: 1px dashed red;
     margin-bottom: 30px;
   }
   h1 {

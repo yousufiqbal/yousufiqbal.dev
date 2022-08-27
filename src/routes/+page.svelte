@@ -11,4 +11,5 @@ import Title from "$lib/components/Title.svelte";
 
 <Container>
   <Title icon="ri:line-chart-line" title="Benefits" above="Reasons to work with me" />
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nisi itaque quis voluptatum dolor rerum ducimus deleniti, quo, nam accusantium recusandae impedit quod voluptates blanditiis. Omnis veritatis, voluptatibus tenetur ea, ab quidem quos, porro esse ad repellat consequuntur quaerat vitae officiis. Sed culpa tempore officiis quod labore quam reiciendis suscipit!</p>
 </Container>

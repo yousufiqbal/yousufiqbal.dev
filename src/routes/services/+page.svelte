@@ -4,5 +4,5 @@
 </script>
 
 <Container>
-  <Title icon="ri:line-chart-line" title="Services" above="Jobs I Do" />
+  <Title icon="ri:list-check-2" title="Services" above="Jobs I Do" />
 </Container>

@@ -17,7 +17,7 @@
 <Header />
 
 {#key data.url.pathname}
-  <main in:fly={{ y: -30, duration: 200 }}>
+  <main in:fly={{ y: -20, duration: 200 }}>
     <slot></slot>
   </main>
 {/key}
