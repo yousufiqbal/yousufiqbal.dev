@@ -4,11 +4,12 @@ body {
   background-color: var(--bg);
 }
 
-body > div {
+/* body > div {
   display: flex;
+  justify-items: left;
   flex-direction: column;
   min-height: 100vh;
-}
+} */
 
 button {
   cursor: pointer;
@@ -20,4 +21,8 @@ i {
 
 p {
   line-height: 1.5;
+}
+
+em {
+  font-weight: 500;
 }

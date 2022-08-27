@@ -3,13 +3,21 @@
   import { dark } from '$lib/stores';
   import '$lib/styles/all.css'
   import { onMount } from 'svelte';
+  import { fly } from 'svelte/transition'
   
   onMount(() => {
     $dark = localStorage.getItem('theme') || 'light'
   })
+
+  /** @type {import('./$types').LayoutData} */
+  export let data
 </script>
 
 
 <Header />
 
-<slot></slot>
+{#key data.url.pathname}
+  <main in:fly={{ y: -30, duration: 200 }}>
+    <slot></slot>
+  </main>
+{/key}

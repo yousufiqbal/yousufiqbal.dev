@@ -1,10 +1,10 @@
 <script>
-import Button from "./Button.svelte";
-import Container from "./Container.svelte";
-import Icon from '@iconify/svelte'
+  import Button from "./Button.svelte";
+  import Container from "./Container.svelte";
+  import Icon from '@iconify/svelte'
 </script>
+
 <div class="hero-wrapper">
-  <Container> 
 
     <div class="hero">
 
@@ -15,16 +15,25 @@ import Icon from '@iconify/svelte'
       <div class="right">
         <div class="title">
           <div class="above">Assalam-u-Alaekum</div>
-          <h1>I'm <span>Yousuf,</span></h1>
+          <h1>I'm <span>Yosof,</span></h1>
         </div>
         <p class="introduction">
-          Using modern and cutting-edge technologies, I <em>design</em> and <em>develop</em> websites that are responsive, sleek, performant and SEO friendly.
+          Using modern and cutting-edge technologies, I <em>design</em> and <em>develop</em> websites that are responsive, sleek, performant and SEO friendly. I do:
         </p>
-        <!-- <div class="services">
-          <div><Icon color="var(--success)" icon="ri:check-line" />Personal Website</div>
-          <div><Icon color="var(--success)" icon="ri:check-line" />Company & Business Website</div>
-          <div><Icon color="var(--success)" icon="ri:check-line" />Design Files to live website</div>
-        </div> -->
+        <div class="services">
+          <div>
+            <i><Icon icon="ri:check-line" /></i>
+            Personal Website
+          </div>
+          <div>
+            <i><Icon icon="ri:check-line" /></i>
+            Company & Business Website
+          </div>
+          <div>
+            <i><Icon icon="ri:check-line" /></i>
+            Design Files to live website
+          </div>
+        </div>
         <div class="buttons">
           <Button name="See Designs" icon="ri:arrow-right-s-line" type="secondary" />
           <Button name="Hire Me" icon="ri:arrow-right-up-line" type="outline" />
@@ -33,14 +42,22 @@ import Icon from '@iconify/svelte'
 
     </div>
 
-  </Container>
 </div>
 
 <style>
+  .hero-wrapper {
+    /* border: 1px dashed red; */
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+    /* height: calc(100vh - 100px); */
+  }
   .hero {
     display: grid;
+    justify-content: center;
     /* border: 1px dashed red; */
     gap: 30px;
+    /* max-width: 350px; */
     /* height: 100vh; */
   }
   .left {
@@ -51,7 +68,7 @@ import Icon from '@iconify/svelte'
   .avatar {
     border-radius: 40%;
     width: 170px; height: 170px;
-    background-image: url(/avatar.jpg);
+    background-image: url('/avatar.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -82,6 +99,7 @@ import Icon from '@iconify/svelte'
   }
   .introduction {
     text-align: center;
+    max-width: 350px;
     /* border: 1px dashed red; */
   }
   .buttons {
@@ -89,15 +107,44 @@ import Icon from '@iconify/svelte'
     gap: 20px;
     /* border: 1px dashed red; */
   }
-  /* .services {
-    border: 1px dashed red;
+  .services {
+    text-transform: capitalize;
+    /* border: 1px dashed red; */
     display: grid;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  .services i {
+    font-size: 22px;
+    color: var(--primary);
   }
   .services > div {
-    border: 1px dashed blue;
+    /* border: 1px dashed blue; */
     display: flex;
     align-items: center;
-    gap: 7px;
-  } */
+    gap: 10px;
+  }
+  @media (min-width: 700px) {
+    .hero {
+      margin-top: 40px;
+      justify-items: center;
+      grid-template-columns: auto 1fr;
+      gap: 80px;
+    }
+    .left {
+      align-self: center;
+    }
+    .right, .title {
+      justify-items: left;
+    }
+    .introduction {
+      text-align: left;
+    }
+  }
+  @media (min-width: 1000px) {
+    .avatar {
+      /* border: 1px solid red; */
+      width: 200px;
+      height: 200px;
+    }
+  }
 </style>
