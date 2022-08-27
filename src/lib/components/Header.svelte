@@ -17,8 +17,6 @@
       localStorage.setItem('theme', $dark ? 'dark' : 'light')
     }, 0);
   }
-
-  $: console.log($dark)
 </script>
 
 <div class="header-wrapper">
@@ -27,7 +25,7 @@
 
     <a aria-label="logo" href="/" class="logo"><Icon width="24" icon="ri:blaze-fill" /></a>
 
-    <button on:click={toggleTheme} class="button">
+    <button aria-label="{$dark? 'light' : 'dark'} theme" on:click={toggleTheme} class="button">
       {#key $dark}
       <i in:fly={{y: -30, duration: 150}}>
         <Icon width="24" icon="{$dark? 'ri:moon-line' : 'ri:sun-line'}" />
