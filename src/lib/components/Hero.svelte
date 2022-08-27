@@ -17,7 +17,7 @@
           <h1>I'm <span>Yosof,</span></h1>
         </div>
         <p class="introduction">
-          Using modern and cutting-edge technologies, I <em>design</em> and <em>develop</em> websites that are responsive, sleek, performant and SEO friendly. I do:
+          Using modern and cutting-edge technologies, I <em>design</em> and <em>develop</em> websites that are responsive, sleek, performant and SEO friendly. I develop:
         </p>
         <div class="services">
           <div>

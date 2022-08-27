@@ -92,7 +92,7 @@
     box-shadow: 0 0 20px 0 lightgray;
   }
   i {
-    /* color: var(--se); */
+    /* color: var(--primary); */
     font-size: 60px;
   }
   p {
