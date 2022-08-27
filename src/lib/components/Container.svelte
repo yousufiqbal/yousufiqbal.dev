@@ -4,7 +4,7 @@
 
 <style>
   .container {
-    border: 1px dashed blue;
+    /* border: 1px dashed blue; */
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px;

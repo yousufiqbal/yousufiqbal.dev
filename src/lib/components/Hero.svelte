@@ -15,19 +15,19 @@ import Icon from '@iconify/svelte'
       <div class="right">
         <div class="title">
           <div class="above">Assalam-u-Alaekum</div>
-          <h1>Hi! I’m <span>Yousuf,</span></h1>
+          <h1>I'm <span>Yousuf,</span></h1>
         </div>
         <p class="introduction">
           Using modern and cutting-edge technologies, I <em>design</em> and <em>develop</em> websites that are responsive, sleek, performant and SEO friendly.
         </p>
-        <div class="services">
+        <!-- <div class="services">
           <div><Icon color="var(--success)" icon="ri:check-line" />Personal Website</div>
           <div><Icon color="var(--success)" icon="ri:check-line" />Company & Business Website</div>
           <div><Icon color="var(--success)" icon="ri:check-line" />Design Files to live website</div>
-        </div>
+        </div> -->
         <div class="buttons">
-          <Button name="See Designs" icon="ri:arrow-right-s-line" />
-          <Button name="Hire Me" icon="ri:arrow-right-up-line" />
+          <Button name="See Designs" icon="ri:arrow-right-s-line" type="secondary" />
+          <Button name="Hire Me" icon="ri:arrow-right-up-line" type="outline" />
         </div>
       </div>
 
@@ -39,13 +39,13 @@ import Icon from '@iconify/svelte'
 <style>
   .hero {
     display: grid;
-    border: 1px dashed red;
-    gap: 40px;
+    /* border: 1px dashed red; */
+    gap: 30px;
     /* height: 100vh; */
   }
   .left {
     display: grid;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     justify-content: center;
   }
   .avatar {
@@ -56,10 +56,11 @@ import Icon from '@iconify/svelte'
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
   }
   .title {
-    border: 1px dashed red;
+    display: grid;
+    /* border: 1px dashed red; */
   }
   .above {
     color: var(--above-below);
@@ -67,21 +68,22 @@ import Icon from '@iconify/svelte'
   h1 {
     font-size: 40px;
     font-weight: 500;
+    line-height: 1;
   }
   h1 span {
     color: var(--primary);
   }
   .right {
     display: grid;
-    gap: 10px;
-    border: 1px dashed green;
+    gap: 20px;
+    /* border: 1px dashed green; */
   }
   .buttons {
     display: flex;
     gap: 20px;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
   }
-  .services {
+  /* .services {
     border: 1px dashed red;
     display: grid;
     margin-bottom: 20px;
@@ -91,5 +93,5 @@ import Icon from '@iconify/svelte'
     display: flex;
     align-items: center;
     gap: 7px;
-  }
+  } */
 </style>
