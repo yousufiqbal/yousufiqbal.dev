@@ -50,7 +50,7 @@ import Icon from '@iconify/svelte'
   }
   .avatar {
     border-radius: 40%;
-    width: 200px; height: 200px;
+    width: 170px; height: 170px;
     background-image: url(/avatar.jpg);
     background-size: cover;
     background-position: center;
@@ -60,6 +60,7 @@ import Icon from '@iconify/svelte'
   }
   .title {
     display: grid;
+    justify-items: center;
     /* border: 1px dashed red; */
   }
   .above {
@@ -75,8 +76,13 @@ import Icon from '@iconify/svelte'
   }
   .right {
     display: grid;
+    justify-items: center;
     gap: 20px;
     /* border: 1px dashed green; */
+  }
+  .introduction {
+    text-align: center;
+    /* border: 1px dashed red; */
   }
   .buttons {
     display: flex;

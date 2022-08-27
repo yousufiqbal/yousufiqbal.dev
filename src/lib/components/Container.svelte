@@ -7,6 +7,6 @@
     /* border: 1px dashed blue; */
     max-width: 1200px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 0 30px;
   }
 </style>
