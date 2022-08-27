@@ -1,7 +1,10 @@
 <script>
+import { prefetch } from '$app/navigation';
+
   import { page } from '$app/stores';
   import { dark } from '$lib/stores';
   import Icon from '@iconify/svelte';
+  import { onMount } from 'svelte';
   import { fly } from 'svelte/transition'
 
   export let links = [
@@ -17,6 +20,13 @@
       localStorage.setItem('theme', $dark ? 'dark' : 'light')
     }, 0);
   }
+
+  // Prefetching top-level links for fast navigation..
+  onMount(() => {
+    for (const link of links) {
+      prefetch(link.href)
+    }
+  })
 </script>
 
 <div class="header-wrapper">
