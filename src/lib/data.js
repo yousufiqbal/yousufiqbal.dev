@@ -4,14 +4,14 @@ export let benefits = [
     icon: 'ri:server-line',
     above: '$ 0.00',
     title: 'Free Website Hosting',
-    description: 'Since I develop websites using serverless technologies. They are eligible for free hosting for upto 100GB bandwidth on Netlify. It is rare for a portfolio or business website to surpass this limit.'
+    description: 'Since I develop websites using serverless technologies. They are eligible for free hosting for upto 100GB bandwidth. It is rare for a personal or business website to surpass this limit.'
   },
   {
     bookmark: true,
     icon: 'ri:mail-send-line',
     above: '$ 0.00',
     title: 'Free Custom Email',
-    description: 'Like contact@mydomain.com you get one free email powered by ZOHO Mail of 5GB. This helps you respond to messages that are sent from the ‘Contact Me’ page from your website. Install ZOHO email application on your phone and respond to emails on the go.'
+    description: 'Like contact@mydomain.com, you get one free email of 5GB space. This helps you respond to messages that are sent from the ‘Contact Me’ page from your website. Just install email application on your phone and respond to emails on the go.'
   },
   {
     bookmark: true,

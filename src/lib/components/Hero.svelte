@@ -34,8 +34,8 @@
           </div>
         </div>
         <div class="buttons">
-          <Button name="See Designs" icon="ri:arrow-right-s-line" type="secondary" />
-          <Button name="Hire Me" icon="ri:arrow-right-up-line" type="ghost" />
+          <Button name="See Designs" href="/designs" icon="ri:arrow-right-s-line" type="secondary" />
+          <Button name="Hire Me" href="/contact" icon="ri:arrow-right-up-line" type="ghost" />
         </div>
       </div>
 
