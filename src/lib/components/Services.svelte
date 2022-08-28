@@ -1,4 +1,6 @@
 <script>
+import { kebabCase } from "$lib/utils";
+
 import Icon from "@iconify/svelte";
 import Button from "./Button.svelte";
 import Card from "./Card.svelte";
@@ -7,16 +9,19 @@ import Card from "./Card.svelte";
     {
       icon: 'ri:user-star-line',
       name: 'Personal Website Development',
+      href: 'personal-website',
       description: 'Personal websites are the best way to introduce your profession. Showcase your education, skills, experiences so interested people can contact.',
     },
     {
       icon: 'ri:building-2-line',
       name: 'Business Website Development',
+      href: 'business-website',
       description: 'Business websites provide the best way to share you product and services with open world. Showcase your products & services so interested people can contact.',
     },
     {
       icon: 'ri:arrow-go-forward-line',
       name: 'Design Files to Live Website Conversion',
+      href: 'design-to-website',
       description: 'Converting design files to live websites always pleases me. Your design file can be from any vector software including but not limited to Figma, XD, Illustrator or Sketch.',
     },
   ]
@@ -33,7 +38,7 @@ import Card from "./Card.svelte";
         {service.description}
       </p>
       <div class="button">
-        <Button type="secondary" name="See Pricing" icon="ri:arrow-right-s-line" />
+        <Button type="secondary" name="See Pricing" icon="ri:arrow-right-s-line" href="/services/{service.href}" />
       </div>
     </div>
   </Card>

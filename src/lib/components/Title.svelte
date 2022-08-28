@@ -14,7 +14,7 @@
       <Icon {icon} />
     </i>
     {/if}
-    <h1>{title}</h1>
+    <h1>{@html title}</h1>
   </div>
 </div>
 
@@ -28,15 +28,20 @@
   h1 {
     font-size: 40px;
   }
+  :global(.title h1 span) {
+    color: var(--primary);
+  }
   .above {
     color: var(--above-below);
   }
   .icon-h1 {
+    /* border: 1px dashed red; */
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 10px;
   }
   i {
+    margin-top: 13px;
     color: var(--primary);
     font-size: 32px;
   }
