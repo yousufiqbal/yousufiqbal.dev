@@ -1,7 +1,7 @@
 <script>
   import Icon from '@iconify/svelte'
 
-  export let name, icon = null
+  export let name, icon = 'ri:arrow-right-s-line'
   export let href = null
   export let type = 'primary'
 </script>
@@ -35,6 +35,7 @@
     font-size: 15px;
     transition: all 300ms;
     font-weight: 500;
+    margin-bottom: var(--mb, 0);
   }
   .primary {
     background-color: var(--primary);
