@@ -9,24 +9,25 @@
 
   const crumbs = [
     { name: 'Services', href: '/services' },
-    { name: 'Personal Website', href: '/services/personal-website' },
+    { name: 'Business Website', href: '/services/business-website' },
   ]
 </script>
 
-<Seo title="Personal Website" description="I provide three services: 1. Personal website, 2. Business website and 3. Design to website development" />
+<Seo title="Business Website" description="I provide three services: 1. Personal website, 2. Business website and 3. Design to website development" />
 
 <Section>
   <Breadcrumbs {crumbs} />
-  <Title title="<span>Personal</span> Website" />
+  <Title title="<span>Business</span> Website" />
   <Content>
     <p>
-      Personal websites are the best way to introduce your profession. You showcase your education, skills, experiences, testimonies, services with pricings, portfolio and especially a contact-me or hire-me page, so interested people can contact.
+      Got a product to showcase or service to provide? Business website serves this purpose. You showcase product features, your pricings, your clients, the number of your customers, your official addresses, contact us form, news, blogs, etc.
     </p>
-    <p>There are three plans for Personal Website:</p>
+    <p>There are four plans for Business Website:</p>
     <ol>
       <li>Basic</li>
       <li>Standard</li>
       <li>Premium</li>
+      <li>Guru</li>
     </ol>
   </Content>
   <Subtitle above="01" subtitle="Basic" --mb="30px" />
@@ -134,6 +135,41 @@
       <td>$ 130.00</td>
     </tr>
   </Table>
+  <Subtitle above="03" subtitle="Guru" --mb="30px" />
+  <Table>
+    <tr>
+      <th>Pages</th>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>Customization</th>
+      <td>Mini</td>
+    </tr>
+    <tr>
+      <th>Web Hosting</th>
+      <td>Free (100GB)</td>
+    </tr>
+    <tr>
+      <th>SSL Certificate</th>
+      <td>Free</td>
+    </tr>
+    <tr>
+      <th>Custom Email</th>
+      <td>Free (5GB)</td>
+    </tr>
+    <tr>
+      <th>Content Upload</th>
+      <td>Free</td>
+    </tr>
+    <tr>
+      <th>Contact Form</th>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <th>Price</th>
+      <td>$ 130.00</td>
+    </tr>
+  </Table>
   <Subtitle above="Clarity" subtitle="Limitations" />
   <Content>
     <ol>
@@ -141,6 +177,7 @@
       <li>When pages limit surpass, subsequent pages will be charged $&nbsp;20.00 per page</li>
       <li>Free email is for one account only</li>
       <li>Contact Form is a page where users interested can send you a message. You receive this message inside your custom domain email which is provided for free. (Not included in the basic plan)</li>
+      <li>Guru plan includes fully customized design which is copyrighted to business owners. This results in a price increase</li>
     </ol>
   </Content>
 </Section>

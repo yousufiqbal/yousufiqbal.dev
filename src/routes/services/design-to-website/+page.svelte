@@ -9,20 +9,20 @@
 
   const crumbs = [
     { name: 'Services', href: '/services' },
-    { name: 'Personal Website', href: '/services/personal-website' },
+    { name: 'Design To Website', href: '/services/design-to-website' },
   ]
 </script>
 
-<Seo title="Personal Website" description="I provide three services: 1. Personal website, 2. Business website and 3. Design to website development" />
+<Seo title="Design To Website" description="I provide three services: 1. Personal website, 2. Business website and 3. Design to website development" />
 
 <Section>
   <Breadcrumbs {crumbs} />
-  <Title title="<span>Personal</span> Website" />
+  <Title title="<span>Design To</span> Website" />
   <Content>
     <p>
-      Personal websites are the best way to introduce your profession. You showcase your education, skills, experiences, testimonies, services with pricings, portfolio and especially a contact-me or hire-me page, so interested people can contact.
+      Converting design files to live websites always pleases me. Your design file can be from any vector software including but not limited to Figma, Adobe XD, Illustrator, Sketch or even Photoshop (non-vector).
     </p>
-    <p>There are three plans for Personal Website:</p>
+    <p>There are three plans for Design to Website conversion:</p>
     <ol>
       <li>Basic</li>
       <li>Standard</li>
