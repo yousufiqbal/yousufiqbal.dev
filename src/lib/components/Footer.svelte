@@ -48,7 +48,7 @@
   }
   .footer {
     display: grid;
-    justify-items: center;
+
     gap: 50px;
   }
   i {
@@ -56,15 +56,16 @@
   }
   .links {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 20px;
+    gap: 18px;
   }
   .copyright {
     color: var(--on-footer-others);
   }
   .link-group {
     display: grid;
-    justify-items: center;
+ 
     gap: 20px;
   }
   a {
@@ -76,5 +77,13 @@
   }
   .copyright a {
     color: rgb(255, 175, 157);
+  }
+  @media (min-width: 600px) {
+    .footer, .link-group {
+      justify-items: center;
+    }
+    .links {
+      gap: 30px;
+    }
   }
 </style>
