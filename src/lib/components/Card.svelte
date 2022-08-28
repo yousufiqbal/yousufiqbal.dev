@@ -9,6 +9,7 @@
 <style>
   .card {
     display: grid;
+    position: relative;
     /* border: 1px solid red; */
     padding: 20px;
     border-radius: var(--radius);

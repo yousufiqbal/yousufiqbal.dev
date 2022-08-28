@@ -23,7 +23,7 @@
     /* border: 1px dashed red; */
     text-transform: capitalize;
     display: grid;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   h1 {
     font-size: 40px;
