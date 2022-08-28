@@ -12,5 +12,7 @@ import Container from "./Container.svelte";
   .section {
     padding: 50px 0;
     background-color: var(--surface);
+    z-index: 1;
+
   }
 </style>

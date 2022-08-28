@@ -7,7 +7,7 @@
   import Title from "$lib/components/Title.svelte";
 </script>
 
-<Container --mw="800px">
+<Container --mw="800px" --pd="50px 20px">
 
   <Title icon="ri:mail-send-line" title="Contact" above="Get In Touch" />
 
@@ -24,6 +24,6 @@
     <Field textarea label="Message" icon="ri:message-3-line" placeholder="What do you want to talk?" />
   </Form>
 
-  <Button name="Send Message" icon="ri:mail-send-line" />
+  <Button name="Send Message" type="secondary" icon="ri:mail-send-line" />
   <div style="margin-bottom: 50px"></div>
 </Container>

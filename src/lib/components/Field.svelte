@@ -55,6 +55,7 @@
     padding: 15px 20px;
     border-radius: var(--radius);
     border: 1px solid var(--border);
+    background-color: var(--bg);
   }
   textarea {
     min-height: 100px;

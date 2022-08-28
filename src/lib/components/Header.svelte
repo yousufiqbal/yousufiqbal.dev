@@ -59,7 +59,9 @@ import { prefetch } from '$app/navigation';
 <style>
   .header-wrapper {
     box-shadow: 0 3px 10px 0 lightgray;
-    margin-bottom: 40px;
+    position: relative;
+    z-index: 10;
+    /* margin-bottom: 40px; */
   }
   .header {
     display: grid;

@@ -2,7 +2,6 @@
 import Icon from "@iconify/svelte";
 import Button from "./Button.svelte";
 import Card from "./Card.svelte";
-import Subtitle from "./Subtitle.svelte";
 
   export let services = [
     {
@@ -34,7 +33,7 @@ import Subtitle from "./Subtitle.svelte";
         {service.description}
       </p>
       <div class="button">
-        <Button name="See Details & Pricing" icon="ri:arrow-right-s-line" />
+        <Button type="secondary" name="See Details & Pricing" icon="ri:arrow-right-s-line" />
       </div>
     </div>
   </Card>

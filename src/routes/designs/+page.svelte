@@ -1,8 +1,8 @@
 <script>
-  import Container from "$lib/components/Container.svelte";
+  import Section from "$lib/components/Section.svelte";
   import Title from "$lib/components/Title.svelte";
 </script>
 
-<Container>
+<Section>
   <Title icon="ri:brush-line" title="Designs" above="All Original Artwork" />
-</Container>
+</Section>
