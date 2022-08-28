@@ -1,16 +1,17 @@
 <script>
-import { prefetch } from '$app/navigation';
-
+  import { prefetch } from '$app/navigation';
   import { page } from '$app/stores';
   import { dark } from '$lib/stores';
   import Icon from '@iconify/svelte';
   import { onMount } from 'svelte';
   import { fly } from 'svelte/transition'
 
+  let scrollY = 0
+
   export let links = [
     { name: 'Home', href: '/', icon: 'ri:home-3-line' },
-    { name: 'Designs', href: '/designs', icon: 'ri:brush-line' },
     { name: 'Services', href: '/services', icon: 'ri:list-check-2' },
+    { name: 'Designs', href: '/designs', icon: 'ri:brush-line' },
     { name: 'Contact', href: '/contact', icon: 'ri:mail-send-line' },
   ]
 
@@ -27,15 +28,19 @@ import { prefetch } from '$app/navigation';
       prefetch(link.href)
     }
   })
+
+  $: console.log(scrollY)
 </script>
 
-<div class="header-wrapper">
+<svelte:window bind:scrollY />
 
-  <div class="header">
+<div  class="header-wrapper">
 
-    <a aria-label="logo" href="/" class="logo"><Icon width="24" icon="ri:blaze-fill" /></a>
+  <div class:hide={scrollY != 0} class="header">
 
-    <button aria-label="{$dark? 'light' : 'dark'} theme" on:click={toggleTheme} class="button">
+    <a class:none={scrollY != 0} aria-label="logo" href="/" class="logo"><Icon width="24" icon="ri:blaze-fill" /></a>
+
+    <button class:none={scrollY != 0} aria-label="{$dark? 'light' : 'dark'} theme" on:click={toggleTheme} class="button">
       {#key $dark}
       <i in:fly={{y: -30, duration: 150}}>
         <Icon width="24" icon="{$dark? 'ri:moon-line' : 'ri:sun-line'}" />
@@ -57,11 +62,27 @@ import { prefetch } from '$app/navigation';
 </div>
 
 <style>
+  @media (max-width: 900px) {
+    /* Hide top during scroll before 900px only */
+    .header.hide {
+      grid-template-areas: 'navigation navigation';
+      border-top: none;
+    }
+    .hide .navigation a {
+      border-top: none;
+    }
+    .hide .logo, .hide .button {
+      display: none;
+      grid-area: auto;
+    }
+  }
   .header-wrapper {
+    background-color: var(--bg);
     box-shadow: 0 3px 10px 0 lightgray;
-    position: relative;
-    z-index: 10;
-    /* margin-bottom: 40px; */
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 2;
   }
   .header {
     display: grid;
@@ -96,8 +117,6 @@ import { prefetch } from '$app/navigation';
     /* border: 1px dashed blue; */
   }
   .navigation {
-    position: sticky;
-    top: 0;
     display: flex;
     grid-area: navigation;
     /* border: 1px dashed green; */

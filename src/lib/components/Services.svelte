@@ -33,7 +33,7 @@ import Card from "./Card.svelte";
         {service.description}
       </p>
       <div class="button">
-        <Button type="secondary" name="See Details & Pricing" icon="ri:arrow-right-s-line" />
+        <Button type="secondary" name="See Pricing" icon="ri:arrow-right-s-line" />
       </div>
     </div>
   </Card>

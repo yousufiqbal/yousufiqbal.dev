@@ -44,7 +44,7 @@
       icon: 'ri:line-chart-line',
       above: 'Standout',
       title: 'Best Lighthouse Score',
-      description: 'Nowadays, developers check and audit their website performance using Google Lighthouse. It gives results in numerics from 0-100. I promise a whopping 100 score for SEO, Accessibility & Best Practices, and 90+ score for performance.'
+      description: 'Nowadays, developers check and audit their website performance using Google Lighthouse. It gives results in numerics from 0-100. I promise a whopping 100 score for SEO & Best Practices and 90+ score for Performance & Accessibility'
     },
     {
       icon: 'ri:arrow-left-right-line',
