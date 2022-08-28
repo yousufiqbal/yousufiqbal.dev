@@ -13,6 +13,7 @@
   .subtitle {
     display: grid;
     gap: 5px;
+    margin-bottom: var(--mb, 30px);
     /* border: 1px dashed red; */
   }
   .above {
