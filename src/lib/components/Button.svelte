@@ -58,9 +58,14 @@
     background-color: var(--secondary);
     color: var(--on-secondary);
   }
-  .secondary:hover, .outline:hover, .success:hover {
+  .secondary:hover, .success:hover {
     background-color: var(--primary);
     color: var(--on-primary);
+  }
+  .outline:hover {
+    background-color: var(--primary);
+    color: var(--on-primary);
+    border: 1px solid transparent;
   }
   .ghost:hover {
     border: 1px solid var(--secondary);

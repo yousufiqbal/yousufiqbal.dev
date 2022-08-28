@@ -7,7 +7,8 @@
 </script>
 
 <Section>
-  <Button type="outline" name="Go Back Home" href="/" --mb="40px" icon="ri:home-3-line" />
+  <!-- <Button type="outline" name="Go Back Home" href="/" --mb="40px" icon="ri:home-3-line" /> -->
   <Title icon="ri:list-ordered" title="Benefits" above="9 Reasons to work with me" />
   <Benefits {benefits} />
+  <Button name="See Services" type="secondary" href='/services'  />
 </Section>

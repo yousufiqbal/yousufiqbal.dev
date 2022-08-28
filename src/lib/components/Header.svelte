@@ -8,6 +8,7 @@
 
   export let links = [
     { name: 'Home', href: '/', icon: 'ri:home-3-line' },
+    { name: 'Benefits', href: '/benefits', icon: 'ri:thumb-up-line' },
     { name: 'Services', href: '/services', icon: 'ri:list-check-2' },
     { name: 'Designs', href: '/designs', icon: 'ri:brush-line' },
     { name: 'Contact', href: '/contact', icon: 'ri:mail-send-line' },
@@ -118,7 +119,7 @@
     justify-items: center;
     border-right: 1px solid var(--border);
     border-top: 1px solid var(--border);
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     transition: color 500ms;
   }
@@ -136,17 +137,19 @@
       /* border: 1px dashed red; */
       /* justify-self: center; */
       display: flex;
+      font-size: 14px;
       justify-content: center;
       align-items: center;
-      gap: 15px;
+      gap: 10px;
       padding: 15px 0;
       /* color: red; */
     }
   }
   @media (min-width: 900px) {
     .navigation a {
+      gap: 15px;
       border-top: none;
-      padding: 10px 20px;
+      padding: 15px 20px;
     }
     .navigation span {
       transition: color 500ms;

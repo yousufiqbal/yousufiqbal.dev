@@ -1,7 +1,6 @@
 <script>
   import Benefits from "$lib/components/Benefits.svelte";
-import Button from "$lib/components/Button.svelte";
-import ButtonHolder from "$lib/components/ButtonHolder.svelte";
+  import Button from "$lib/components/Button.svelte";
   import Hero from "$lib/components/Hero.svelte";
   import Section from "$lib/components/Section.svelte";
   import Seo from "$lib/components/Seo.svelte";
@@ -17,7 +16,7 @@ import ButtonHolder from "$lib/components/ButtonHolder.svelte";
 <Hero />
 
 <Section>
-  <Title icon="ri:list-ordered" title="Benefits" above="9 Reasons to work with me" />
+  <Title icon="ri:thumb-up-line" title="Benefits" above="9 Reasons to work with me" />
   <Benefits benefits={benefits.slice(0, 3)} />
   <Button type="primary" name="Read 6 More Benefits" href="/benefits" --mb="70px" />
   <Title icon="ri:list-check-2" title="Services" above="Jobs I Do" />
