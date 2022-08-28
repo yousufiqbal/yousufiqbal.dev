@@ -67,6 +67,7 @@
   .avatar {
     border-radius: 40%;
     width: 170px; height: 170px;
+    background-color: lightgray;
     background-image: url('/avatar.jpg');
     background-size: cover;
     background-position: center;
