@@ -41,7 +41,7 @@ import Card from "./Card.svelte";
     },
     {
       // icon: 'cib:visual-studio-code',
-      name: 'Visual Studio Code',
+      name: 'VS Code',
       description: 'Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js',
     },
   ]
