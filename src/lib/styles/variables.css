@@ -20,6 +20,6 @@
   --failure: #FF5151;
 
   --radius: 5px;
-  --shadow: 0 0 20px 0 lightgray;
+  --shadow: 0 0 20px 0 rgb(211, 211, 211, 0.5);
 
 }

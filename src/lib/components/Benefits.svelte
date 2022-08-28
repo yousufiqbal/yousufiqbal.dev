@@ -15,6 +15,7 @@
       {#if benefit.bookmark}
       <div class="bookmark">
         <Icon icon="ri:bookmark-fill" />
+        <!-- <span>02</span> -->
       </div>
       {/if}
       <i>
@@ -51,9 +52,16 @@
     font-size: 50px;
     position: absolute;
     top: -10px; right: 20px;
-    color: var(--primary);
+    color: var(--secondary);
+    /* position: relative; */
     /* opacity: 0.5; */
   }
+  /* .bookmark span {
+    font-size: 15px;
+    color: var(--on-secondary);
+    left: 18px; top: 12px;
+    position: absolute;
+  } */
   i {
     /* transition: color 400ms; */
     /* justify-content: end; */
