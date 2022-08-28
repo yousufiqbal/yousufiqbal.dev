@@ -1,20 +1,24 @@
 <script>
-import Footer from '$lib/components/Footer.svelte';
-
+  import Footer from '$lib/components/Footer.svelte';
   import Header from '$lib/components/Header.svelte';
   import { dark } from '$lib/stores';
   import '$lib/styles/all.css'
   import { onMount } from 'svelte';
   import { fly } from 'svelte/transition'
-  
+
   onMount(() => {
+    // Getting theme..
     $dark = localStorage.getItem('theme') || 'light'
+    // Prefetching top-level links for fast navigation..
+    const links = ['/', '/services', '/contact', '/designs', '/benefits', '/tech-stack']
+    for (const link of links) {
+      prefetch(link.href)
+    }
   })
 
   /** @type {import('./$types').LayoutData} */
   export let data
 </script>
-
 
 <Header />
 
