@@ -18,6 +18,8 @@
   --placeholder: #747474;
   --success: #00B749;
   --failure: #FF5151;
+
   --radius: 5px;
+  --shadow: 0 0 20px 0 lightgray;
 
 }

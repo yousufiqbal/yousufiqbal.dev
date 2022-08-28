@@ -1,5 +1,6 @@
 <script>
   import Icon from "@iconify/svelte";
+  import Card from "./Card.svelte";
   import Subtitle from "./Subtitle.svelte";
 
   let benefits = [
@@ -25,7 +26,7 @@
       icon: 'ri:mail-send-line',
       above: '$ 0.00',
       title: 'Free Email',
-      description: 'Like contact@mydomain.com you get one free email powered by ZOHO Mail of 5GB. This helps you respond to messages that are sent from the ‘Contact Me’ or ‘Hire Me’ page from your official domain. You can easily install the ZOHO email application on your phone and respond to emails on the go.'
+      description: 'Like contact@mydomain.com you get one free email powered by ZOHO Mail of 5GB. This helps you respond to messages that are sent from the ‘Contact Me’ page from your website. Install ZOHO email application on your phone and respond to emails on the go.'
     },
     {
       icon: 'ri:upload-cloud-line',
@@ -63,15 +64,17 @@
  <div class="benefits">
 
   {#each benefits as benefit}
-  <div class="benefit">
-    <i>
-      <Icon icon="{benefit.icon}" />
-    </i>
-    <Subtitle above="{benefit.above}" subtitle="{benefit.title}" />
-    <p class="description">
-      {benefit.description}
-    </p>
-  </div>
+  <Card>
+    <div class="benefit">
+      <i>
+        <Icon icon="{benefit.icon}" />
+      </i>
+      <Subtitle above="{benefit.above}" subtitle="{benefit.title}" />
+      <p class="description">
+        {benefit.description}
+      </p>
+    </div>
+  </Card>
   {/each}
 
  </div>
@@ -81,27 +84,20 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 50px;
+    margin-bottom: 50px;
   }
   .benefit {
+    /* border: 1px dashed blue; */
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
-    background-color: var(--bg);
-    border-radius: var(--radius);
-    box-shadow: 0 0 20px 0 lightgray;
   }
   i {
     /* color: var(--primary); */
     font-size: 60px;
   }
-  p {
-    /* border: 1px dashed green; */
-    flex: 1;
-  }
-  @media (min-width: 700px) {
-    .benefit {
-      padding: 30px;
-    }
-  }
+  /* p {
+    border: 1px dashed green;
+    flex-grow: 1;
+  } */
  </style>

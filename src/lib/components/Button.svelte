@@ -25,11 +25,12 @@
 
 <style>
   .button {
+    align-self: start;
     display: flex;
     align-items: center;
     border-radius: var(--radius);
     gap: 10px;
-    padding: 7px 10px 7px 15px;
+    padding: 10px 10px 10px 15px;
     text-transform: uppercase;
     font-size: 15px;
     transition: all 500ms;
