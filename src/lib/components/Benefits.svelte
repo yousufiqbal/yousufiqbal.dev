@@ -52,7 +52,7 @@
     font-size: 50px;
     position: absolute;
     top: -10px; right: 20px;
-    color: var(--secondary);
+    color: var(--primary);
     /* position: relative; */
     /* opacity: 0.5; */
   }
