@@ -25,9 +25,8 @@
 
 <style>
   .button {
-    align-self: start;
-    display: flex;
-    align-items: center;
+    /* border: 1px dashed red; */
+    display: inline-flex;
     border-radius: var(--radius);
     gap: 10px;
     padding: 10px 10px 10px 15px;
@@ -59,7 +58,7 @@
     background-color: var(--secondary);
     color: var(--on-secondary);
   }
-  .secondary:hover, .outline:hover {
+  .secondary:hover, .outline:hover, .success:hover {
     background-color: var(--primary);
     color: var(--on-primary);
   }

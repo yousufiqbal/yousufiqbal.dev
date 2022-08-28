@@ -18,7 +18,7 @@ export let benefits = [
     icon: 'ri:lock-2-line',
     above: '$ 0.00',
     title: 'Free HTTPS',
-    description: 'Ever had to pay for SSL certificates? Not anymore. All of your web traffic is secured using Let’s Encrypt certificate. This ensures that all transmitted data is safe on the internet from prying eyes.'
+    description: 'Ever had to pay for SSL certificates? Not anymore. All of your web traffic is secured using Let’s Encrypt certificate. This ensures that all transmitted data is safe over internet from prying eyes.'
   },
   {
     bookmark: false,

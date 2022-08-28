@@ -28,8 +28,6 @@
       prefetch(link.href)
     }
   })
-
-  $: console.log(scrollY)
 </script>
 
 <svelte:window bind:scrollY />
