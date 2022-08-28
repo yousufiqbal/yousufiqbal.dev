@@ -3,7 +3,7 @@
 
   export let name, icon = null
   export let href = null
-  export let type = 'secondary'
+  export let type = 'primary'
 </script>
 
 {#if !href}
@@ -44,10 +44,19 @@
     color: var(--on-secondary);
   }
   .outline {
+    font-weight: 500;
     border: 1px solid var(--secondary);
+  }
+  .success {
+    background-color: var(--success);
+    color: white;
   }
   .ghost {
     border: 1px solid transparent;
+  }
+  .primary:hover {
+    background-color: var(--secondary);
+    color: var(--on-secondary);
   }
   .secondary:hover, .outline:hover {
     background-color: var(--primary);

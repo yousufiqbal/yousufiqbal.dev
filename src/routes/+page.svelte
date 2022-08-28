@@ -5,6 +5,7 @@ import Hero from "$lib/components/Hero.svelte";
 import Section from "$lib/components/Section.svelte";
 import Seo from "$lib/components/Seo.svelte";
 import Services from "$lib/components/Services.svelte";
+import Technologies from "$lib/components/Technologies.svelte";
 import Title from "$lib/components/Title.svelte";
 </script>
 
@@ -17,4 +18,6 @@ import Title from "$lib/components/Title.svelte";
   <Benefits />
   <Title icon="ri:list-check-2" title="Services" above="Jobs I Do" />
   <Services />
+  <Title icon="ri:stack-line" title="Tech Stack" above="Technologies I Use" />
+  <Technologies />
 </Section>

@@ -21,6 +21,10 @@
     background-color: var(--surface);
     /* color: white; */
   }
+  .secondary {
+    background-color: var(--secondary);
+    color: var(--on-secondary);
+  }
   @media (min-width: 700px) {
     .card {
       padding: 30px;

@@ -84,7 +84,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
   .benefit {
     /* border: 1px dashed blue; */
