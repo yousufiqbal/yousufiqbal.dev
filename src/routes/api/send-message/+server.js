@@ -12,7 +12,7 @@ export const POST = async ({ request }) => {
   // TODO validation..
 
   // Setting API Key..
-  sgMail.setApiKey('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')
+  sgMail.setApiKey(import.meta.env.VITE_SEND_GRID_KEY)
 
   // Sending email..
   try {
@@ -26,7 +26,7 @@ export const POST = async ({ request }) => {
         <h2>${client.name}</h2>
         <p>${client.message}</p>
         <br><br>
-        <h3>Information</h3>
+        <h3>Sender Information</h3>
         <p>Name: ${client.name}</p>
         <p>Email: ${client.email}</p>
         <p>WhatsApp: ${client.whatsapp || 'Not Given'}</p>

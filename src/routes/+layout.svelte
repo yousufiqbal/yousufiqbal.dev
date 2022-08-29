@@ -12,7 +12,7 @@ import { prefetch } from '$app/navigation';
     // Getting theme..
     $dark = localStorage.getItem('theme') || 'light'
     // Prefetching top-level links for fast navigation..
-    const links = ['/', '/services', '/contact', '/designs', '/benefits', '/tech-stack']
+    const links = ['/', '/services', '/contact', '/designs', '/benefits', '/tech-stack', '/contact/thank-you']
     for (const link of links) {
       prefetch(link)
     }
