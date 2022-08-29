@@ -10,6 +10,7 @@
   import { isEmpty } from '$lib/utils.js'
   import { goto } from "$app/navigation";
 import Seo from "$lib/components/Seo.svelte";
+import Card from "$lib/components/Card.svelte";
 
   let wait = false
 
@@ -77,14 +78,17 @@ import Seo from "$lib/components/Seo.svelte";
     </div>
     <div slot="related">
       <Title title="<span>Three</span> Things" above="Prerequisties" />
-      <Content>
-        <p><em>Do</em> three things before contacting me for website project:</p>
-        <ol>
-          <li>Read the <a href="/benefits">benefits</a> I provide for websites, this ensures how much goodness you are getting.</li> 
-          <li>Read the <a href="/services">services</a> I provide and choose your desired service with the package name after reading details.</li>
-          <li>View my <a href="/designs">designs</a> and choose your favorite one as a template for your website.</li>
-        </ol>
-      </Content>
+        <Card>
+          
+          <Content>
+            <p><em>Do</em> three things before contacting me for website project:</p>
+            <ol>
+              <li>Read the <a href="/benefits">benefits</a> I provide for websites, this ensures how much goodness you are getting.</li> 
+              <li>Read the <a href="/services">services</a> I provide and choose your desired service with the package name after reading details.</li>
+              <li>View my <a href="/designs">designs</a> and choose your favorite one as a template for your website.</li>
+            </ol>
+          </Content>
+        </Card>
     </div>
   </Layout>
 
