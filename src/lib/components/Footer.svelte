@@ -19,7 +19,7 @@
   <Container>
 
     <div class="footer">
-      <i class="logo"><Icon icon="ri:blaze-fill" /></i>
+      <i class="logo"><Icon icon="ri:blaze-line" /></i>
       <div class="link-group">
         <div class="links">
           {#each links as { href, name }}
