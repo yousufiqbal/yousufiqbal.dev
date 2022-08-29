@@ -13,7 +13,7 @@ export const POST = async ({ request }) => {
   // TODO validation..
 
   // Setting API Key..
-  sgMail.setApiKey(import.meta.env.SENDGRID_KEY)
+  sgMail.setApiKey(process.env.SENDGRID_KEY)
 
   // Sending email..
   try {
