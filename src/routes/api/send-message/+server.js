@@ -1,5 +1,6 @@
 import { error, json } from '@sveltejs/kit'
 import sgMail from '@sendgrid/mail'
+import 'dotenv/config'
 
 /** @type {import('./$types').RequestHandler} */
 export const POST = async ({ request }) => {
@@ -12,7 +13,7 @@ export const POST = async ({ request }) => {
   // TODO validation..
 
   // Setting API Key..
-  sgMail.setApiKey(import.meta.env.VITE_SEND_GRID_KEY)
+  sgMail.setApiKey(import.meta.env.SENDGRID_KEY)
 
   // Sending email..
   try {
