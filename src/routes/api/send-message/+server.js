@@ -1,22 +1,24 @@
 import { error, json } from '@sveltejs/kit'
 import sgMail from '@sendgrid/mail'
 import 'dotenv/config'
+import { contactSchema } from '$lib/yup'
 
 /** @type {import('./$types').RequestHandler} */
 export const POST = async ({ request }) => {
-
+  
+  // TODO make it secure
   let myEmail = 'contact@yosofiqbal.com'
 
-  // Getting and validating form..
-  const client = await request.json()
-
-  // TODO validation..
-
-  // Setting API Key..
-  sgMail.setApiKey(process.env.SENDGRID_KEY)
-
-  // Sending email..
   try {
+
+    // Getting and validating form..
+    const body = await request.json()
+    const client = await contactSchema.validate(body, { abortEarly: false })
+  
+    // Setting API Key..
+    sgMail.setApiKey(process.env.SENDGRID_KEY)
+  
+    // Sending email..
     await sgMail.send({
       to: myEmail,
       from: myEmail,
@@ -36,8 +38,9 @@ export const POST = async ({ request }) => {
 
     // On success
     return json({ message: 'Email sent' })
-  } catch (err) {
     
+  } catch (err) {
+
     // On failure
     return error(403, 'Cannot send email')
     
