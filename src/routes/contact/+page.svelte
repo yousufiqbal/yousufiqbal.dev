@@ -4,7 +4,7 @@
   import Content from "$lib/components/Content.svelte";
   import Field from "$lib/components/Field.svelte";
   import Form from "$lib/components/Form.svelte";
-  import Layout from "$lib/components/ContactLayout.svelte";
+  import Layout from "$lib/components/Layout.svelte";
   import Title from "$lib/components/Title.svelte";
   import { contactSchema, extractYupErrors } from "$lib/yup";
   import { isEmpty } from '$lib/utils.js'

@@ -27,6 +27,22 @@
     border-color: var(--primary);
   }
   .table th {
+    font-weight: 500;
     border-right: 1px solid var(--border);
+  }
+  .table .no {
+    color: var(--failure);
+  }
+  .table .yes {
+    color: var(--success);
+  }
+  .table tr:last-child {
+    font-weight: 500;
+  }
+  .table tr:last-child th {
+    color: var(--primary);
+  }
+  .table tr:last-child td {
+    color: var(--success);
   }
 </style>

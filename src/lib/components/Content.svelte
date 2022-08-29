@@ -8,6 +8,7 @@
     flex-direction: column;
     gap: 20px;
     margin-bottom: 40px;
+    max-width: 600px;
   }
   .content ol {
     display: grid;
