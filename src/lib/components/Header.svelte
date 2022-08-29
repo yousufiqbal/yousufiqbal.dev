@@ -28,7 +28,9 @@
 
   <div class:hide={scrollY != 0} class="header">
 
-    <a class:none={scrollY != 0} aria-label="logo" href="/" class="logo"><Icon width="24" icon="ri:blaze-fill" /></a>
+    <a class:none={scrollY != 0} aria-label="logo" href="/" class="logo">
+      <Icon icon="ri:blaze-fill" width="24px" />
+    </a>
 
     <button class:none={scrollY != 0} aria-label="{$dark? 'light' : 'dark'} theme" on:click={toggleTheme} class="button">
       {#key $dark}

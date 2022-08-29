@@ -1,4 +1,3 @@
-/* eslint-disable */
 import adapter from '@sveltejs/adapter-netlify';
 import sveltePreproces from 'svelte-preprocess'
 
@@ -9,7 +8,7 @@ const config = {
     adapter: adapter({
       edge: false,
       split: false
-    })
+    }),
   }
 };
 
