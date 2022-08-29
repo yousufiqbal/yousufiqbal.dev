@@ -48,7 +48,6 @@
   }
 
   const submit = async () => {
-    console.log('came')
     if (isEmpty(errors)) {
       await sendMessage()
     } else {

@@ -37,7 +37,7 @@ export const POST = async ({ request }) => {
     // On success
     return json({ message: 'Email sent' })
   } catch (err) {
-    console.log(err)
+    
     // On failure
     return error(403, 'Cannot send email')
     
