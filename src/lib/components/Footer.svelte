@@ -9,7 +9,7 @@
     { name: 'Contact', href: '/contact' },
   ]
   let otherLinks = [
-    { name: 'Sitemap', href: '/sitemap' },
+    { name: 'Sitemap', href: '/sitemap.xml' },
     { name: 'Privacy', href: '/privacy' },
     { name: 'Twitter', href: '/' },
   ]

@@ -11,7 +11,7 @@
 
 </script>
 
-<Seo title="Home" description="Design your personal, business or company websites, or convert your design files to live website with me, using modern web technology." />
+<Seo title="Home" description="Using modern technologies, I design and develop websites that are responsive, sleek, performant and SEO friendly." />
 
 <Hero />
 

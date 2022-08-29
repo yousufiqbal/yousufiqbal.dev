@@ -9,6 +9,7 @@
   import { contactSchema, extractYupErrors } from "$lib/yup";
   import { isEmpty } from '$lib/utils.js'
   import { goto } from "$app/navigation";
+import Seo from "$lib/components/Seo.svelte";
 
   let wait = false
 
@@ -57,6 +58,8 @@
 
   $: client && validate()
 </script>
+
+<Seo title="Contact" description="Contact me to avail any web development services and other queries" />
 
 <Container --pd="50px 20px">
   

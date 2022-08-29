@@ -13,7 +13,7 @@
   ]
 </script>
 
-<Seo title="Personal Website" description="I provide three services: 1. Personal website, 2. Business website and 3. Design to website development" />
+<Seo title="Personal Website" description="I develop personal websites. They are great in showcasing your professional life including education, experiences and skills" />
 
 <Section>
   <Breadcrumbs {crumbs} />

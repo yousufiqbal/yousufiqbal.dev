@@ -2,9 +2,12 @@
   import Benefits from "$lib/components/Benefits.svelte";
   import Button from "$lib/components/Button.svelte";
   import Section from "$lib/components/Section.svelte";
+import Seo from "$lib/components/Seo.svelte";
   import Title from "$lib/components/Title.svelte";
   import { benefits } from "$lib/data";
 </script>
+
+<Seo title="Benefits" description="Read all the goodness you are getting from developing your website from me." />
 
 <Section>
   <!-- <Button type="outline" name="Go Back Home" href="/" --mb="40px" icon="ri:home-3-line" /> -->

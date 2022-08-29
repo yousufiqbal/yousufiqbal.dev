@@ -6,7 +6,7 @@
   import Title from "$lib/components/Title.svelte";
 </script>
 
-<Seo title="Services" description="I provide three services: 1. Personal website, 2. Business website and 3. Design to website development" />
+<Seo title="Pricacy" description="Pricacy policy for clients and common users" />
 
 <Section>
 

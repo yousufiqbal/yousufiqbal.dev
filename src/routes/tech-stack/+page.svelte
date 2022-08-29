@@ -4,7 +4,10 @@
   import Section from "$lib/components/Section.svelte";
   import Title from "$lib/components/Title.svelte";
   import { technologies } from "$lib/data";
+  import Seo from "$lib/components/Seo.svelte";
 </script>
+
+<Seo title="Tech Stack" description="To build awesome websites I use HTML, CSS, JavaScript, NodeJS, SvelteJS, SvelteKit, VSCode, etc." />
 
 <Section>
   <Button type="outline" name="Go Back Home" href="/" --mb="40px" icon="ri:home-3-line" />
