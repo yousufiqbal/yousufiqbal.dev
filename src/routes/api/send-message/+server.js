@@ -5,7 +5,7 @@ import { contactSchema } from '$lib/yup'
 
 /** @type {import('./$types').RequestHandler} */
 export const POST = async ({ request }) => {
-  
+
   // TODO make it secure
   let myEmail = 'contact@yosofiqbal.com'
 
@@ -23,7 +23,7 @@ export const POST = async ({ request }) => {
       to: myEmail,
       from: myEmail,
       replyTo: client.email,
-      subject: `${client.name} from  ${client.email}`,
+      subject: `${client.name} from ${client.email}`,
       // text: client.message,
       html: `
         <h2>${client.name}</h2>
