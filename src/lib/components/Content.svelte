@@ -9,22 +9,30 @@
     gap: 20px;
     margin-bottom: 40px;
   }
-  ol {
+  .content ol {
     display: grid;
-    gap: 5px;
+    gap: 10px;
     list-style-type: decimal;
     list-style-position: inside;
   }
-  ol li::before {
+  .content ol li::before {
     content: "";
     width: 5px;
     display: inline-block;
   }
-  ol > li::marker {
+  .content ol > li::marker {
     font-weight: 500;
   }
-  h2 {
+  .content h2 {
     font-weight: 500;
     font-size: 26px;
+  }
+  .content a {
+    display: inline-flex;
+    color: var(--primary);
+    text-decoration: underline;
+  }
+  .content a:hover {
+    color: var(--success);
   }
 </style>

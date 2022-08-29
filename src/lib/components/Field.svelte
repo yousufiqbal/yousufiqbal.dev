@@ -1,6 +1,7 @@
 <script>
   import { kebabCase } from "$lib/utils";
   import Icon from "@iconify/svelte";
+  import { fly } from 'svelte/transition'
 
   export let label, attribute = kebabCase(label), icon
   export let touched = false, error = null
@@ -23,12 +24,12 @@
     </div>
   </label>
   {#if !textarea}
-  <input {inputmode} {placeholder} size="1" bind:value id="{attribute}" name="{attribute}" use:typeMe type="text">
+  <input on:blur={()=>touched=true} {inputmode} {placeholder} size="1" bind:value id="{attribute}" name="{attribute}" use:typeMe type="text">
   {:else}
-  <textarea {inputmode} {placeholder} bind:value id="{attribute}" name="{attribute}" rows="10"></textarea>
+  <textarea on:blur={()=>touched=true} {inputmode} {placeholder} bind:value id="{attribute}" name="{attribute}" rows="10"></textarea>
   {/if}
   {#if touched && error}
-  <div class="error">{error}</div>
+  <div in:fly={{x: -20, duration: 150}} class="error">{error}</div>
   {/if}
 </div>
 
@@ -67,6 +68,7 @@
     border-color: var(--secondary);
   }
   .error {
+    text-transform: capitalize;
     color: var(--failure);
   }
   .status {

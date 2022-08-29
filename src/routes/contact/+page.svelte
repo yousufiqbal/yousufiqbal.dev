@@ -4,26 +4,87 @@
   import Content from "$lib/components/Content.svelte";
   import Field from "$lib/components/Field.svelte";
   import Form from "$lib/components/Form.svelte";
+  import Layout from "$lib/components/ContactLayout.svelte";
   import Title from "$lib/components/Title.svelte";
+  import { contactSchema, extractYupErrors } from "$lib/yup";
+  import { isEmpty } from '$lib/utils.js'
+  import { goto } from "$app/navigation";
+
+  let wait = false
+
+  const client = {
+    name: '',
+    email: '',
+    whatsapp: '',
+    message: '',
+  }
+  
+  let touched = false, errors = {}
+
+  const validate = async () => {
+    try {
+      await contactSchema.validate(client, { abortEarly: false })
+      errors = {}
+    } catch (error) {
+      errors = extractYupErrors(error)
+    }
+  }
+
+  const sendMessage = async () => {
+    try {
+      wait = 'Sending..'
+      let response = await fetch('/api/send-message', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json;charset=utf-8'
+        },
+        body: JSON.stringify(client)
+      });
+      goto('/contact/thank-you')
+    } catch (error) {
+      alert('Unable to send message. I apologize')
+      wait = false
+    }
+  }
+
+  const submit = async () => {
+    console.log('came')
+    if (isEmpty(errors)) {
+      await sendMessage()
+    } else {
+      touched = true
+    }
+  }
+
+  $: client && validate()
 </script>
 
-<Container --mw="800px" --pd="50px 20px">
+<Container --pd="50px 20px">
+  
+  <Layout>
+    <div slot="main">
+      <Title icon="ri:mail-send-line" title="Contact" above="Get In Touch" />
+      <p style="margin-bottom: 40px;">I try responing to every message unless it is considered spam by everyone.</p>
+      <Form>
+        <Field {touched} error={errors.name} bind:value={client.name} label="Your Name" icon="ri:user-3-line" placeholder="How do I call you?" />
+        <Field {touched} error={errors.email} bind:value={client.email} label="Your Email" type="email" inputmode="email" icon="ri:at-line" placeholder="Where do I reply you?" />
+        <Field {touched} error={errors.whatsapp} bind:value={client.whatsapp} label="Your WhatsApp" type="tel" inputmode="tel" icon="ri:whatsapp-line" placeholder="Good for quick chats (Optional)" />
+        <Field {touched} error={errors.message} bind:value={client.message} textarea label="Your Message" icon="ri:message-3-line" placeholder="What do you want to talk?" />
+      </Form>
+      <Button on:click={submit} name="{wait || 'Send Message'}" type="secondary" icon="ri:mail-send-line" />
+    </div>
+    <div slot="related">
+      <Title title="<span>Three</span> Things" above="Prerequisties" />
+      <Content>
+        <p><em>Do</em> three things before contacting me for website project:</p>
+        <ol>
+          <li>Read the <a href="/benefits">benefits</a> I provide for websites, this ensures how much goodness you are getting.</li> 
+          <li>Read the <a href="/services">services</a> I provide and choose your desired service with the package name after reading details.</li>
+          <li>View my <a href="/designs">designs</a> and choose your favorite one as a template for your website.</li>
+        </ol>
+      </Content>
+    </div>
+  </Layout>
 
-  <Title icon="ri:mail-send-line" title="Contact" above="Get In Touch" />
-
-  <Content>
-    <p>
-      I try responing to every message unless it is considered spam by everyone
-    </p>
-  </Content>
-
-  <Form>
-    <Field label="Name" icon="ri:user-3-line" placeholder="How do I call you?" />
-    <Field label="Email" type="email" inputmode="email" icon="ri:at-line" placeholder="Where do I reply you?" />
-    <Field label="WhatsApp No." type="tel" inputmode="tel" icon="ri:whatsapp-line" placeholder="Good for quick chats" />
-    <Field textarea label="Message" icon="ri:message-3-line" placeholder="What do you want to talk?" />
-  </Form>
-
-  <Button name="Send Message" type="secondary" icon="ri:mail-send-line" />
-  <div style="margin-bottom: 50px"></div>
 </Container>
+
