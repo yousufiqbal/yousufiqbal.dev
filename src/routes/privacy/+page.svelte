@@ -1,14 +1,17 @@
 <script>
-import Button from "$lib/components/Button.svelte";
-
+  import Button from "$lib/components/Button.svelte";
   import Container from "$lib/components/Container.svelte";
   import Content from "$lib/components/Content.svelte";
+import Seo from "$lib/components/Seo.svelte";
   import Title from "$lib/components/Title.svelte";
 </script>
+
+<Seo title="Privacy" description="All privacy policies related to client and common users" />
 
 <Container --pd="50px 30px">
   <Button type="outline" name="Go Back Home" href="/" --mb="40px" icon="ri:home-3-line" />
   <Title icon="ri:git-repository-private-line" title="Privacy" above="Policies" />
+
   <Content>
     <h2>Clients Related</h2>
     <p>All client data including name, email, contact, etc. is private. It is not shared with any other person or third-party.</p>
@@ -31,4 +34,5 @@ import Button from "$lib/components/Button.svelte";
     <h2>GDPR Consent</h2>
     <p>YosofIqbal.com doesn't require a GDPR consent notice because no personally identifiable information is collected.</p>
   </Content>
+  
 </Container>

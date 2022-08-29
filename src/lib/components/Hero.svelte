@@ -1,6 +1,6 @@
 <script>
   import Button from "./Button.svelte";
-  import Icon from '@iconify/svelte'
+  import Icon from '$lib/components/Icon.svelte'
 </script>
 
 <div class="hero-wrapper">

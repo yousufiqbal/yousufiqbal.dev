@@ -1,5 +1,5 @@
 <script>
-  import Icon from '@iconify/svelte'
+  import Icon from '$lib/components/Icon.svelte'
 
   export let title, above = null, icon = null
 </script>

@@ -1,6 +1,6 @@
 <script>
   import { kebabCase } from "$lib/utils";
-  import Icon from "@iconify/svelte";
+  import Icon from "$lib/components/Icon.svelte";
   import { fly } from 'svelte/transition'
 
   export let label, attribute = kebabCase(label), icon

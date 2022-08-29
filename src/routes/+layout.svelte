@@ -1,6 +1,5 @@
 <script>
-import { prefetch } from '$app/navigation';
-
+  import { prefetch } from '$app/navigation';
   import Footer from '$lib/components/Footer.svelte';
   import Header from '$lib/components/Header.svelte';
   import { dark } from '$lib/stores';

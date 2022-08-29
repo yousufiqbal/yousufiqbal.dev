@@ -1,7 +1,7 @@
 <script>
 import { kebabCase } from "$lib/utils";
 
-import Icon from "@iconify/svelte";
+import Icon from "$lib/components/Icon.svelte";
 import Button from "./Button.svelte";
 import Card from "./Card.svelte";
 

@@ -1,5 +1,5 @@
 <script>
-  import Icon from '@iconify/svelte'
+  import Icon from '$lib/components/Icon.svelte'
 
   export let name, icon = 'ri:arrow-right-s-line'
   export let href = null

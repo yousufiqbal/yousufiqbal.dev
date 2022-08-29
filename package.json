@@ -23,7 +23,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@iconify/svelte": "^2.2.1",
 		"@sendgrid/mail": "^7.7.0",
 		"dotenv": "^16.0.1",
 		"yup": "^0.32.11"
