@@ -10,7 +10,7 @@
     { name: 'Home', href: '/', icon: 'ri:home-3-line' },
     { name: 'Benefits', href: '/benefits', icon: 'ri:thumb-up-line' },
     { name: 'Services', href: '/services', icon: 'ri:list-check-2' },
-    { name: 'Templates', href: '/templates', icon: 'ri:brush-line' },
+    { name: 'Templates', href: '/templates', icon: 'ri:layout-2-line' },
     { name: 'Contact', href: '/contact', icon: 'ri:mail-send-line' },
   ]
 

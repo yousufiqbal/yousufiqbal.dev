@@ -33,7 +33,7 @@
         </div>
       </div>
       <div class="copyright">
-        © {new Date().getFullYear()} - Built with <a href="https://kit.svelte.dev">SvelteKit</a>
+        © {new Date().getFullYear()} - Built with <a href="https://kit.svelte.dev">SvelteKit</a> - Icons by <a href="https://remixicon.com">Remix Icons</a>
       </div>
     </div>
 
