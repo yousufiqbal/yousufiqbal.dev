@@ -3,7 +3,7 @@
   import { onMount } from 'svelte';
 
   export let title, above = null, icon = null
-  let typed = above ? above[0] : ''
+  let typed = ''
   export let typeEffect = false
 
   onMount(() => {
@@ -13,7 +13,7 @@
   const startTypewriter = () => {
     // only do typeing effect if above is there..
     if (!above || !typeEffect) return
-    let index = 1
+    let index = 0
     let interval = setInterval(() => {
       typed += above[index]
       index++
@@ -24,7 +24,7 @@
 
 <div class="title">
   {#if above}
-  <div aria-label="{above}" class="above">{typeEffect ? typed : above}</div>
+  <div aria-label="{above}" class="above">{typeEffect ? typed : above}&nbsp;</div>
   {/if}
   <div class="icon-h1">
     {#if icon}
