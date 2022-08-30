@@ -1,4 +1,30 @@
-:root {
+.dark {
+
+  --above-below: #e2e2e2;
+  --primary: #ff8671;
+  --on-primary: #fff;
+  --secondary: rgb(234, 234, 234);
+  --on-secondary: rgb(70, 70, 70);
+  --bg: rgb(46, 46, 46);
+  --on-bg: rgb(224, 224, 224);
+  --bg-2: #464646;
+  --on-bg-2: rgb(207, 207, 207);
+  --surface: rgb(32, 32, 32);
+  --on-surface: #444;
+  --footer: #373737;
+  --on-footer: rgb(237, 237, 237);
+  --on-footer-others: #C8C8C8;
+  --border: #575757;
+  --placeholder: #cbcbcb;
+  --success: #00ff66;
+  --failure: #ff8282;
+
+  --radius: 5px;
+  --shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+.light {
 
   --above-below: #747474;
   --primary: #FF6347;

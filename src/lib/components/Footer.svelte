@@ -43,8 +43,8 @@
 <style>
   .footer-wrapper {
     padding: 50px 0;
-    background-color: var(--secondary);
-    color: var(--on-secondary);
+    background-color: var(--footer);
+    color: var(--on-footer);
   }
   .footer {
     display: grid;

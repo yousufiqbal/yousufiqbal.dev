@@ -35,6 +35,7 @@
     transition: all 300ms;
     font-weight: 500;
     margin-bottom: var(--mb, 0);
+    align-items: center;
   }
   .primary {
     background-color: var(--primary);

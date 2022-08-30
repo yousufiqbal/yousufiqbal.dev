@@ -7,11 +7,23 @@
   import { onMount } from 'svelte';
   import { fly } from 'svelte/transition'
 
-  onMount(() => {
-    // Getting theme..
-    $dark = localStorage.getItem('theme') || 'light'
+  const setTheme = () => {
+    let theme = localStorage.getItem('theme') || 'light'
+    $dark = theme == 'dark' ? true : false
+    if ($dark) {
+      document.body.classList.remove('light')
+      document.body.classList.add('dark')
+    }
+  }
+
+  const doPrefetch = () => {
     const links = ['/', '/services', '/contact', '/templates', '/benefits', '/services/personal-website', '/services/business-website', '/services/design-to-website']
     for (const link of links) prefetch(link)
+  }
+
+  onMount(() => {
+    setTheme()
+    doPrefetch()
   })
 
   /** @type {import('./$types').LayoutData} */

@@ -16,9 +16,14 @@
 
   const toggleTheme = () => {
     $dark = !$dark
-    setTimeout(() => {
-      localStorage.setItem('theme', $dark ? 'dark' : 'light')
-    }, 0);
+    localStorage.setItem('theme', $dark ? 'dark' : 'light')
+    if ($dark) {
+      document.body.classList.remove('light')
+      document.body.classList.add('dark')
+    } else {
+      document.body.classList.remove('dark')
+      document.body.classList.add('light')
+    }
   }
 </script>
 
@@ -69,8 +74,10 @@
     }
   }
   .header-wrapper {
+    border-bottom: 1px solid var(--border);
     background-color: var(--bg);
-    box-shadow: 0 3px 10px 0 lightgray;
+    /* box-shadow: 0 3px 10px 0 lightgray; */
+    box-shadow: var(--shadow);
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
