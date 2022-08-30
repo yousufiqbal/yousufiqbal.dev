@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.yosofiqbal.com/sitemap.xml
