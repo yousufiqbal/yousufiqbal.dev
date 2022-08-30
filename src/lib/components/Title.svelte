@@ -24,7 +24,7 @@
 
 <div class="title">
   {#if above}
-  <div class="above">{typeEffect ? typed : above}</div>
+  <div aria-label="{above}" class="above">{typeEffect ? typed : above}</div>
   {/if}
   <div class="icon-h1">
     {#if icon}

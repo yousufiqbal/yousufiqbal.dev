@@ -29,7 +29,7 @@
 
       <div class="right">
         <div class="title">
-          <div class="above">{typed}</div>
+          <div aria-label={salam} class="above">{typed}</div>
           <h1>I'm <span>Yousuf,</span></h1>
         </div>
         <p class="introduction">
