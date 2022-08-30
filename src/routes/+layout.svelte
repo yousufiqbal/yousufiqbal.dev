@@ -10,11 +10,8 @@
   onMount(() => {
     // Getting theme..
     $dark = localStorage.getItem('theme') || 'light'
-    // Prefetching top-level links for fast navigation..
-    const links = ['/', '/services', '/contact', '/designs', '/benefits', '/tech-stack', '/contact/thank-you']
-    for (const link of links) {
-      prefetch(link)
-    }
+    const links = ['/', '/services', '/contact', '/designs', '/benefits', '/services/personal-website', '/services/business-website', '/services/design-to-website']
+    for (const link of links) prefetch(link)
   })
 
   /** @type {import('./$types').LayoutData} */

@@ -176,7 +176,7 @@ import Limitations from "$lib/components/Limitations.svelte";
     </div>
   </Prices>
 
-  <Button type="outline" name="Interested? Contact Me" href="/" --mb="40px" icon="ri:mail-send-line" />
+  <Button type="outline" name="Interested? Contact Me" href="/contact" --mb="40px" icon="ri:mail-send-line" />
  
   <Limitations price="20" />
 
