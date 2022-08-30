@@ -83,7 +83,7 @@ import Limitations from "$lib/components/Limitations.svelte";
         </tr>
         <tr>
           <th>Custom Email</th>
-          <td class="no">Free</td>
+          <td>Free</td>
         </tr>
         <tr>
           <th>Content Upload</th>
