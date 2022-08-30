@@ -85,7 +85,7 @@ import Card from "$lib/components/Card.svelte";
             <ol>
               <li>Read the <a href="/benefits">benefits</a> I provide for websites, this ensures how much goodness you are getting.</li> 
               <li>Read the <a href="/services">services</a> I provide and choose your desired service with the package name after reading details.</li>
-              <li>View my <a href="/designs">designs</a> and choose your favorite one as a template for your website.</li>
+              <li>View my <a href="/templates">templates</a> and choose your favorite one as a template for your website.</li>
             </ol>
           </Content>
         </Card>

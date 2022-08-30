@@ -11,5 +11,5 @@
 <Section>
   <Title typeEffect icon="ri:list-check-2" title="Services" above="Jobs I Do" />
   <Services />
-  <Button name="See Designs" type="outline" href='/designs'  />
+  <Button name="See Templates" type="outline" href='/templates'  />
 </Section>

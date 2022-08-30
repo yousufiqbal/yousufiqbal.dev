@@ -25,14 +25,14 @@ export let benefits = [
     icon: 'ri:device-line',
     above: '100%',
     title: 'Responsive Design',
-    description: 'All of the designs are developed with responsiveness in mind. They look aesthetically correct on Smartphones, Tablets and Desktop PCs. This ensures that all of your website content is accessible and pleasing at the same time.'
+    description: 'All of the websites are developed with responsiveness in mind. They look aesthetically correct on Smartphones, Tablets and Desktop PCs. This ensures that all of your website content is accessible and pleasing at the same time.'
   },
   {
     bookmark: false,
     icon: 'ri:flashlight-line',
     above: 'Speed',
     title: 'App Like Experience',
-    description: 'Ever used an android app? You definitely have felt how snappy navigation happens in an app. My designs deliver nearly app-like navigation. Thanks to SvelteJS & SvelteKit by Rich Harris for one of the fastest web frameworks.'
+    description: 'Ever used an android app? You definitely have felt how snappy navigation happens in an app. My websites deliver nearly app-like navigation. Thanks to SvelteJS & SvelteKit by Rich Harris for one of the fastest web frameworks.'
   },
   {
     bookmark: true,

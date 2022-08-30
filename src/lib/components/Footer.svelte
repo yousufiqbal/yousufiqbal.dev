@@ -4,7 +4,7 @@
 
   let links = [
     { name: 'Home', href: '/' },
-    { name: 'Designs', href: '/designs' },
+    { name: 'Templates', href: '/templates' },
     { name: 'Services', href: '/services' },
     { name: 'Contact', href: '/contact' },
   ]

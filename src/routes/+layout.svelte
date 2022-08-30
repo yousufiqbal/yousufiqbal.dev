@@ -10,7 +10,7 @@
   onMount(() => {
     // Getting theme..
     $dark = localStorage.getItem('theme') || 'light'
-    const links = ['/', '/services', '/contact', '/designs', '/benefits', '/services/personal-website', '/services/business-website', '/services/design-to-website']
+    const links = ['/', '/services', '/contact', '/templates', '/benefits', '/services/personal-website', '/services/business-website', '/services/design-to-website']
     for (const link of links) prefetch(link)
   })
 
