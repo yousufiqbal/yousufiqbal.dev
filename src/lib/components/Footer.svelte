@@ -1,6 +1,6 @@
 <script>
   import Icon from "$lib/components/Icon.svelte";
-  import Container from "./Container.svelte";
+  import Container from "$lib/components/Container.svelte";
 
   let links = [
     { name: 'Home', href: '/' },

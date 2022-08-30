@@ -11,9 +11,10 @@
     display: grid;
     position: relative;
     /* border: 1px solid red; */
-    padding: 20px;
+    padding: var(--pd, 20px);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
+    overflow: hidden;
   }
   .primary {
     background-color: var(--bg);
@@ -28,7 +29,7 @@
   }
   @media (min-width: 700px) {
     .card {
-      padding: 30px;
+      padding: var(--pd, 30px);
     }
   }
 </style>

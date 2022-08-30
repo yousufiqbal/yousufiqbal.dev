@@ -1,7 +1,7 @@
 .dark {
 
   --above-below: #e2e2e2;
-  --primary: #ff8671;
+  --primary: #ff6c52;
   --on-primary: #fff;
   --secondary: rgb(234, 234, 234);
   --on-secondary: rgb(70, 70, 70);
@@ -18,7 +18,6 @@
   --placeholder: #cbcbcb;
   --success: #00ff66;
   --failure: #ff8282;
-
   --radius: 5px;
   --shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 

@@ -1,6 +1,6 @@
 <script>
-  import Content from "./Content.svelte";
-  import Subtitle from "./Subtitle.svelte";
+  import Content from "$lib/components/Content.svelte";
+  import Subtitle from "$lib/components/Subtitle.svelte";
 
   export let price
 </script>

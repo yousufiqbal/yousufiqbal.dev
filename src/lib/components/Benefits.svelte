@@ -1,7 +1,7 @@
 <script>
   import Icon from "$lib/components/Icon.svelte";
-  import Card from "./Card.svelte";
-  import Subtitle from "./Subtitle.svelte";
+  import Card from "$lib/components/Card.svelte";
+  import Subtitle from "$lib/components/Subtitle.svelte";
 
   export let benefits = []
 </script>

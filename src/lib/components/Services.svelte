@@ -2,8 +2,8 @@
 import { kebabCase } from "$lib/utils";
 
 import Icon from "$lib/components/Icon.svelte";
-import Button from "./Button.svelte";
-import Card from "./Card.svelte";
+import Button from "$lib/components/Button.svelte";
+import Card from "$lib/components/Card.svelte";
 
   export let services = [
     {

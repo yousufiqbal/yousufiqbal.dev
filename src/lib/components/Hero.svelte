@@ -1,5 +1,5 @@
 <script>
-  import Button from "./Button.svelte";
+  import Button from "$lib/components/Button.svelte";
   import Icon from '$lib/components/Icon.svelte'
 
   let salam = 'Assalam-u-Alaekum'
