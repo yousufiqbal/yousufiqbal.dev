@@ -38,6 +38,7 @@
   }
   .table tr:last-child {
     font-weight: 500;
+    border-bottom: none;
   }
   .table tr:last-child th {
     color: var(--primary);
