@@ -6,8 +6,8 @@ export async function GET() {
   // Getting raw links and cleaning them..
   const rawLinks = Object.keys(import.meta.glob('/src/routes/**/+page.svelte'))
   const links = rawLinks.map(el => el.replace('/src/routes', ''))
-  .map(el => el.replace('/+page.svelte', ''))
-  .filter(el => !el.includes(blacklist))
+                        .map(el => el.replace('/+page.svelte', ''))
+                        .filter(el => !el.includes(blacklist))
   
   const absoluteUrl = 'https://yosofiqbal.com'
   
