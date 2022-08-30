@@ -33,7 +33,7 @@
           <h1>I'm <span>Yousuf,</span></h1>
         </div>
         <p class="introduction">
-          Using modern technologies, I <em>design</em> and <em>develop</em> websites that are fast, responsive,  and SEO friendly just like this website. I develop:
+          Using modern technologies, I <em>design</em> and <em>develop</em> websites that are fast, responsive, and SEO friendly, just like this website. I develop:
         </p>
         <div class="services">
           <div>
@@ -97,6 +97,7 @@
     /* border: 1px dashed red; */
   }
   .above {
+    text-align: center;
     color: var(--above-below);
   }
   h1 {
@@ -115,7 +116,7 @@
   }
   .introduction {
     text-align: center;
-    max-width: 290px;
+    max-width: 300px;
     /* border: 1px dashed red; */
     /* padding: 0 10px; */
   }
@@ -142,6 +143,9 @@
     gap: 10px;
   }
   @media (min-width: 700px) {
+    .above {
+      text-align: left;
+    }
     .hero {
       grid-template-areas: 'left right';
       /* margin-top: 40px; */
