@@ -21,7 +21,7 @@
       <i>
         <Icon icon="{benefit.icon}" />
       </i>
-      <Subtitle above="{benefit.above}" subtitle="{benefit.title}" />
+      <Subtitle above="{benefit.above}" subtitle="{benefit.title}" --mb="0" />
       <p class="description">
         {benefit.description}
       </p>
