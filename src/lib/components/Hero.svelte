@@ -1,22 +1,8 @@
 <script>
   import Button from "./Button.svelte";
   import Icon from '$lib/components/Icon.svelte'
-  import { onMount } from "svelte";
 
-  let salam = 'Assalam-u-Alaekum', typed = ''
-
-  onMount(() => {
-    startTypewriter()
-  })
-
-  const startTypewriter = () => {
-    let index = 0
-    let interval = setInterval(() => {
-      typed += salam[index]
-      index++
-      if (index == salam.length) clearInterval(interval)
-    }, 100)
-  }
+  let salam = 'Assalam-u-Alaekum'
 </script>
 
 <div class="hero-wrapper">
@@ -29,7 +15,7 @@
 
       <div class="right">
         <div class="title">
-          <div aria-label={salam} class="above">{typed}</div>
+          <div class="above">{salam}</div>
           <h1>I'm <span>Yousuf,</span></h1>
         </div>
         <p class="introduction">
