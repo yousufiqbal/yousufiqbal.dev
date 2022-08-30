@@ -19,3 +19,15 @@ export const isEmpty = obj => {
   }
   return true;
 }
+
+/**
+ * 
+ * @param {object} obj - untrimmed object 
+ * @returns trimmed object
+ */
+export const trimObject = obj => {
+  return Object.keys(obj).reduce((acc, curr) => {
+    acc[curr] = obj[curr].trim()
+    return acc;
+  }, {});
+}

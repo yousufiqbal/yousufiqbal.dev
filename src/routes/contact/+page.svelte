@@ -6,11 +6,11 @@
   import Form from "$lib/components/Form.svelte";
   import Layout from "$lib/components/Layout.svelte";
   import Title from "$lib/components/Title.svelte";
-  import { contactSchema, extractYupErrors } from "$lib/yup";
   import { isEmpty } from '$lib/utils.js'
   import { goto } from "$app/navigation";
-import Seo from "$lib/components/Seo.svelte";
-import Card from "$lib/components/Card.svelte";
+  import Seo from "$lib/components/Seo.svelte";
+  import Card from "$lib/components/Card.svelte";
+  import { validateContactForm } from "$lib/validations";
 
   let wait = false
 
@@ -21,21 +21,12 @@ import Card from "$lib/components/Card.svelte";
     message: '',
   }
   
-  let touched = false, errors = {}
-
-  const validate = async () => {
-    try {
-      await contactSchema.validate(client, { abortEarly: false })
-      errors = {}
-    } catch (error) {
-      errors = extractYupErrors(error)
-    }
-  }
+  let touched = false
 
   const sendMessage = async () => {
     try {
       wait = 'Sending..'
-      let response = await fetch('/api/send-message', {
+      await fetch('/api/send-message', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json;charset=utf-8'
@@ -48,7 +39,7 @@ import Card from "$lib/components/Card.svelte";
       wait = false
     }
   }
-
+  
   const submit = async () => {
     if (isEmpty(errors)) {
       await sendMessage()
@@ -56,8 +47,8 @@ import Card from "$lib/components/Card.svelte";
       touched = true
     }
   }
-
-  $: client && validate()
+  
+  $: errors = validateContactForm(client)
 </script>
 
 <Seo title="Contact" description="Contact me to avail any web development services and other queries" />

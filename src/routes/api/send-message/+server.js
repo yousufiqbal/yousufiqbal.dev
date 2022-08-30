@@ -1,7 +1,9 @@
 import { error, json } from '@sveltejs/kit'
 import sgMail from '@sendgrid/mail'
-import { contactSchema } from '$lib/yup'
+// import { contactSchema } from '$lib/yup'
 import { dev } from '$app/env'
+import { validateContactForm } from '$lib/validations'
+import { isEmpty } from '$lib/utils'
 
 /** @type {import('./$types').RequestHandler} */
 export const POST = async ({ request }) => {
@@ -12,8 +14,11 @@ export const POST = async ({ request }) => {
   try {
 
     // Getting and validating form..
-    const body = await request.json()
-    const client = await contactSchema.validate(body, { abortEarly: false })
+    const client = await request.json()
+    const errors = validateContactForm(client)
+    if (!isEmpty(errors)) {
+      throw error(403, 'Cannot send email')
+    }
   
     // Setting API Key..
     sgMail.setApiKey(dev ? import.meta.env.VITE_SENDGRID_KEY : process.env.SENDGRID_KEY)
@@ -42,7 +47,7 @@ export const POST = async ({ request }) => {
   } catch (err) {
 
     // On failure
-    return error(403, 'Cannot send email')
+    throw error(403, 'Cannot send email')
     
   }
 
