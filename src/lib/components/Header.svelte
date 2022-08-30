@@ -5,8 +5,6 @@
   import Icon from '$lib/components/Icon.svelte';
 
   let scrollY = 0
-  let themeLabel = true
-  let timeout
 
   export let links = [
     { name: 'Home', href: '/', icon: 'ri:home-3-line' },
@@ -17,8 +15,6 @@
   ]
 
   const toggleTheme = () => {
-    clearTimeout(timeout)
-    themeLabel = true
     $dark = !$dark
     localStorage.setItem('theme', $dark ? 'dark' : 'light')
     if ($dark) {
@@ -28,12 +24,6 @@
       document.body.classList.remove('dark')
       document.body.classList.add('light')
     }
-  }
-
-  const hideMe = () => {
-    timeout = setTimeout(() => {
-      themeLabel = false
-    }, 3000);
   }
 </script>
 
@@ -49,9 +39,6 @@
 
     <button class:none={scrollY != 0} aria-label="{$dark? 'light' : 'dark'} theme" on:click={toggleTheme} class="button">
       {#key $dark}
-      {#if themeLabel}
-      <span use:hideMe>{$dark ? 'Night' : 'Day'} Mode</span>
-      {/if}
       <i in:fly={{y: -30, duration: 150}}>
         <Icon width="24" icon="{$dark? 'ri:moon-line' : 'ri:sun-line'}" />
       </i>
@@ -129,10 +116,10 @@
     gap: 10px;
     /* border: 1px dashed blue; */
   }
-  .button span {
+  /* .button span {
     font-size: 14px;
     text-transform: uppercase;
-  }
+  } */
   .navigation {
     display: flex;
     grid-area: navigation;
