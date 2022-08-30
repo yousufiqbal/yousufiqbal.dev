@@ -32,7 +32,7 @@ import Seo from "$lib/components/Seo.svelte";
       <li>No information is shared with third parties</li>
     </ol>
     <h2>GDPR Consent</h2>
-    <p>YosofIqbal.com doesn't require a GDPR consent notice because no personally identifiable information is collected.</p>
+    <p>Website yousufiqbal.dev, doesn't require a GDPR consent notice because no personally identifiable information is collected.</p>
   </Content>
   
 </Container>

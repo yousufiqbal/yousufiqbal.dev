@@ -12,6 +12,7 @@ export async function GET() {
                         
   // Joining links to url tag for xml..
   const absoluteUrl = 'https://yosofiqbal.com'
+  
   let urls = ''
   for (const link of links) {
     urls += `

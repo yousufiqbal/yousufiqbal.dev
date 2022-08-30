@@ -1,6 +1,6 @@
 <script>
   export let title, description
-  export let fixed = ' - Yosof Iqbal'
+  export let fixed = ' - Yousuf Iqbal'
 </script>
 
 <svelte:head>

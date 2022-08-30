@@ -7,7 +7,7 @@ import { dev } from '$app/env'
 export const POST = async ({ request }) => {
 
   // TODO make it secure
-  let myEmail = 'contact@yosofiqbal.com'
+  let myEmail = 'contact@yousofiqbal.com'
 
   try {
 
