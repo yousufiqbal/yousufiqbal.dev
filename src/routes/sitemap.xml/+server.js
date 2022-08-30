@@ -1,6 +1,6 @@
 export async function GET() {
 
-  // Links you do not want in stemap..
+  // Links you do not want in sitemap..
   const blacklist = ['/contact/thank-you']
   
   // Getting raw links and cleaning them..
@@ -9,9 +9,9 @@ export async function GET() {
                         .map(el => el.replace('/+page.svelte', ''))
                         .filter(el => !el.includes(blacklist))
   
-  const absoluteUrl = 'https://yosofiqbal.com'
-  
+                        
   // Joining links to url tag for xml..
+  const absoluteUrl = 'https://yosofiqbal.com'
   let urls = ''
   for (const link of links) {
     urls += `
