@@ -1,6 +1,22 @@
 <script>
   import Button from "./Button.svelte";
   import Icon from '$lib/components/Icon.svelte'
+  import { onMount } from "svelte";
+
+  let salam = 'Assalam-u-Alaekum', typed = ''
+
+  onMount(() => {
+    startTypewriter()
+  })
+
+  const startTypewriter = () => {
+    let index = 0
+    let interval = setInterval(() => {
+      typed += salam[index]
+      index++
+      if (index == salam.length) clearInterval(interval)
+    }, 100)
+  }
 </script>
 
 <div class="hero-wrapper">
@@ -13,11 +29,11 @@
 
       <div class="right">
         <div class="title">
-          <div class="above">Assalam-u-Alaekum</div>
+          <div class="above">{typed}</div>
           <h1>I'm <span>Yosof,</span></h1>
         </div>
         <p class="introduction">
-          Using modern technologies, I <em>design</em> and <em>develop</em> websites that are responsive, sleek, performant and SEO friendly. I develop:
+          Using modern technologies, I <em>design</em> and <em>develop</em> websites that are fast, responsive,  and SEO friendly just like this website. I develop:
         </p>
         <div class="services">
           <div>

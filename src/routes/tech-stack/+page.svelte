@@ -11,7 +11,7 @@
 
 <Section>
   <Button type="outline" name="Go Back Home" href="/" --mb="40px" icon="ri:home-3-line" />
-  <Title icon="ri:stack-line" title="Tech Stack" above="Technologies I Use" />
+  <Title typeEffect icon="ri:stack-line" title="Tech Stack" above="Technologies I Use" />
   <Technologies {technologies} />
   <Button name="See Services" type="secondary" href='/services'  />
 </Section>

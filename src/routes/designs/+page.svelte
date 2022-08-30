@@ -7,5 +7,5 @@ import Seo from "$lib/components/Seo.svelte";
 <Seo title="Designs" description="All artwork designs, developed to jump start your website from any given design template." />
 
 <Section>
-  <Title icon="ri:brush-line" title="Designs" above="All Original Artwork" />
+  <Title typeEffect icon="ri:brush-line" title="Designs" above="All Original Artwork" />
 </Section>

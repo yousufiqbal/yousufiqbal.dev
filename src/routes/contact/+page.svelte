@@ -66,7 +66,7 @@ import Card from "$lib/components/Card.svelte";
   
   <Layout>
     <div slot="main">
-      <Title icon="ri:mail-send-line" title="Contact" above="Get In Touch" />
+      <Title typeEffect icon="ri:mail-send-line" title="Contact" above="Get In Touch" />
       <p style="margin-bottom: 40px;">I try responing to every message unless it is considered spam by everyone.</p>
       <Form>
         <Field {touched} error={errors.name} bind:value={client.name} label="Your Name" icon="ri:user-3-line" placeholder="How do I call you?" />

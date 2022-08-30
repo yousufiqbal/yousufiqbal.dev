@@ -10,7 +10,7 @@ import Seo from "$lib/components/Seo.svelte";
 <Seo title="Benefits" description="Read all the goodness you are getting from developing your website from me." />
 
 <Section>
-  <Title icon="ri:thumb-up-line" title="Benefits" above="9 Reasons to work with me" />
+  <Title typeEffect icon="ri:thumb-up-line" title="Benefits" above="9 Reasons to work with me" />
   <Benefits {benefits} />
   <Button name="See Services" type="secondary" href='/services'  />
 </Section>

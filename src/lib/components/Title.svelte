@@ -1,12 +1,30 @@
 <script>
   import Icon from '$lib/components/Icon.svelte'
+  import { onMount } from 'svelte';
 
   export let title, above = null, icon = null
+  let typed = ''
+  export let typeEffect = false
+
+  onMount(() => {
+    startTypewriter()
+  })
+
+  const startTypewriter = () => {
+    // only do typeing effect if above is there..
+    if (!above || !typeEffect) return
+    let index = 0
+    let interval = setInterval(() => {
+      typed += above[index]
+      index++
+      if (index == above.length) clearInterval(interval)
+    }, 100)
+  }
 </script>
 
 <div class="title">
   {#if above}
-  <div class="above">{above}</div>
+  <div class="above">{typeEffect ? typed : above}</div>
   {/if}
   <div class="icon-h1">
     {#if icon}

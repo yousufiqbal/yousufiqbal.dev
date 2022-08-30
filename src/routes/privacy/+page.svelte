@@ -10,7 +10,7 @@ import Seo from "$lib/components/Seo.svelte";
 
 <Container --pd="50px 30px">
   <Button type="outline" name="Go Back Home" href="/" --mb="40px" icon="ri:home-3-line" />
-  <Title icon="ri:git-repository-private-line" title="Privacy" above="Policies" />
+  <Title typeEffect icon="ri:git-repository-private-line" title="Privacy" above="Policies" />
 
   <Content>
     <h2>Clients Related</h2>

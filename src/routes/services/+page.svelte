@@ -9,8 +9,7 @@
 <Seo title="Pricacy" description="Pricacy policy for clients and common users" />
 
 <Section>
-
-  <Title icon="ri:list-check-2" title="Services" above="Jobs I Do" />
+  <Title typeEffect icon="ri:list-check-2" title="Services" above="Jobs I Do" />
   <Services />
   <Button name="See Designs" type="outline" href='/designs'  />
 </Section>
