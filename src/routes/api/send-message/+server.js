@@ -9,7 +9,6 @@ export const POST = async ({ request }) => {
 
     let transporter = nodemailer.createTransport({
       service: 'Outlook365',
-      secure: false,
       auth: {
         user: 'yousufiqbalhashim@outlook.com',
         pass: dev ? import.meta.env.VITE_OUTLOOK_PWD : process.env.OUTLOOK_PWD,
@@ -17,7 +16,7 @@ export const POST = async ({ request }) => {
     });
 
     try {
-      
+
       let info = await transporter.sendMail({
         from: { name: 'My Website', address: 'yousufiqbalhashim@outlook.com' },
         to: "contact@yosofiqbal.com", // list of receivers
