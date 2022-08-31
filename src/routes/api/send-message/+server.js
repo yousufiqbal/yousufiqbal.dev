@@ -9,7 +9,7 @@ export const POST = async ({ request }) => {
 
     let transporter = nodemailer.createTransport({
       service: 'Outlook365',
-      secure: dev, // true for 465, false for other ports
+      secure: false,
       auth: {
         user: 'yousufiqbalhashim@outlook.com',
         pass: dev ? import.meta.env.VITE_OUTLOOK_PWD : process.env.OUTLOOK_PWD,
