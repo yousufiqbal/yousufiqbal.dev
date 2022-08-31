@@ -17,6 +17,7 @@
     /* border: 1px dashed red; */
   }
   .above {
+    text-transform: capitalize;
     color: var(--primary);
   }
   h2 {

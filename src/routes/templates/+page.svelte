@@ -1,8 +1,8 @@
 <script>
   import Content from "$lib/components/Content.svelte";
-import Section from "$lib/components/Section.svelte";
-import Seo from "$lib/components/Seo.svelte";
-import Templates from "$lib/components/Templates.svelte";
+  import Section from "$lib/components/Section.svelte";
+  import Seo from "$lib/components/Seo.svelte";
+  import Templates from "$lib/components/Templates.svelte";
   import Title from "$lib/components/Title.svelte";
 </script>
 

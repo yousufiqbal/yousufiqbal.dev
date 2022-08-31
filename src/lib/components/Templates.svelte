@@ -2,25 +2,31 @@
   import Card from "$lib/components/Card.svelte";
   import Subtitle from "$lib/components/Subtitle.svelte";
   import Button from "$lib/components/Button.svelte";
+  import { templates } from "$lib/templates";
+
 </script>
 
+{#if templates.length != 0}
 <div class="templates">
-
-  {#each Array(6) as item}
+  
+  {#each templates as template}
   <Card --pd="0">
     <div class="template">
-      <img src="/template.jpg" alt="Rayyan Minima Template Website">
+
+      <img src="/templates/{template.url}.jpg" alt="{template.name} website template">
       <div class="details">
-        <Subtitle above="Personal Website" subtitle="Rayyan Minima" --mb="15px" />
+        <Subtitle above="{template.type} Website" subtitle="{template.name}" --mb="15px" />
         <div class="button">
-          <Button name="Live Demo" type="primary" />
+          <Button name="Live Demo" type="primary" href="https://{template.url}.yosofiqbal.com" />
         </div>
       </div>
+
     </div>
   </Card>
   {/each}
-
+  
 </div>
+{/if}
 
 <style>
   .templates {
