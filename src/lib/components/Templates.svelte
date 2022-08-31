@@ -17,7 +17,7 @@
       <div class="details">
         <Subtitle above="{template.type} Website" subtitle="{template.name}" --mb="15px" />
         <div class="button">
-          <Button name="Live Demo" type="primary" href="https://{template.url}.yosofiqbal.com" />
+          <Button name="Live Demo" type="primary" href="https://{template.url}.yousufiqbal.dev" />
         </div>
       </div>
 

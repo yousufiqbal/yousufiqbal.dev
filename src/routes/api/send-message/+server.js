@@ -19,7 +19,7 @@ export const POST = async ({ request }) => {
 
       let info = await transporter.sendMail({
         from: { name: 'My Website', address: 'yousufiqbalhashim@outlook.com' },
-        to: "contact@yosofiqbal.com", // list of receivers
+        to: "contact@yousufiqbal.dev", // list of receivers
         replyTo: client.email,
         subject: `${client.name} from ${client.email}`,
         text: client.message,
