@@ -34,13 +34,13 @@ export const POST = async ({ request }) => {
         `,
       });
     
-      console.log("Message sent: %s", info.messageId);
+      if (dev) console.log("Message sent: %s", info.messageId);
 
       return json({ message: 'Email sent' })
       
     } catch (err) {
       
-      console.log(err)
+      if (dev) console.log(err)
       throw error(403, 'Cannot send email')
     }
   
