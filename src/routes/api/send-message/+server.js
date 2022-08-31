@@ -41,7 +41,7 @@ export const POST = async ({ request }) => {
     } catch (err) {
       
       if (dev) console.log(err)
-      return error(403, 'Cannot send email')
+      throw error(403, 'Cannot send email')
     }
   
 }
