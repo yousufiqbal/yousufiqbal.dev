@@ -1,49 +1,47 @@
+import { dev } from '$app/env';
 import { error, json } from '@sveltejs/kit'
-import sgMail from '@sendgrid/mail'
-import { contactSchema } from '$lib/yup'
-import { dev } from '$app/env'
+import nodemailer from 'nodemailer'
 
 /** @type {import('./$types').RequestHandler} */
 export const POST = async ({ request }) => {
 
-  // TODO make it secure
-  let myEmail = 'contact@yosofiqbal.com'
+    const client = await request.json()
 
-  try {
+    let transporter = nodemailer.createTransport({
+      service: 'Outlook365',
+      secure: dev, // true for 465, false for other ports
+      auth: {
+        user: 'yousufiqbalhashim@outlook.com',
+        pass: dev ? import.meta.env.VITE_OUTLOOK_PWD : process.env.OUTLOOK_PWD,
+      },
+    });
 
-    // Getting and validating form..
-    const body = await request.json()
-    const client = await contactSchema.validate(body, { abortEarly: false })
-  
-    // Setting API Key..
-    sgMail.setApiKey(dev ? import.meta.env.VITE_SENDGRID_KEY : process.env.SENDGRID_KEY)
-  
-    // Sending email..
-    await sgMail.send({
-      to: myEmail,
-      from: myEmail,
-      replyTo: client.email,
-      subject: `${client.name} from ${client.email}`,
-      // text: client.message,
-      html: `
-        <h2>${client.name}</h2>
-        <p>${client.message}</p>
-        <br><br>
-        <h3>Sender Information</h3>
-        <p>Name: ${client.name}</p>
-        <p>Email: ${client.email}</p>
-        <p>WhatsApp: ${client.whatsapp || 'Not Given'}</p>
-      `,
-    })
-
-    // On success
-    return json({ message: 'Email sent' })
+    try {
+      let info = await transporter.sendMail({
+        from: { name: 'My Website', address: 'yousufiqbalhashim@outlook.com' },
+        to: "contact@yosofiqbal.com", // list of receivers
+        replyTo: client.email,
+        subject: `${client.name} from ${client.email}`,
+        text: client.message,
+        html: `
+          <h2>${client.name}</h2>
+          <p>${client.message}</p>
+          <br><br>
+          <h3>Sender Information</h3>
+          <p>Name: ${client.name}</p>
+          <p>Email: ${client.email}</p>
+          <p>WhatsApp: ${client.whatsapp || 'Not Given'}</p>
+        `,
+      });
     
-  } catch (err) {
+      if (dev) console.log("Message sent: %s", info.messageId);
 
-    // On failure
-    return error(403, 'Cannot send email')
-    
-  }
-
+      return json({ message: 'Email sent' })
+      
+    } catch (err) {
+      
+      if (dev) console.log(err)
+      return error(403, 'Cannot send email')
+    }
+  
 }
