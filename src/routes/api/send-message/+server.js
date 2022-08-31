@@ -17,6 +17,7 @@ export const POST = async ({ request }) => {
     });
 
     try {
+      
       let info = await transporter.sendMail({
         from: { name: 'My Website', address: 'yousufiqbalhashim@outlook.com' },
         to: "contact@yosofiqbal.com", // list of receivers
@@ -34,13 +35,13 @@ export const POST = async ({ request }) => {
         `,
       });
     
-      if (dev) console.log("Message sent: %s", info.messageId);
+      console.log("Message sent: %s", info.messageId);
 
       return json({ message: 'Email sent' })
       
     } catch (err) {
       
-      if (dev) console.log(err)
+      console.log(err)
       throw error(403, 'Cannot send email')
     }
   
