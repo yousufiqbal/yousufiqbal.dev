@@ -1,2 +1,3 @@
 User-agent: *
-Sitemap: https://www.yosofiqbal.com/sitemap.xml
+Disallow: 
+Sitemap: https://yousufiqbal.dev/sitemap.xml
