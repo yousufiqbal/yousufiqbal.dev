@@ -10,19 +10,19 @@
 <div class="templates">
   
   {#each templates as template}
-  <Card --pd="0">
-    <div class="template">
+  <div class="template">
 
-      <img src="/templates/{template.url}.jpg" alt="{template.name} website template">
-      <div class="details">
-        <Subtitle above="{template.type} Website" subtitle="{template.name}" --mb="15px" />
-        <div class="button">
-          <Button name="Live Demo" type="primary" href="https://{template.url}.yousufiqbal.dev" />
-        </div>
+    <a rel="external" target="_blank" href="https://gpsites.co/{template.name}">
+      <img src="/templates/{template.name}.png" alt="{template.name} website template">
+    </a>
+    <div class="details">
+      <h2>{template.name}</h2>
+      <div class="button">
+        <Button name="Live Demo" type="secondary" external href="https://gpsites.co/{template.name}" target />
       </div>
-
     </div>
-  </Card>
+
+  </div>
   {/each}
   
 </div>
@@ -37,10 +37,15 @@
     margin-bottom: 80px;
   }
   .template {
-    /* border: 1px dashed red; */
+    border-radius: var(--radius);
+    /* border: 1px dashed var(--above-below); */
     display: flex;
     flex-direction: column;
+    box-shadow: var(--shadow);
     /* gap: 20px; */
+  }
+  .template a {
+    display: flex;
   }
   .details {
     display: flex;
@@ -51,7 +56,14 @@
   .button {
     display: flex;
   }
+  h2 {
+    color: var(--primary);
+    font-size: 25px;
+    text-transform: capitalize;
+  }
   img {
+    /* max-height: 200px; */
+    flex: 1;
     object-fit: cover;
   }
 </style>

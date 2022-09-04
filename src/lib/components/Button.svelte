@@ -16,7 +16,7 @@
 </button>
 
 {:else}
-<a {href} rel={external ? 'external' : ''} class="button {type}">
+<a {href} rel={external ? 'external' : ''} target={external ? '_blank' : '_self'} class="button {type}">
   <span>{name}</span>
   {#if icon}
   <Icon width="22" {icon} />
