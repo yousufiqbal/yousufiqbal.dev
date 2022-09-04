@@ -41,7 +41,7 @@
   }
   .topbar {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     /* justify-content: space-between; */
     align-items: center;
     padding: 10px;
@@ -73,6 +73,9 @@
     display: flex;
     align-items: center;
     gap: 20px;
+  }
+  .right {
+    justify-self: right;
   }
   @media (min-width: 1300px) {
     .topbar {
