@@ -12,13 +12,13 @@
   {#each templates as template}
   <div class="template">
 
-    <a rel="external" target="_blank" href="https://gpsites.co/{template.name}">
+    <a href="/templates/{template.from}-{template.name}">
       <img src="/templates/{template.name}.png" alt="{template.name} website template">
     </a>
     <div class="details">
       <h2>{template.name}</h2>
       <div class="button">
-        <Button name="Live Demo" type="secondary" external href="https://gpsites.co/{template.name}" target />
+        <Button name="Live Demo" type="secondary" href="/templates/{template.from}-{template.name}" />
       </div>
     </div>
 
