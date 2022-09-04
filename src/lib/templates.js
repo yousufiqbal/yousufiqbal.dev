@@ -71,7 +71,7 @@ export const templates = [
   { name: 'shop', from: 'generate-press' },
   { name: 'sider', from: 'generate-press' },
   { name: 'slideout', from: 'generate-press' },
-  { name: 'solo', from: 'generate-press' },
+  // { name: 'solo', from: 'generate-press' },
   { name: 'spacious', from: 'generate-press' },
   { name: 'split', from: 'generate-press' },
   { name: 'stream', from: 'generate-press' },
