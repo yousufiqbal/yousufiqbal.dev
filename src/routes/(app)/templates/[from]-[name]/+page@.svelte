@@ -28,7 +28,7 @@
     </div>
   </div>
   {#if $page.params.from == 'gp'}
-  <iframe class="{current}" title="Web Template" src="http://gpsites.co/{$page.params.name}/" frameborder="0" ></iframe>
+  <iframe class="{current}" title="Web Template" src="https://gpsites.co/{$page.params.name}/" frameborder="0" ></iframe>
   {/if}
 </div>
 
