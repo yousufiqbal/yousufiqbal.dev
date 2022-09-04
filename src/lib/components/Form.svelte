@@ -6,6 +6,6 @@
   form {
     display: grid;
     gap: 30px;
-    margin-bottom: 50px;
+    margin-bottom: var(--mb, 50px);
   }
 </style>
