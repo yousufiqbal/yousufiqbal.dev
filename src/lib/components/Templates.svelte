@@ -13,7 +13,7 @@
   <div class="template">
 
     <a href="/templates/{template.from}-{template.name}">
-      <img src="/templates/{template.name}.png" alt="{template.name} website template">
+      <img loading="lazy" src="/templates/{template.name}.png" alt="{template.name} website template">
     </a>
     <div class="details">
       <h2>{template.name}</h2>
