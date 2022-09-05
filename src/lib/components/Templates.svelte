@@ -1,6 +1,4 @@
 <script>
-  import Card from "$lib/components/Card.svelte";
-  import Subtitle from "$lib/components/Subtitle.svelte";
   import Button from "$lib/components/Button.svelte";
   import { templates } from "$lib/templates";
 
