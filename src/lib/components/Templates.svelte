@@ -44,8 +44,12 @@
     box-shadow: var(--shadow);
     /* gap: 20px; */
   }
+  /* .template:hover {
+    box-shadow: 0 0 25px 0 rgb(0, 0, 0, 0.1);
+  } */
   .template a {
     display: flex;
+    border-bottom: 1px solid var(--border);
   }
   .details {
     display: flex;
@@ -62,7 +66,7 @@
     text-transform: capitalize;
   }
   img {
-    /* max-height: 200px; */
+    aspect-ratio: 1.17 / 1;
     flex: 1;
     object-fit: cover;
   }
