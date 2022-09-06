@@ -45,8 +45,7 @@
   /* .template:hover {
     box-shadow: 0 0 25px 0 rgb(0, 0, 0, 0.1);
   } */
-  .template a {
-    display: flex;
+  .template i {
     border-bottom: 1px solid var(--border);
   }
   .details {
