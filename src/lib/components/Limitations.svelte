@@ -6,6 +6,7 @@
 </script>
 
 <Subtitle above="Clarity" subtitle="Limitations" />
+
 <Content>
   <ol>
     <li>Each page has a limit of 4 sections per page</li>

@@ -1,28 +1,26 @@
 <script>
-  import Card from "$lib/components/Card.svelte";
-  import Subtitle from "$lib/components/Subtitle.svelte";
   import Button from "$lib/components/Button.svelte";
-  import { templates } from "$lib/templates";
-
+  
+  export let templates = []
 </script>
 
 {#if templates.length != 0}
 <div class="templates">
   
   {#each templates as template}
-  <div class="template">
+  <a href="/templates/{template.from}-{template.name}" class="template">
 
-    <a href="/templates/{template.from}-{template.name}">
+    <i>
       <img src="/templates/{template.name}.png" alt="{template.name} website template">
-    </a>
+    </i>
     <div class="details">
       <h2>{template.name}</h2>
       <div class="button">
-        <Button name="Live Demo" type="secondary" href="/templates/{template.from}-{template.name}" />
+        <Button name="Live Demo" type="secondary" />
       </div>
     </div>
 
-  </div>
+  </a>
   {/each}
   
 </div>
