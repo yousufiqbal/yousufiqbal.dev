@@ -1,5 +1,4 @@
 <script>
-  import Container from "$lib/components/Container.svelte";
   import Icon from "$lib/components/Icon.svelte";
   import Section from "$lib/components/Section.svelte";
   import Seo from "$lib/components/Seo.svelte";
@@ -16,6 +15,10 @@
     templates = fuzzysort.go(keyword, originalTemplates, {key: 'name'}).map(d => ({ ...d.obj } ));
   }
 
+  const handleKey = e => {
+    if (e.key == 'Enter' || e.key == 'Escape') e.currentTarget.blur()
+  }
+
   $: if (keyword == '') templates = [...originalTemplates]
 </script>
 
@@ -27,7 +30,7 @@
     <Title typeEffect icon="ri:layout-2-line" title="Templates" --mb="0" above="Websites Ideas" />
     <div class="filter-box">
       <Icon icon="ri:search-2-line" width="20" />
-      <input placeholder="Search Templates" size="1" bind:value={keyword} on:keyup={filter} type="text">
+      <input placeholder="Search Templates" on:keyup={handleKey} size="1" bind:value={keyword} on:keyup={filter} type="text">
       {#if keyword}
       <button on:click={()=>keyword=''} style="display: flex; align-items: center">
         <Icon icon="ri:close-line" width="20" />
@@ -74,6 +77,9 @@
   .filter-box button {
     color: var(--primary);
     padding: 15px;
+  }
+  button:hover {
+    color: red
   }
   ::placeholder {
     color: var(--placeholder);
