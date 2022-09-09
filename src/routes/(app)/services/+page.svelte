@@ -5,6 +5,16 @@
   import Services from "$lib/components/Services.svelte";
   import Title from "$lib/components/Title.svelte";
   import { services } from "$lib/data";
+  import { onMount } from 'svelte'
+
+  onMount(() => {
+    doPrefetch()
+  })
+
+  const doPrefetch = () => {
+    const links = ['/services/personal-website', '/services/business-website', '/services/design-to-website']
+    for (const link of links) prefetch(link)
+  }
 </script>
 
 <Seo title="Pricacy" description="Pricacy policy for clients and common users" />
