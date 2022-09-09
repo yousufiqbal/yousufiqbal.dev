@@ -41,7 +41,7 @@
     /* border: 1px dashed red; */
     text-transform: capitalize;
     display: grid;
-    margin-bottom: 40px;
+    margin-bottom: var(--mb, 40px);
   }
   h1 {
     font-size: 40px;

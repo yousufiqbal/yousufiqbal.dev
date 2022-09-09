@@ -40,6 +40,7 @@
     display: flex;
     flex-direction: column;
     box-shadow: var(--shadow);
+    background-color: var(--bg);
     /* gap: 20px; */
   }
   /* .template:hover {
