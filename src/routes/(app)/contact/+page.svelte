@@ -12,6 +12,7 @@
   import Card from "$lib/components/Card.svelte";
   import { validateContactForm } from "$lib/validations";
 import Loading from "$lib/components/Loading.svelte";
+import Section from "$lib/components/Section.svelte";
 
   let wait = false
 
@@ -54,7 +55,7 @@ import Loading from "$lib/components/Loading.svelte";
 
 <Seo title="Contact" description="Contact me to avail any web development services and other queries" />
 
-<Container --pd="50px 20px">
+<Section>
   
   <Layout>
     <div slot="main">
@@ -74,7 +75,7 @@ import Loading from "$lib/components/Loading.svelte";
     </div>
     <div slot="related">
       <Title title="<span>Three</span> Things" above="Prerequisties" />
-        <Card>
+        <!-- <Card> -->
           
           <Content>
             <p><em>Do</em> three things before contacting me for website project:</p>
@@ -84,9 +85,9 @@ import Loading from "$lib/components/Loading.svelte";
               <li>View my <a href="/templates">templates</a> and choose your favorite one as a template for your website.</li>
             </ol>
           </Content>
-        </Card>
+        <!-- </Card> -->
     </div>
   </Layout>
 
-</Container>
+</Section>
 

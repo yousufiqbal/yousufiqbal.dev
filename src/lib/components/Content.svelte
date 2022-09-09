@@ -12,7 +12,7 @@
   }
   .content ol {
     display: grid;
-    gap: 10px;
+    gap: 20px;
     list-style-type: decimal;
     list-style-position: inside;
   }
