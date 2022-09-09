@@ -2,7 +2,7 @@
   import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
   import Button from "$lib/components/Button.svelte";
   import Content from "$lib/components/Content.svelte";
-import Limitations from "$lib/components/Limitations.svelte";
+  import Limitations from "$lib/components/Limitations.svelte";
   import Prices from "$lib/components/Prices.svelte";
   import Section from "$lib/components/Section.svelte";
   import Seo from "$lib/components/Seo.svelte";
@@ -181,5 +181,3 @@ import Limitations from "$lib/components/Limitations.svelte";
   <Limitations price="20" />
 
 </Section>
-
-
