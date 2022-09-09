@@ -4,7 +4,7 @@
   export let name, icon = 'ri:arrow-right-s-line'
   export let href = null
   export let type = 'primary'
-  export let external = false
+  // export let external = false
 </script>
 
 {#if !href}
@@ -16,7 +16,7 @@
 </button>
 
 {:else}
-<a {href} rel={external ? 'external' : ''} target={external ? '_blank' : '_self'} class="button {type}">
+<a {href} class="button {type}">
   <span>{name}</span>
   {#if icon}
   <Icon width="22" {icon} />
