@@ -11,6 +11,7 @@
   import Seo from "$lib/components/Seo.svelte";
   import Card from "$lib/components/Card.svelte";
   import { validateContactForm } from "$lib/validations";
+import Loading from "$lib/components/Loading.svelte";
 
   let wait = false
 
@@ -65,7 +66,11 @@
         <Field {touched} error={errors.whatsapp} bind:value={client.whatsapp} label="Your WhatsApp" type="tel" inputmode="tel" icon="ri:whatsapp-line" placeholder="Good for quick chats (Optional)" />
         <Field {touched} error={errors.message} bind:value={client.message} textarea label="Your Message" icon="ri:message-3-line" placeholder="What do you want to talk?" />
       </Form>
-      <Button on:click={submit} name="{wait || 'Send Message'}" type="secondary" icon="ri:mail-send-line" />
+      {#if wait}
+      <Loading message="Sending Your Message.." />
+      {:else}
+      <Button on:click={submit} name="{'Send Message'}" type="secondary" icon="ri:mail-send-line" />
+      {/if}
     </div>
     <div slot="related">
       <Title title="<span>Three</span> Things" above="Prerequisties" />
