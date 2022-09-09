@@ -1,6 +1,5 @@
 <script>
-  import { afterNavigate, prefetch } from '$app/navigation';
-  import { page } from '$app/stores';
+  import { prefetch } from '$app/navigation';
   import Footer from '$lib/components/Footer.svelte';
   import Header from '$lib/components/Header.svelte';
   import { dark } from '$lib/stores';
@@ -16,12 +15,6 @@
       document.body.classList.add('dark')
     }
   }
-
-  afterNavigate(() => {
-    window.goatcounter.count({
-      path: $page.url.pathname
-    })
-  })
 
   const doPrefetch = () => {
     const links = ['/', '/services', '/contact', '/templates', '/benefits']
