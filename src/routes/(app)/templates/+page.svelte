@@ -1,7 +1,7 @@
 <script>
   import Container from "$lib/components/Container.svelte";
   import Icon from "$lib/components/Icon.svelte";
-import Section from "$lib/components/Section.svelte";
+  import Section from "$lib/components/Section.svelte";
   import Seo from "$lib/components/Seo.svelte";
   import Templates from "$lib/components/Templates.svelte";
   import Title from "$lib/components/Title.svelte";
