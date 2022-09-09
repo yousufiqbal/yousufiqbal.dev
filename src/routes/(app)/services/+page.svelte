@@ -1,4 +1,5 @@
 <script>
+  import { prefetch } from "$app/navigation";
   import Button from "$lib/components/Button.svelte";
   import Section from "$lib/components/Section.svelte";
   import Seo from "$lib/components/Seo.svelte";

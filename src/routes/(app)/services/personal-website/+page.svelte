@@ -31,7 +31,7 @@ import Limitations from "$lib/components/Limitations.svelte";
       Basic, Standard & Premium</p>
   </Content>
 
-  <Prices class="prices">
+  <Prices>
     <div class="price hide">
       <Subtitle above="&nbsp;" subtitle="&nbsp;" --mb="30px" />
       <Table>
