@@ -30,6 +30,10 @@
   export let data
 </script>
 
+<svelte:head>
+  <script data-goatcounter="https://yousufiqbal.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</svelte:head>
+
 <Header />
 
 {#key data.url.pathname}
