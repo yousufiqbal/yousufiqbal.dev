@@ -26,7 +26,9 @@
     if (dev) return
     const response = await fetch('https://ipapi.co/currency')
     if (response.ok) {
-      $currency = await response.text()
+      let whitelist = ['PKR', 'USD', 'GBP']
+      let got = await response.text()
+      $currency = whitelist.includes(got) ? got : 'USD'
     } else {
       $currency = 'USD'
     }
