@@ -1,4 +1,5 @@
 <script>
+import { dev } from '$app/env';
   import { prefetch } from '$app/navigation';
   import Footer from '$lib/components/Footer.svelte';
   import Header from '$lib/components/Header.svelte';
@@ -22,6 +23,7 @@
   }
 
   const setCurrency = async () => {
+    if (dev) return
     const response = await fetch('https://ipapi.co/currency')
     if (response.ok) {
       $currency = await response.text()
