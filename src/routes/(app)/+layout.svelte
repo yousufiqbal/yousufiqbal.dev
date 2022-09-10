@@ -16,25 +16,23 @@
     }
   }
 
-  $: console.log($currency)
-
   const doPrefetch = () => {
     const links = ['/', '/services', '/contact', '/templates', '/benefits']
     for (const link of links) prefetch(link)
   }
 
   const setCurrency = async () => {
-    const response = await fetch('http://ip-api.com/json/?fields=currency')
+    const response = await fetch('https://ipapi.co/currency')
     if (response.ok) {
-      $currency = (await response.json()).currency
+      $currency = await response.text()
     } else {
       $currency = 'USD'
     }
   }
 
-  onMount(() => {
-    setCurrency()
+  onMount(async () => {
     setTheme()
+    await setCurrency()
     doPrefetch()
   })
 
