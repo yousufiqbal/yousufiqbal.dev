@@ -1,6 +1,6 @@
 <script>
   import '$lib/styles/all.css'
-  import { dev } from '$app/env';
+  import { dev } from '$app/environment';
   import { prefetch } from '$app/navigation';
   import Footer from '$lib/components/Footer.svelte';
   import Header from '$lib/components/Header.svelte';
