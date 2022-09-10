@@ -1,10 +1,10 @@
 <script>
-import { dev } from '$app/env';
+  import '$lib/styles/all.css'
+  import { dev } from '$app/env';
   import { prefetch } from '$app/navigation';
   import Footer from '$lib/components/Footer.svelte';
   import Header from '$lib/components/Header.svelte';
   import { currency, dark } from '$lib/stores';
-  import '$lib/styles/all.css'
   import { onMount } from 'svelte';
   import { fly } from 'svelte/transition'
 
