@@ -5,7 +5,7 @@
   import Seo from "$lib/components/Seo.svelte";
   import Services from "$lib/components/Services.svelte";
   import Title from "$lib/components/Title.svelte";
-  import { services } from "$lib/data";
+  import { services } from "$lib/data/services";
   import { onMount } from 'svelte'
 
   onMount(() => {

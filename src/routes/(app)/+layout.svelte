@@ -2,7 +2,7 @@
   import { prefetch } from '$app/navigation';
   import Footer from '$lib/components/Footer.svelte';
   import Header from '$lib/components/Header.svelte';
-  import { dark } from '$lib/stores';
+  import { currency, dark } from '$lib/stores';
   import '$lib/styles/all.css'
   import { onMount } from 'svelte';
   import { fly } from 'svelte/transition'
@@ -16,12 +16,20 @@
     }
   }
 
+  $: console.log($currency)
+
   const doPrefetch = () => {
     const links = ['/', '/services', '/contact', '/templates', '/benefits']
     for (const link of links) prefetch(link)
   }
 
+  const setCurrency = async () => {
+    const response = await fetch('http://ip-api.com/json/?fields=currency')
+    $currency = (await response.json()).currency
+  }
+
   onMount(() => {
+    setCurrency()
     setTheme()
     doPrefetch()
   })

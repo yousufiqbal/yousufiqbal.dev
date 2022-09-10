@@ -46,9 +46,12 @@
   h1 {
     font-size: 40px;
   }
-  :global(.title h1 span) {
+  /* :global(.title h1 span) {
     color: var(--primary);
   }
+  h1::first-letter {
+    color: var(--primary);
+  } */
   .above {
     color: var(--above-below);
   }

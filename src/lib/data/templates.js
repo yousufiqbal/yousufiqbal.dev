@@ -1,4 +1,3 @@
-
 export const templates = [
   // { name: 'abstract', from: 'gp' },
   { name: 'access', from: 'gp' },

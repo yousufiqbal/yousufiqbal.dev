@@ -4,7 +4,7 @@
   import Seo from "$lib/components/Seo.svelte";
   import Templates from "$lib/components/Templates.svelte";
   import Title from "$lib/components/Title.svelte";
-  import { templates as originalTemplates } from "$lib/templates";
+  import { templates as originalTemplates } from "$lib/data/templates";
   import fuzzysort from 'fuzzysort'
 
   let keyword = ''

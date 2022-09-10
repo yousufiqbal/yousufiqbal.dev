@@ -8,8 +8,10 @@
   import Technologies from "$lib/components/Technologies.svelte";
   import Templates from "$lib/components/Templates.svelte";
   import Title from "$lib/components/Title.svelte";
-  import { benefits, services, technologies } from "$lib/data";
-  import { templates } from "$lib/templates";
+  import { technologies } from "$lib/data/technologies";
+  import { services } from "$lib/data/services";
+  import { benefits } from "$lib/data/benefits";
+  import { templates } from "$lib/data/templates";
 </script>
 
 <Seo title="Home" description="Using modern technologies, I design and develop websites that are responsive, sleek, performant and SEO friendly." />

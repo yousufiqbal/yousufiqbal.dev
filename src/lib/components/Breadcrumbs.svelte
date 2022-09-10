@@ -35,6 +35,7 @@
     margin-bottom: var(--mb, 30px);
   }
   a {
+    color: var(--primary);
     /* border: 1px dashed blue; */
     white-space: nowrap;
     overflow: hidden;

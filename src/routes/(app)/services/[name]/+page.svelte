@@ -10,7 +10,8 @@
   import Subtitle from "$lib/components/Subtitle.svelte";
   import Table from "$lib/components/Table.svelte";
   import Title from "$lib/components/Title.svelte";
-  import { services } from "$lib/data";
+  import { services } from "$lib/data/services";
+import { currency } from "$lib/stores";
 
   let service = services.filter(service => service.href == $page.params.name)[0]
   let attributes = Object.keys(service.packages[0].attributes)
@@ -54,7 +55,11 @@
         {#each attributes as attribute}
         <tr>
           <th>{attribute}</th>
+          {#if attribute != 'Price'}
           <td>{pack.attributes[attribute]}</td>
+          {:else}
+          <td>{pack.attributes[attribute][$currency]}</td>
+          {/if}
         </tr>
         {/each}
       </Table>
