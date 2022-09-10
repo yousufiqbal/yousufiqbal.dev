@@ -25,7 +25,11 @@
 
   const setCurrency = async () => {
     const response = await fetch('http://ip-api.com/json/?fields=currency')
-    $currency = (await response.json()).currency
+    if (response.ok) {
+      $currency = (await response.json()).currency
+    } else {
+      $currency = 'USD'
+    }
   }
 
   onMount(() => {
