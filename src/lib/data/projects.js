@@ -1,27 +1,32 @@
 export const projects = [
   {
     name: 'YousufIqbal.dev',
-    description: 'This website, you are browsing, I developed this using tools from my tech stack. Head over to pagespeed.web.dev and analyze yousufiqbal.dev to view performance, seo and other statistics',
+    description: 'This website, you are browsing, I developed this using tools from my tech stack. Head over to pagespeed.web.dev and analyze yousufiqbal.dev to view performance, seo and other statistics.',
     tags: ['open-source', 'stable']
   },
   {
     name: 'Darulifta',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas ipsa eius quos repudiandae vero provident.',
-    tags: ['closed-source', 'stable']
+    description: 'This software was designed for "Banuri Town Medresa" to manage fatawa related questions. Every darulifta has a chain. The question moves from asker to receipet to mujeeb to musahhih to musaddiq. This software streamlines this chain with other notable features.',
+    tags: ['closed-source', 'beta']
   },
   {
     name: 'E-commerce',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas ipsa eius quos repudiandae vero provident.',
-    tags: ['closed-source', 'stable']
+    description: 'Generic e-commerce software for selling anything. It has categories, products with variants, reports, etc. This software comes with two panels, one for users and other for admins for manipulating products. Speed of this app, makes it feel like a native app.',
+    tags: ['open-source', 'wip']
   },
   {
     name: 'Expense Manager',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas ipsa eius quos repudiandae vero provident.',
-    tags: ['closed-source', 'stable']
+    description: 'Expense Manager app can be used to manage day-to-day expenses. Just enter your income and add expenses. It has multi-account support while all you data lives in cloud, so you don\'t have to worry for backups. It also features complete activity audit.',
+    tags: ['open-source', 'beta']
   },
   {
     name: 'Local Food Panda',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas ipsa eius quos repudiandae vero provident.',
-    tags: ['closed-source', 'stable']
-  }
+    description: 'After getting frustating from high deduction rates from foodpanda. I decided to build in app, so that every restaurant, food-shop and home-shef can host their version of foodpanda themselves, ending the monopoly. Just they have to hire a rider. This comes with four panel: rider, admin, operator and user panels.',
+    tags: ['closed-source', 'wip']
+  },
+  {
+    name: 'Ride',
+    description: 'Just to test coding skills. I decided to make an app like Bykea or inDrive. The goal isn\'t to alternate them but just to see if this can be achieved and it felt quite promosing.',
+    tags: ['closed-source', 'wip']
+  },
 ]

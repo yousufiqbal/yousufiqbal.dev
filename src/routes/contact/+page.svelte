@@ -11,6 +11,7 @@
   import { validateContactForm } from "$lib/validations";
   import Loading from "$lib/components/Loading.svelte";
   import Section from "$lib/components/Section.svelte";
+    import Services from "$lib/components/Services.svelte";
 
   let wait: null | string = null
 
@@ -74,14 +75,8 @@
     </div>
 
     <div slot="related">
-      <Title title="<span>Three</span> Things" above="Prerequisties" />
-        <Content>
-          <p><em>Do</em> three things before contacting me for website project:</p>
-          <ol>
-            <li>Read the <a href="/projects">projects</a> I provide for websites, this ensures how much goodness you are getting.</li> 
-            <li>Read the <a href="/services">services</a> I provide and choose your desired service with the package name after reading details.</li>
-          </ol>
-        </Content>
+      <Title title="Services" above="Things I Do" />
+      <Services />
     </div>
 
   </Layout>

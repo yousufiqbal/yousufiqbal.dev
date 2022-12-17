@@ -20,7 +20,7 @@
 
 <div class="field">
   <label for="{attribute}" >
-    <i><span class="i-{icon}"></span></i>
+    <i><span class="{icon}"></span></i>
     <span>{label}</span>
     <div class="status">
       <i><span class="i-ri:check-fill"></span></i>
