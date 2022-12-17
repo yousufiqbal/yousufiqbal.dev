@@ -1,7 +1,6 @@
 <script lang="ts">
-  
   import { onMount } from 'svelte';
-    import { fly } from 'svelte/transition';
+  import { fly } from 'svelte/transition';
 
   export let title: string
   export let above: string = ''

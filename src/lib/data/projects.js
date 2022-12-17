@@ -6,7 +6,7 @@ export const projects = [
   },
   {
     name: 'Darulifta',
-    description: 'This software was designed for "Banuri Town Medresa" to manage fatawa related questions. Every darulifta has a chain. The question moves from asker to receipet to mujeeb to musahhih to musaddiq. This software streamlines this chain with other notable features.',
+    description: 'This software was designed for "Banuri Town Medresa" to manage fatawa related questions. Every darulifta has a chain. The question moves from asker to recepient to mujeeb to musahhih to musaddiq. This software streamlines this chain with other notable features.',
     tags: ['closed-source', 'beta']
   },
   {
