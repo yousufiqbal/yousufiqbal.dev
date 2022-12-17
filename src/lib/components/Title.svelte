@@ -1,6 +1,7 @@
 <script lang="ts">
   
   import { onMount } from 'svelte';
+    import { fly } from 'svelte/transition';
 
   export let title: string
   export let above: string = ''
@@ -32,7 +33,7 @@
     {#if icon}
     <i><span class="{icon}"></span></i>
     {/if}
-    <h1>{@html title}</h1>
+    <h1 in:fly={{ x: -20, duration: 150 }}>{@html title}</h1>
   </div>
 </div>
 
