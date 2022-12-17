@@ -9,5 +9,9 @@ declare namespace App {
 }
 
 export type Services = {
-	name: string, icon: string, description: string, href: string
+	name: string, icon: string, description: string
+}[]
+
+export type Projects = {
+	name: string, description: string, tags: string[]
 }[]

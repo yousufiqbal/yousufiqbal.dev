@@ -2,7 +2,7 @@
   import Button from "$lib/components/Button.svelte";
   import Container from "$lib/components/Container.svelte";
   import Content from "$lib/components/Content.svelte";
-import Seo from "$lib/components/Seo.svelte";
+  import Seo from "$lib/components/Seo.svelte";
   import Title from "$lib/components/Title.svelte";
 </script>
 

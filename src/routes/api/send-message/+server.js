@@ -3,6 +3,8 @@ import { OUTLOOK_PWD } from '$env/static/private';
 import { error, json } from '@sveltejs/kit'
 import nodemailer from 'nodemailer'
 
+export const prerender = false
+
 /** @type {import('./$types').RequestHandler} */
 export const POST = async ({ request }) => {
 

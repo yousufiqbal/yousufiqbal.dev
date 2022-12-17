@@ -1,6 +1,5 @@
 <script>
   import Button from "$lib/components/Button.svelte";
-  
 
   let salam = 'Assalam-u-Alaekum'
 </script>

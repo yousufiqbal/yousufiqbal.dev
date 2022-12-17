@@ -51,11 +51,12 @@
   $: errors = validateContactForm(client)
 </script>
 
-<Seo title="Contact" description="Contact me to avail any web development services and other queries" />
+<Seo title="Contact" description="Contact me to avail any web development services and for other queries" />
 
 <Section>
   
   <Layout>
+
     <div slot="main">
       <Title typeEffect icon="i-ri:mail-send-line" title="Contact" above="Get In Touch" />
       <p style="margin-bottom: 40px;">I try responing to every message unless it is considered spam by everyone.</p>
@@ -71,19 +72,18 @@
       <Button on:click={submit} name="{'Send Message'}" type="secondary" icon="i-ri:mail-send-line" />
       {/if}
     </div>
+
     <div slot="related">
       <Title title="<span>Three</span> Things" above="Prerequisties" />
-        <!-- <Card> -->
-          
-          <Content>
-            <p><em>Do</em> three things before contacting me for website project:</p>
-            <ol>
-              <li>Read the <a href="/projects">projects</a> I provide for websites, this ensures how much goodness you are getting.</li> 
-              <li>Read the <a href="/services">services</a> I provide and choose your desired service with the package name after reading details.</li>
-            </ol>
-          </Content>
-        <!-- </Card> -->
+        <Content>
+          <p><em>Do</em> three things before contacting me for website project:</p>
+          <ol>
+            <li>Read the <a href="/projects">projects</a> I provide for websites, this ensures how much goodness you are getting.</li> 
+            <li>Read the <a href="/services">services</a> I provide and choose your desired service with the package name after reading details.</li>
+          </ol>
+        </Content>
     </div>
+
   </Layout>
 
 </Section>

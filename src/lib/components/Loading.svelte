@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
   import { fly } from 'svelte/transition'
   
-  export let message
+  export let message: string
 </script>
 
 <div in:fly={{ x: -20, duration: 150 }} class="loading">

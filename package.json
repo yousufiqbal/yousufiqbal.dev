@@ -26,7 +26,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"fuzzysort": "^2.0.4",
 		"nodemailer": "^6.8.0"
 	}
 }

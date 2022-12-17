@@ -1,7 +1,7 @@
 <script>
-import Container from "$lib/components/Container.svelte";
-
+  import Container from "$lib/components/Container.svelte";
 </script>
+
 <div class="section">
   <Container>
     <slot></slot>

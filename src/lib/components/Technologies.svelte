@@ -1,7 +1,6 @@
 <script>
   import Card from "$lib/components/Card.svelte";
-
-  export let technologies = []
+  import { technologies } from "$lib/data/technologies";
 </script>
 
 {#if technologies.length != 0}

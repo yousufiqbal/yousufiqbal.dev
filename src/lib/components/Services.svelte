@@ -1,9 +1,6 @@
 <script lang="ts">
-  import Button from "$lib/components/Button.svelte";
   import Card from "$lib/components/Card.svelte";
-  import type { Services } from "src/app";
-  
-  export let services: Services = []
+  import { services } from "$lib/data/services";
 </script>
 
 <div class="services">
@@ -11,14 +8,11 @@
   {#each services as service}
   <Card>
     <div class="service">
-      <i><span class="{service.icon}"></span></i>
+      <i><span class={service.icon}></span></i>
       <h2>{service.name}</h2>
       <p class="description">
         {service.description}
       </p>
-      <div class="button">
-        <Button type="secondary" name="See Pricing" icon="i-ri:arrow-right-s-line" href="/services/{service.href}" />
-      </div>
     </div>
   </Card>
   {/each}
@@ -45,7 +39,7 @@
   }
   i {
     color: var(--primary);
-    font-size: 60px;
+    font-size: 24px;
   }
   p {
     /* border: 1px dashed green; */

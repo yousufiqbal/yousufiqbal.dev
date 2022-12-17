@@ -1,5 +1,4 @@
 <script>
-  
   import Container from "$lib/components/Container.svelte";
 
   let links = [
