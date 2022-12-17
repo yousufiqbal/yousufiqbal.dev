@@ -1,4 +1,5 @@
 import { dev } from '$app/environment';
+import { OUTLOOK_PWD } from '$env/static/private';
 import { error, json } from '@sveltejs/kit'
 import nodemailer from 'nodemailer'
 
@@ -11,7 +12,7 @@ export const POST = async ({ request }) => {
       service: 'Outlook365',
       auth: {
         user: 'yousufiqbalhashim@outlook.com',
-        pass: dev ? import.meta.env.VITE_OUTLOOK_PWD : process.env.OUTLOOK_PWD,
+        pass: OUTLOOK_PWD
       },
     });
 
