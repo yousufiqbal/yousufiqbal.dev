@@ -68,7 +68,7 @@ import { currency } from "$lib/stores";
     {/each}
   </Prices>
 
-  <Button type="outline" name="Interested? Contact Me" href="/contact" --mb="40px" icon=i-ri:mail-send-line" />
+  <Button type="outline" name="Interested? Contact Me" href="/contact" --mb="40px" icon="i-ri:mail-send-line" />
  
   <Limitations price="20" />
 

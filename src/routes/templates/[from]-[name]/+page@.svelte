@@ -16,7 +16,7 @@
 <div class="wrapper">
   <div class="topbar">
     <div class="left">
-      <Button href="/templates" name="Back" type="secondary" icon=i-ri:arrow-left-line" />
+      <Button href="/templates" name="Back" type="secondary" icon="i-ri:arrow-left-line" />
     </div>
     <div class="modes">
       <button class:active={current=='desktop'} on:click={changeMode} data-mode='desktop'>Desktop</button>
@@ -24,7 +24,7 @@
       <button class:active={current=='mobile'} on:click={changeMode} data-mode='mobile'>Mobile</button>
     </div>
     <div class="right">
-      <Button href="/contact" name="Contact Me" icon=i-ri:mail-send-line" />
+      <Button href="/contact" name="Contact Me" icon="i-ri:mail-send-line" />
     </div>
   </div>
   {#if $page.params.from == 'gp'}
