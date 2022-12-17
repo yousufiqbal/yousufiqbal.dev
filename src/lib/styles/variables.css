@@ -1,7 +1,7 @@
 .dark {
 
   --above-below: #e2e2e2;
-  --primary: #ff6c52;
+  --primary: #ff6464;
   --on-primary: #fff;
   --secondary: rgb(234, 234, 234);
   --on-secondary: rgb(70, 70, 70);
@@ -26,7 +26,7 @@
 .light {
 
   --above-below: #747474;
-  --primary: #FF6347;
+  --primary: #ff2121;
   --on-primary: #fff;
   --secondary: #444;
   --on-secondary: #fff;

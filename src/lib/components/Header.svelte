@@ -78,7 +78,7 @@
     }
   }
   .header-wrapper {
-    border-bottom: 1px solid var(--border);
+    /* border-bottom: 1px solid var(--border); */
     background-color: var(--bg);
     /* box-shadow: 0 3px 10px 0 lightgray; */
     box-shadow: var(--shadow);

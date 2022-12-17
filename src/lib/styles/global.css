@@ -19,3 +19,22 @@ p {
 em {
   font-weight: 500;
 }
+
+.card {
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  background-color: var(--bg);
+}
+
+@media (min-width: 700px) {
+  .card {
+    padding: 30px;
+  }
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 26px;
+  /* line-height: 1; */
+}

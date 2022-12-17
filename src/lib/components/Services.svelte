@@ -1,20 +1,23 @@
 <script lang="ts">
-  import Card from "$lib/components/Card.svelte";
   import { services } from "$lib/data/services";
+
+  export let limit: number = Infinity
 </script>
 
 <div class="services">
 
-  {#each services as service}
-  <Card>
-    <div class="service">
-      <i><span class={service.icon}></span></i>
-      <h2>{service.name}</h2>
-      <p class="description">
-        {service.description}
-      </p>
-    </div>
-  </Card>
+  {#each services as service, index}
+  {#if (index+1) <= limit}
+
+  <div class="card service">
+    <!-- <i><span class="{service.icon}"></span></i> -->
+    <h2>{service.name}</h2>
+    <p class="description">
+      {service.description}
+    </p>
+  </div>
+
+  {/if}
   {/each}
 
 </div>
@@ -28,7 +31,7 @@
   }
   .service {
     /* border: 1px dashed blue; */
-    display: flex;
+        display: flex;
     flex-direction: column;
     gap: 20px;
   }
@@ -37,23 +40,8 @@
     font-size: 26px;
     /* line-height: 1; */
   }
-  i {
+  /* i {
     color: var(--primary);
     font-size: 24px;
-  }
-  p {
-    /* border: 1px dashed green; */
-    flex: 1;
-    margin-bottom: 15px;
-  }
-  .button {
-    display: flex;
-    justify-content: end;
-  }
-  @media (min-width: 600px) {
-    .button {
-      justify-content: start;
-    }
-
-  }
+  } */
 </style>

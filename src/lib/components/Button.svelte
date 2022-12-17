@@ -27,6 +27,7 @@
     font-weight: 500;
     margin-bottom: var(--mb, 0);
     align-items: center;
+    font-weight: bold;
   }
   .primary {
     background-color: var(--primary);
@@ -45,6 +46,7 @@
   }
   .ghost {
     border: 1px solid transparent;
+    border: 1px solid var(--secondary);
   }
   .primary:hover {
     background-color: var(--secondary);
@@ -63,6 +65,6 @@
     border: 1px solid var(--secondary);
   }
   i {
-    font-size: 22px;
+    font-size: 20px;
   }
 </style>

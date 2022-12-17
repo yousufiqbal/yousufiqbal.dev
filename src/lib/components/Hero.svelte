@@ -22,22 +22,24 @@
         </p>
         <div class="services">
           <div>
-            <i><span class="i-ri:check-line"></span></i>
-            Personal Websites
+            <i><span class="i-ri:check-double-line"></span></i>
+            Personal / Business Websites
           </div>
           <div>
-            <i><span class="i-ri:check-line"></span></i>
-            Company & Business Websites
+            <i><span class="i-ri:check-double-line"></span></i>
+            E-Commerce Websites
           </div>
           <div>
-            <i><span class="i-ri:check-line"></span></i>
-            Design Files To Live Websites
+            <i><span class="i-ri:check-double-line"></span></i>
+            Custom Web Apps
           </div>
         </div>
+
         <div class="buttons">
-          <Button name="See Projects" href="/projects" icon="i-ri:thumb-up-line" type="secondary" />
+          <Button name="See Projects" href="/projects" icon="i-ri:arrow-right-s-line" type="primary" />
           <Button name="Hire Me" href="/contact" icon="i-ri:arrow-right-up-line" type="ghost" />
         </div>
+
       </div>
 
     </div>
@@ -46,10 +48,12 @@
 
 <style>
   .hero-wrapper {
+    background-color: var(--surface);
     /* border: 1px dashed red; */
     display: grid;
     place-items: center;
     /* margin-bottom: 50px; */
+    border-bottom: 1px solid var(--border);
   }
   .hero {
     display: grid;
@@ -74,7 +78,8 @@
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    /* border: 1px solid orange; */
+    box-shadow: var(--shadow);
+    /* border: 1px solid gray; */
   }
   .title {
     display: grid;
