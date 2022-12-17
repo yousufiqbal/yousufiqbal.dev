@@ -1,6 +1,6 @@
 <script>
   import Button from "$lib/components/Button.svelte";
-  import Icon from '$lib/components/Icon.svelte'
+  
 
   let salam = 'Assalam-u-Alaekum'
 </script>
@@ -23,15 +23,15 @@
         </p>
         <div class="services">
           <div>
-            <i><Icon icon="ri:check-line" /></i>
+            <i><span class="i-ri:check-line"></span></i>
             Personal Websites
           </div>
           <div>
-            <i><Icon icon="ri:check-line" /></i>
+            <i><span class="i-ri:check-line"></span></i>
             Company & Business Websites
           </div>
           <div>
-            <i><Icon icon="ri:check-line" /></i>
+            <i><span class="i-ri:check-line"></span></i>
             Design Files To Live Websites
           </div>
         </div>

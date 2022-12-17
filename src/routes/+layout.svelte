@@ -6,7 +6,6 @@
   import Header from '$lib/components/Header.svelte';
   import { currency, dark } from '$lib/stores';
   import { onMount } from 'svelte';
-  import { fly } from 'svelte/transition'
 
   const setTheme = () => {
     let theme = localStorage.getItem('theme') || 'light'
@@ -44,12 +43,15 @@
   export let data
 </script>
 
+{#if !(/^\/templates\/[^\s]+$/.test(data.url.pathname))}
 <Header />
 
-{#key data.url.pathname}
-  <main in:fly={{ y: -20, duration: 200 }}>
-    <slot></slot>
-  </main>
-{/key}
+<main>
+  <slot></slot>
+</main>
 
 <Footer />
+{:else}
+
+<slot></slot>
+{/if}

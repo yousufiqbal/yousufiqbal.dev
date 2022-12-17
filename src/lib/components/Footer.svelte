@@ -1,5 +1,5 @@
 <script>
-  import Icon from "$lib/components/Icon.svelte";
+  
   import Container from "$lib/components/Container.svelte";
 
   let links = [
@@ -19,7 +19,7 @@
   <Container>
 
     <div class="footer">
-      <i class="logo"><Icon icon="ri:blaze-line" /></i>
+      <i class="logo"><span class="i-ri:blaze-line"></span></i>
       <div class="link-group">
         <div class="links">
           {#each links as { href, name }}

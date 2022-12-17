@@ -1,26 +1,29 @@
-<script>
+<script lang="ts">
   import { kebabCase } from "$lib/utils";
-  import Icon from "$lib/components/Icon.svelte";
   import { fly } from 'svelte/transition'
 
-  export let label, attribute = kebabCase(label), icon
-  export let touched = false, error = null
+  export let label: string
+  export let attribute: string = kebabCase(label)
+  export let icon: string
+  export let touched: boolean = false
+  export let error: null | string = null
   export let textarea = false
-  export let type = 'text', placeholder = null
-  export let value
+  export let type = 'text'
+  export let placeholder: null | string = null
+  export let value: string
   export let inputmode = 'text'
 
-  const typeMe = node => {
+  const typeMe = (node: HTMLInputElement) => {
     node.type == type
   }
 </script>
 
 <div class="field">
   <label for="{attribute}" >
-    <i><Icon {icon} /></i>
+    <i><span class="i-{icon}"></span></i>
     <span>{label}</span>
     <div class="status">
-      <Icon icon="ri:check-fill" />
+      <i><span class="i-ri:check-fill"></span></i>
     </div>
   </label>
   {#if !textarea}

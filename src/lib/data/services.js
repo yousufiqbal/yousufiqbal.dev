@@ -1,6 +1,6 @@
 export const services = [
   {
-    icon: 'ri:building-2-line',
+    icon: 'i-ri:building-2-line',
     name: 'Website Development',
     href: 'website-development',
     description: 'Websites provide the best way to share you product and services with open world, so interested people can contact. There are three plans for  Website development',
@@ -59,13 +59,13 @@ export const services = [
     ]
   },
   // {
-  //   icon: 'ri:shopping-cart-line',
+  //   icon: 'i-ri:shopping-cart-line',
   //   name: 'E-Commerce Website',
   //   href: 'design-to-website',
   //   description: 'Converting design files to live websites always pleases me. Your design file can be from any vector software including but not limited to Figma, XD, Illustrator or Sketch.',
   // },
   // {
-  //   icon: 'ri:arrow-go-forward-line',
+  //   icon: 'i-ri:arrow-go-forward-line',
   //   name: 'Design Files to Live Website Conversion',
   //   href: 'design-to-website',
   //   description: 'Converting design files to live websites always pleases me. Your design file can be from any vector software including but not limited to Figma, XD, Illustrator or Sketch.',

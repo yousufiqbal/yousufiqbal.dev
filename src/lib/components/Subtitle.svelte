@@ -1,5 +1,6 @@
-<script>
-  export let above = null, subtitle
+<script lang="ts">
+  export let above: null | string = null
+  export let subtitle: string
 </script>
 
 <div class="subtitle">

@@ -1,8 +1,7 @@
-<script>
+<script lang="ts">
   import { page } from "$app/stores";
-  import Icon from "$lib/components/Icon.svelte";
 
-  export let crumbs = []
+  export let crumbs: { name: string, href: string }[] = []
 </script>
 
 {#if crumbs.length != 0}
@@ -17,7 +16,7 @@
   {/if}
   
   {#if index < crumbs.length - 1}
-  <Icon icon="ri:arrow-right-s-line" />
+  <i><span class="i-ri:arrow-right-s-line"></span></i>
   {/if}
   
   {/each}

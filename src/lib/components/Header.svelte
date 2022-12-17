@@ -1,17 +1,16 @@
 <script>
   import { page } from '$app/stores';
   import { dark } from '$lib/stores';
-  import { fly } from 'svelte/transition'
-  import Icon from '$lib/components/Icon.svelte';
+  import { fly } from 'svelte/transition';
 
   let scrollY = 0
 
   export let links = [
-    { name: 'Home', href: '/', icon: 'ri:home-3-line' },
-    { name: 'Benefits', href: '/benefits', icon: 'ri:thumb-up-line' },
-    { name: 'Services', href: '/services', icon: 'ri:list-check-2' },
-    { name: 'Templates', href: '/templates', icon: 'ri:layout-2-line' },
-    { name: 'Contact', href: '/contact', icon: 'ri:mail-send-line' },
+    { name: 'Home', href: '/', icon: 'i-ri:home-3-line' },
+    { name: 'Benefits', href: '/benefits', icon: 'i-ri:thumb-up-line' },
+    { name: 'Services', href: '/services', icon: 'i-ri:list-check-2' },
+    { name: 'Templates', href: '/templates', icon: 'i-ri:layout-2-line' },
+    { name: 'Contact', href: '/contact', icon: 'i-ri:mail-send-line' },
   ]
 
   const toggleTheme = () => {
@@ -34,13 +33,13 @@
   <div class:hide={scrollY != 0} class="header">
 
     <a class:none={scrollY != 0} aria-label="logo" href="/" class="logo">
-      <Icon icon="ri:blaze-line" width="24px" />
+      <i><span class="i-i-ri:blaze-line"></span></i>
     </a>
-
+    
     <button class:none={scrollY != 0} aria-label="{$dark? 'light' : 'dark'} theme" on:click={toggleTheme} class="button">
       {#key $dark}
       <i in:fly={{y: -30, duration: 150}}>
-        <Icon width="24" icon="{$dark? 'ri:moon-line' : 'ri:sun-line'}" />
+        <span class="{$dark? 'i-ri:moon-line' : 'i-ri:sun-line'}"></span>
       </i>
       {/key}
     </button>
@@ -48,7 +47,7 @@
     <div class="navigation">
       {#each links as link}
       <a class:active={$page.url.pathname == link.href} href="{link.href}">
-        <Icon width="22" icon="{link.icon}" />
+        <i><span class="{link.icon}"></span></i>
         <span>{link.name}</span>
       </a>
       {/each}
@@ -59,6 +58,12 @@
 </div>
 
 <style>
+  .header i {
+    font-size: 24px;
+  }
+  .navigation i {
+    font-size: 22px;
+  }
   @media (max-width: 900px) {
     /* Hide top during scroll before 900px only */
     .header.hide {

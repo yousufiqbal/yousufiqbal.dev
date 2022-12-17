@@ -1,5 +1,5 @@
-<script>
-  import Icon from "$lib/components/Icon.svelte";
+<script lang="ts">
+  
   import Section from "$lib/components/Section.svelte";
   import Seo from "$lib/components/Seo.svelte";
   import Templates from "$lib/components/Templates.svelte";
@@ -8,15 +8,15 @@
   import fuzzysort from 'fuzzysort'
 
   let keyword = ''
-  let templates = []
+  let templates: any = []
   
   const filter = () => {
     if (!keyword) return
     templates = fuzzysort.go(keyword, originalTemplates, {key: 'name'}).map(d => ({ ...d.obj } ));
   }
 
-  const handleKey = e => {
-    if (e.key == 'Enter' || e.key == 'Escape') e.currentTarget.blur()
+  const handleKey = (e: KeyboardEvent) => {
+    if (e.key == 'Enter' || e.key == 'Escape') e.currentTarget?.blur()
   }
 
   $: if (keyword == '') templates = [...originalTemplates]
@@ -29,11 +29,11 @@
   <div class="dual">
     <Title typeEffect icon="ri:layout-2-line" title="Templates" --mb="0" above="Websites Ideas" />
     <div class="filter-box">
-      <Icon icon="ri:search-2-line" width="20" />
+      <i><span class="ri:search-2-line"></span></i>
       <input placeholder="Search Templates" on:keyup={handleKey} size="1" bind:value={keyword} on:keyup={filter} type="text">
       {#if keyword}
       <button on:click={()=>keyword=''} style="display: flex; align-items: center">
-        <Icon icon="ri:close-line" width="20" />
+        <i><span class="ri:close-line"></span></i>
       </button>
       {/if}
     </div>
@@ -55,6 +55,9 @@
 </Section>
 
 <style>
+  i {
+    font-size: 20px;
+  }
   .dual {
     display: grid;
     gap: 20px;

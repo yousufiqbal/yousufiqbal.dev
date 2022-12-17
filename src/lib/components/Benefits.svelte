@@ -1,9 +1,9 @@
-<script>
-  import Icon from "$lib/components/Icon.svelte";
+<script lang="ts">
   import Card from "$lib/components/Card.svelte";
   import Subtitle from "$lib/components/Subtitle.svelte";
+  import type { Benefits } from "src/app";
 
-  export let benefits = []
+  export let benefits: Benefits = []
 </script>
 
 {#if benefits.length != 0}
@@ -14,13 +14,10 @@
     <div class="benefit">
       {#if benefit.bookmark}
       <div class="bookmark">
-        <Icon icon="ri:bookmark-fill" />
-        <!-- <span>02</span> -->
+        <i><span class="i-ri:bookmark-fill"></span></i>
       </div>
       {/if}
-      <i>
-        <Icon icon="{benefit.icon}" />
-      </i>
+      <i><span class="i-{benefit.icon}"></span></i>
       <Subtitle above="{benefit.above}" subtitle="{benefit.title}" --mb="0" />
       <p class="description">
         {benefit.description}

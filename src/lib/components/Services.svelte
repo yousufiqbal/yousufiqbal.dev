@@ -1,9 +1,9 @@
-<script>
-  import Icon from "$lib/components/Icon.svelte";
+<script lang="ts">
   import Button from "$lib/components/Button.svelte";
   import Card from "$lib/components/Card.svelte";
+  import type { Services } from "src/app";
   
-  export let services = []
+  export let services: Services = []
 </script>
 
 <div class="services">
@@ -11,7 +11,7 @@
   {#each services as service}
   <Card>
     <div class="service">
-      <i><Icon icon={service.icon} /></i>
+      <i><span class="{service.icon}"></span></i>
       <h2>{service.name}</h2>
       <p class="description">
         {service.description}

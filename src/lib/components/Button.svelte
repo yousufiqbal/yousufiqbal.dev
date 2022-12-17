@@ -1,28 +1,18 @@
 <script lang="ts">
-  import Icon from '$lib/components/Icon.svelte'
-
   export let name: string
   export let icon = 'ri:arrow-right-s-line'
   export let href: null | string = null
   export let type = 'primary'
+
+  let element: string = href ? 'button' : 'a'
 </script>
 
-{#if !href}
-<button on:click class="button {type}">
+<svelte:element this={element} {href} on:click on:keydown class="button {type}">
   <span>{name}</span>
   {#if icon}
-  <Icon width="22" {icon} />
+  <i><span class="{icon}"></span></i>
   {/if}
-</button>
-
-{:else}
-<a {href} class="button {type}">
-  <span>{name}</span>
-  {#if icon}
-  <Icon width="22" {icon} />
-  {/if}
-</a>
-{/if}
+</svelte:element>
 
 <style>
   .button {
@@ -71,5 +61,8 @@
   }
   .ghost:hover {
     border: 1px solid var(--secondary);
+  }
+  i {
+    font-size: 22px;
   }
 </style>

@@ -7,3 +7,19 @@ declare namespace App {
 	// interface PageData {}
 	// interface Platform {}
 }
+
+export type Templates = {
+	name: string, from: string
+}[]
+
+export type Benefits = {
+	bookmark: string
+	icon: string
+	above: string
+	title: string
+	description: string
+}[]
+
+export type Services = {
+	name: string, icon: string, description: string, href: string
+}[]

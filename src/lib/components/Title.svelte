@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Icon from '$lib/components/Icon.svelte'
+  
   import { onMount } from 'svelte';
 
   export let title: string
@@ -30,9 +30,7 @@
   {/if}
   <div class="icon-h1">
     {#if icon}
-    <i>
-      <Icon {icon} />
-    </i>
+    <i><span class="{icon}"></span></i>
     {/if}
     <h1>{@html title}</h1>
   </div>
@@ -48,12 +46,6 @@
   h1 {
     font-size: 40px;
   }
-  /* :global(.title h1 span) {
-    color: var(--primary);
-  }
-  h1::first-letter {
-    color: var(--primary);
-  } */
   .above {
     color: var(--above-below);
   }
