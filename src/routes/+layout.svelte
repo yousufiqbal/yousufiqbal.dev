@@ -2,7 +2,7 @@
   import '$lib/styles/all.css'
   import 'uno.css'
   import { dev } from '$app/environment';
-  import { preloadCode } from '$app/navigation';
+  import { preloadData } from '$app/navigation';
   import Footer from '$lib/components/Footer.svelte';
   import Header from '$lib/components/Header.svelte';
   import { currency, dark } from '$lib/stores';
@@ -18,8 +18,8 @@
   }
 
   const doPrefetch = () => {
-    const links = ['/', '/services', '/contact', '/templates', '/benefits']
-    for (const link of links) preloadCode(link)
+    const links = ['/', '/services', '/contact', '/projects']
+    for (const link of links) preloadData(link)
   }
 
   const setCurrency = async () => {

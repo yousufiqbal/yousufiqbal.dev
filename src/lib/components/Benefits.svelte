@@ -17,7 +17,7 @@
         <i><span class="i-ri:bookmark-fill"></span></i>
       </div>
       {/if}
-      <i><span class="i-{benefit.icon}"></span></i>
+      <i><span class="{benefit.icon}"></span></i>
       <Subtitle above="{benefit.above}" subtitle="{benefit.title}" --mb="0" />
       <p class="description">
         {benefit.description}
