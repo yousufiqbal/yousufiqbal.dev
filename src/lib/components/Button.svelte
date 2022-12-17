@@ -4,7 +4,7 @@
   export let href: null | string = null
   export let type = 'primary'
 
-  let element: string = href ? 'button' : 'a'
+  let element: string = href ? 'a' : 'button'
 </script>
 
 <svelte:element this={element} {href} on:click on:keydown class="button {type}">

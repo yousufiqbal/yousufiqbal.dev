@@ -52,11 +52,12 @@
   .icon-h1 {
     /* border: 1px dashed red; */
     display: flex;
-    align-items: start;
+    align-items: center;
     gap: 10px;
+    margin-top: 3px;
   }
   i {
-    margin-top: 13px;
+    /* margin-top: 13px; */
     color: var(--primary);
     font-size: 32px;
   }

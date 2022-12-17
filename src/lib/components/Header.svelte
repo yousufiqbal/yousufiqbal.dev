@@ -33,7 +33,7 @@
   <div class:hide={scrollY != 0} class="header">
 
     <a class:none={scrollY != 0} aria-label="logo" href="/" class="logo">
-      <i><span class="i-i-ri:blaze-line"></span></i>
+      <i><span class="i-ri:blaze-line"></span></i>
     </a>
     
     <button class:none={scrollY != 0} aria-label="{$dark? 'light' : 'dark'} theme" on:click={toggleTheme} class="button">
