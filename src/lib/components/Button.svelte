@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
   import Icon from '$lib/components/Icon.svelte'
 
-  export let name, icon = 'ri:arrow-right-s-line'
-  export let href = null
+  export let name: string
+  export let icon = 'ri:arrow-right-s-line'
+  export let href: null | string = null
   export let type = 'primary'
-  // export let external = false
 </script>
 
 {#if !href}

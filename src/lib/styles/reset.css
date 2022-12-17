@@ -75,3 +75,9 @@ meter {
 :where([draggable="true"]) {
     -webkit-user-drag: element;
 }
+
+/* back to papa */
+input[type="checkbox"],
+input[type="radio"] {
+    all: revert;
+}

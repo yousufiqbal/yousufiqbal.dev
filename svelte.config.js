@@ -1,15 +1,10 @@
-import adapter from '@sveltejs/adapter-netlify';
-import sveltePreproces from 'svelte-preprocess'
+import adapter from '@sveltejs/adapter-auto';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  preprocess: [sveltePreproces()],
-  kit: {
-    adapter: adapter({
-      edge: false,
-      split: false
-    }),
-  }
+	kit: {
+		adapter: adapter()
+	}
 };
 
 export default config;

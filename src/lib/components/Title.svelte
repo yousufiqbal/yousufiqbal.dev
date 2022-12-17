@@ -1,10 +1,12 @@
-<script>
+<script lang="ts">
   import Icon from '$lib/components/Icon.svelte'
   import { onMount } from 'svelte';
 
-  export let title, above = null, icon = null
-  let typed = ''
+  export let title: string
+  export let above: string = ''
+  export let icon: null | string = null
   export let typeEffect = false
+  let typed = ''
 
   onMount(() => {
     startTypewriter()

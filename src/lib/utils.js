@@ -1,7 +1,7 @@
 /**
  * 
  * @param {string} str 
- * @returns kebab-cased string
+ * @returns {string} kebab-cased string
  */
 export const kebabCase = str => {
   return str.toLowerCase().trim().replace(/ /g, '-')
@@ -10,7 +10,7 @@ export const kebabCase = str => {
 /**
  * 
  * @param {object} obj 
- * @returns true if object is empty like {}
+ * @returns {boolean}
  */
 export const isEmpty = obj => {
   for(var prop in obj) {
@@ -23,7 +23,7 @@ export const isEmpty = obj => {
 /**
  * 
  * @param {object} obj - untrimmed object 
- * @returns trimmed object
+ * @returns {object} trimmed object
  */
 export const trimObject = obj => {
   return Object.keys(obj).reduce((acc, curr) => {

@@ -1,15 +1,8 @@
 body {
-  font-family: 'Poppins', Verdana, sans-serif;
+  font-family: 'Sen', Verdana, sans-serif;
   color: var(--secondary);
   background-color: var(--bg);
 }
-
-/* body > div {
-  display: flex;
-  justify-items: left;
-  flex-direction: column;
-  min-height: 100vh;
-} */
 
 button {
   cursor: pointer;

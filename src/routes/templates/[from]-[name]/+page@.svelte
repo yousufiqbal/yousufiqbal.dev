@@ -6,7 +6,7 @@
 
   /**
    * 
-   * @param {EventListener} e
+   * @param {any} e
    */
   const changeMode = e => {
     current = e.target.dataset.mode

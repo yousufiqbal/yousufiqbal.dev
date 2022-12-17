@@ -1,5 +1,5 @@
 <script>
-  import { prefetch } from "$app/navigation";
+  import { preloadCode } from "$app/navigation";
   import Button from "$lib/components/Button.svelte";
   import Section from "$lib/components/Section.svelte";
   import Seo from "$lib/components/Seo.svelte";
@@ -9,12 +9,12 @@
   import { onMount } from 'svelte'
 
   onMount(() => {
-    doPrefetch()
+    doPreloadCode()
   })
 
-  const doPrefetch = () => {
+  const doPreloadCode = () => {
     const links = ['/services/personal-website', '/services/business-website', '/services/design-to-website']
-    for (const link of links) prefetch(link)
+    for (const link of links) preloadCode(link)
   }
 </script>
 
