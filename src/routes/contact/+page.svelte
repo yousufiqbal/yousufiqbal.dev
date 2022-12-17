@@ -59,18 +59,18 @@ import Section from "$lib/components/Section.svelte";
   
   <Layout>
     <div slot="main">
-      <Title typeEffect icon="ri:mail-send-line" title="Contact" above="Get In Touch" />
+      <Title typeEffect icon="i-ri:mail-send-line" title="Contact" above="Get In Touch" />
       <p style="margin-bottom: 40px;">I try responing to every message unless it is considered spam by everyone.</p>
       <Form>
-        <Field {touched} error={errors.name} bind:value={client.name} label="Your Name" icon="ri:user-3-line" placeholder="How do I call you?" />
-        <Field {touched} error={errors.email} bind:value={client.email} label="Your Email" type="email" inputmode="email" icon="ri:at-line" placeholder="Where do I reply you?" />
-        <Field {touched} error={errors.whatsapp} bind:value={client.whatsapp} label="Your WhatsApp" type="tel" inputmode="tel" icon="ri:whatsapp-line" placeholder="Good for quick chats (Optional)" />
-        <Field {touched} error={errors.message} bind:value={client.message} textarea label="Your Message" icon="ri:message-3-line" placeholder="What do you want to talk?" />
+        <Field {touched} error={errors.name} bind:value={client.name} label="Your Name" icon="i-ri:user-3-line" placeholder="How do I call you?" />
+        <Field {touched} error={errors.email} bind:value={client.email} label="Your Email" type="email" inputmode="email" icon="i-ri:at-line" placeholder="Where do I reply you?" />
+        <Field {touched} error={errors.whatsapp} bind:value={client.whatsapp} label="Your WhatsApp" type="tel" inputmode="tel" icon="i-ri:whatsapp-line" placeholder="Good for quick chats (Optional)" />
+        <Field {touched} error={errors.message} bind:value={client.message} textarea label="Your Message" icon="i-ri:message-3-line" placeholder="What do you want to talk?" />
       </Form>
       {#if wait}
       <Loading message="Sending Your Message.." />
       {:else}
-      <Button on:click={submit} name="{'Send Message'}" type="secondary" icon="ri:mail-send-line" />
+      <Button on:click={submit} name="{'Send Message'}" type="secondary" icon="i-ri:mail-send-line" />
       {/if}
     </div>
     <div slot="related">

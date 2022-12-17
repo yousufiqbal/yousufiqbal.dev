@@ -1,5 +1,6 @@
 <script>
   import '$lib/styles/all.css'
+  import 'uno.css'
   import { dev } from '$app/environment';
   import { preloadCode } from '$app/navigation';
   import Footer from '$lib/components/Footer.svelte';

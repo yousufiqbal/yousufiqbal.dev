@@ -9,8 +9,8 @@ import Seo from "$lib/components/Seo.svelte";
 <Seo title="Privacy" description="All privacy policies related to client and common users" />
 
 <Container --pd="50px 30px">
-  <Button type="outline" name="Go Back Home" href="/" --mb="40px" icon="ri:home-3-line" />
-  <Title typeEffect icon="ri:git-repository-private-line" title="Privacy" above="Policies" />
+  <Button type="outline" name="Go Back Home" href="/" --mb="40px" icon=i-ri:home-3-line" />
+  <Title typeEffect icon=i-ri:git-repository-private-line" title="Privacy" above="Policies" />
 
   <Content>
     <h2>Clients Related</h2>

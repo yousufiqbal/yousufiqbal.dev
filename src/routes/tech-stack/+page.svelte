@@ -10,8 +10,8 @@
 <Seo title="Tech Stack" description="To build awesome websites I use HTML, CSS, JavaScript, NodeJS, SvelteJS, SvelteKit, VSCode, etc." />
 
 <Section>
-  <Button type="outline" name="Go Back Home" href="/" --mb="40px" icon="ri:home-3-line" />
-  <Title typeEffect icon="ri:stack-line" title="Tech Stack" above="Technologies I Use" />
+  <Button type="outline" name="Go Back Home" href="/" --mb="40px" icon=i-ri:home-3-line" />
+  <Title typeEffect icon=i-ri:stack-line" title="Tech Stack" above="Technologies I Use" />
   <Technologies {technologies} />
   <Button name="See Services" type="secondary" href='/services'  />
 </Section>

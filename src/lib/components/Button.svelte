@@ -1,6 +1,6 @@
 <script lang="ts">
   export let name: string
-  export let icon = 'ri:arrow-right-s-line'
+  export let icon = 'i-ri:arrow-right-s-line'
   export let href: null | string = null
   export let type = 'primary'
 

@@ -21,7 +21,7 @@
 <Seo title="Pricacy" description="Pricacy policy for clients and common users" />
 
 <Section>
-  <Title typeEffect icon="ri:list-check-2" title="Services" above="Jobs I Do" />
+  <Title typeEffect icon=i-ri:list-check-2" title="Services" above="Jobs I Do" />
   <Services {services} />
   <Button name="See Templates" type="outline" href='/templates'  />
 </Section>

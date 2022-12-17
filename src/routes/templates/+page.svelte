@@ -1,5 +1,4 @@
 <script lang="ts">
-  
   import Section from "$lib/components/Section.svelte";
   import Seo from "$lib/components/Seo.svelte";
   import Templates from "$lib/components/Templates.svelte";
@@ -27,13 +26,13 @@
 <Section>
 
   <div class="dual">
-    <Title typeEffect icon="ri:layout-2-line" title="Templates" --mb="0" above="Websites Ideas" />
+    <Title typeEffect icon=i-ri:layout-2-line" title="Templates" --mb="0" above="Websites Ideas" />
     <div class="filter-box">
-      <i><span class="ri:search-2-line"></span></i>
+      <i><span class=i-ri:search-2-line"></span></i>
       <input placeholder="Search Templates" on:keyup={handleKey} size="1" bind:value={keyword} on:keyup={filter} type="text">
       {#if keyword}
       <button on:click={()=>keyword=''} style="display: flex; align-items: center">
-        <i><span class="ri:close-line"></span></i>
+        <i><span class=i-ri:close-line"></span></i>
       </button>
       {/if}
     </div>

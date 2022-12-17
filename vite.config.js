@@ -5,10 +5,10 @@ import presetIcons from '@unocss/preset-icons'
 /** @type {import('vite').UserConfig} */
 const config = {
 	plugins: [
-		sveltekit(),
 		UnoCSS({
 			presets: [presetIcons()]
-		})
+		}),
+		sveltekit(),
 	]
 };
 
