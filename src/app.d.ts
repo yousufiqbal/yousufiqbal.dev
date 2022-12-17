@@ -13,7 +13,7 @@ export type Templates = {
 }[]
 
 export type Benefits = {
-	bookmark: string
+	bookmark: boolean
 	icon: string
 	above: string
 	title: string

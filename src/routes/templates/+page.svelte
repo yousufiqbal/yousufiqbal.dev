@@ -14,7 +14,7 @@
     templates = fuzzysort.go(keyword, originalTemplates, {key: 'name'}).map(d => ({ ...d.obj } ));
   }
 
-  const handleKey = (e: KeyboardEvent) => {
+  const handleKey = (e: any) => {
     if (e.key == 'Enter' || e.key == 'Escape') e.currentTarget?.blur()
   }
 

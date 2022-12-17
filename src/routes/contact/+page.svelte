@@ -1,6 +1,5 @@
-<script>
+<script lang="ts">
   import Button from "$lib/components/Button.svelte";
-  import Container from "$lib/components/Container.svelte";
   import Content from "$lib/components/Content.svelte";
   import Field from "$lib/components/Field.svelte";
   import Form from "$lib/components/Form.svelte";
@@ -9,12 +8,11 @@
   import { isEmpty } from '$lib/utils.js'
   import { goto } from "$app/navigation";
   import Seo from "$lib/components/Seo.svelte";
-  import Card from "$lib/components/Card.svelte";
   import { validateContactForm } from "$lib/validations";
-import Loading from "$lib/components/Loading.svelte";
-import Section from "$lib/components/Section.svelte";
+  import Loading from "$lib/components/Loading.svelte";
+  import Section from "$lib/components/Section.svelte";
 
-  let wait = false
+  let wait: null | string = null
 
   const client = {
     name: '',
@@ -38,7 +36,7 @@ import Section from "$lib/components/Section.svelte";
       goto('/contact/thank-you')
     } catch (error) {
       alert('Unable to send message. I apologize')
-      wait = false
+      wait = null
     }
   }
   
