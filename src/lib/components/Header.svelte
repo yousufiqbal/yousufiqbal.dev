@@ -7,10 +7,8 @@
 
   export let links = [
     { name: 'Home', href: '/', icon: 'i-ri:home-3-line' },
-    // { name: 'Benefits', href: '/benefits', icon: 'i-ri:thumb-up-line' },
     { name: 'Services', href: '/services', icon: 'i-ri:list-check-2' },
     { name: 'Projects', href: '/projects', icon: 'i-ri:briefcase-2-line' },
-    // { name: 'Templates', href: '/templates', icon: 'i-ri:layout-2-line' },
     { name: 'Contact', href: '/contact', icon: 'i-ri:mail-send-line' },
   ]
 

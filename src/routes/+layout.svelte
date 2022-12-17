@@ -39,12 +39,8 @@
     await setCurrency()
     doPrefetch()
   })
-
-  /** @type {import('./$types').LayoutData} */
-  export let data
 </script>
 
-{#if !(/^\/templates\/[^\s]+$/.test(data.url.pathname))}
 <Header />
 
 <main>
@@ -52,7 +48,3 @@
 </main>
 
 <Footer />
-{:else}
-
-<slot></slot>
-{/if}

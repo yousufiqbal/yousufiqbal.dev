@@ -36,7 +36,7 @@
           </div>
         </div>
         <div class="buttons">
-          <Button name="See Benefits" href="/benefits" icon="i-ri:thumb-up-line" type="secondary" />
+          <Button name="See Projects" href="/projects" icon="i-ri:thumb-up-line" type="secondary" />
           <Button name="Hire Me" href="/contact" icon="i-ri:arrow-right-up-line" type="ghost" />
         </div>
       </div>
