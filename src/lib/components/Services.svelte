@@ -17,7 +17,7 @@
         {service.description}
       </p>
       <div class="button">
-        <Button type="secondary" name="See Pricing" icon="ri:arrow-right-s-line" href="/services/{service.href}" />
+        <Button type="secondary" name="See Pricing" icon="i-ri:arrow-right-s-line" href="/services/{service.href}" />
       </div>
     </div>
   </Card>
