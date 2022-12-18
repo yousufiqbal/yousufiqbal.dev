@@ -10,14 +10,19 @@ export const projects = [
     tags: ['closed-source', 'beta']
   },
   {
+    name: 'Masnoon Duain',
+    description: 'All masnoon duain in arabic with english language translation & references. The project was aimed at keyword specific linking and title provision using google suggestions, so that a wider muslim audience reach right masnoon dua. Adimin panel is complete. User panel is under construction.',
+    tags: ['closed-source', 'wip']
+  },
+  {
     name: 'E-Commerce',
     description: 'Generic e-commerce software for selling anything. It has categories, products with variants, reports, etc. This software comes with two panels, one for users and other for admins for manipulating products. Speed of this app, makes it feel like a native app.',
-    tags: ['open-source', 'wip']
+    tags: ['closed-source', 'wip']
   },
   {
     name: 'Expense Manager',
     description: 'Expense Manager app can be used to manage day-to-day expenses. Just enter your income and add expenses. It has multi-account support while all you data lives in cloud, so you don\'t have to worry for backups. It also features complete activity audit.',
-    tags: ['open-source', 'beta']
+    tags: ['closed-source', 'beta']
   },
   {
     name: 'Food Gaynda',
@@ -38,5 +43,25 @@ export const projects = [
     name: 'Point Of Sale',
     description: 'Like a superstore counter software this software prepares bills and manages inventory. FBR Compliant and many other notable features.',
     tags: ['closed-source', 'wip']
+  },
+  {
+    name: 'Weight Tracker',
+    description: 'App for managing your weight change overtime, with bmi and ideal weight goal setting. User registrations with all cloud data.',
+    tags: ['closed-source', 'wip']
+  },
+  {
+    name: 'Spec Nitro',
+    description: 'Mobile specifications of all popular brands with easy search and year-wise sorting. The business model was to use amazon affiliation. Quite abandoned but I am willing to continue in future.',
+    tags: ['closed-source', 'wip']
+  },
+  {
+    name: 'Delivery Manager',
+    description: 'Small software for managing daily deliveries. Personal use only.',
+    tags: ['closed-source', 'stable']
+  },
+  {
+    name: 'Componentia',
+    description: 'All common components used in web designs in SvelteJS. More than 30+ components. Needs a lot of update. If I can spare sometime. I may do.',
+    tags: ['closed-source', 'beta']
   },
 ]
