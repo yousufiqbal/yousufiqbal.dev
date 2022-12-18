@@ -30,18 +30,8 @@
     margin-bottom: 80px;
   }
   .service {
-    /* border: 1px dashed blue; */
-        display: flex;
+    display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  h2 {
-    font-weight: 500;
-    font-size: 26px;
-    /* line-height: 1; */
-  }
-  /* i {
-    color: var(--primary);
-    font-size: 24px;
-  } */
 </style>

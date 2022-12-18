@@ -10,7 +10,7 @@ export const projects = [
     tags: ['closed-source', 'beta']
   },
   {
-    name: 'E-commerce',
+    name: 'E-Commerce',
     description: 'Generic e-commerce software for selling anything. It has categories, products with variants, reports, etc. This software comes with two panels, one for users and other for admins for manipulating products. Speed of this app, makes it feel like a native app.',
     tags: ['open-source', 'wip']
   },
