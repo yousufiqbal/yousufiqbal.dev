@@ -19,4 +19,9 @@ export const services = [
     name: 'Personal Website',
     description: 'Personal website allows you to potray your personality, including but not limited to, your education, portfolio, experiences & testimonials. It\'s like a digital resume with interactivity.',
   },
+  {
+    icon: 'i-ri:home-line',
+    name: 'Non-Profit Website',
+    description: 'If you need a website for a non-profit company or group busy in Muslim welfare. I can design your project for free after field work discussions.',
+  },
 ]
