@@ -26,7 +26,7 @@ export const projects = [
   },
   {
     name: 'Food Gaynda',
-    description: 'After getting frustating from high deduction rates from foodpanda. I decided to build in app, so that every restaurant, food-shop and home-shef can host their version of foodpanda themselves, ending the monopoly. Just they have to hire a rider. This comes with four panel: rider, admin, operator and user panels.',
+    description: 'After getting frustating from high deduction rates from foodpanda. I decided to build an alternative app, so that every restaurant, food-shop and home-shef can host their version of foodpanda themselves, ending the monopoly. Just they have to hire a rider. This comes with four panel: rider, admin, operator and user panel.',
     tags: ['closed-source', 'wip']
   },
   {
