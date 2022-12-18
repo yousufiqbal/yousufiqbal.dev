@@ -29,4 +29,14 @@ export const projects = [
     description: 'Just to test coding skills. I decided to make an app like Bykea or inDrive. The goal isn\'t to alternate them but just to see if this can be achieved and it felt quite promosing.',
     tags: ['closed-source', 'wip']
   },
+  {
+    name: 'Double Entry Accounting',
+    description: 'App for classic bookkeeping using double-entry. Make accounts, chart of accounts and enter transactions. Reportings for statement of financial position, trial balance and income statement. All data is stored on cloud',
+    tags: ['closed-source', 'wip']
+  },
+  {
+    name: 'Point Of Sale',
+    description: 'Like a superstore counter software this software prepares bills and manages inventory. FBR Compliant and many other notable features.',
+    tags: ['closed-source', 'wip']
+  },
 ]
