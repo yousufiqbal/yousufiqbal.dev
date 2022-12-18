@@ -13,6 +13,8 @@
   export let value: string
   export let inputmode = 'text'
 
+  $: isValid = value && !error
+
   const typeMe = (node: HTMLInputElement) => {
     node.type == type
   }
@@ -22,14 +24,16 @@
   <label for="{attribute}" >
     <i><span class="{icon}"></span></i>
     <span>{label}</span>
-    <div class="status">
+    {#if isValid}
+    <div in:fly={{ x: 20, duration: 100 }} class="status">
       <i><span class="i-ri:check-fill"></span></i>
     </div>
+    {/if}
   </label>
   {#if !textarea}
-  <input on:blur={()=>touched=true} {inputmode} {placeholder} size="1" bind:value id="{attribute}" name="{attribute}" use:typeMe type="text">
+  <input class:valid={isValid} on:blur={()=>touched=true} {inputmode} {placeholder} size="1" bind:value id="{attribute}" name="{attribute}" use:typeMe type="text">
   {:else}
-  <textarea on:blur={()=>touched=true} {inputmode} {placeholder} bind:value id="{attribute}" name="{attribute}" rows="10"></textarea>
+  <textarea class:valid={isValid} on:blur={()=>touched=true} {inputmode} {placeholder} bind:value id="{attribute}" name="{attribute}" rows="10"></textarea>
   {/if}
   {#if touched && error}
   <div in:fly={{x: -20, duration: 150}} class="error">{error}</div>
@@ -37,6 +41,9 @@
 </div>
 
 <style>
+  .valid {
+    border: 1px solid var(--success) !important;
+  }
   .field {
     display: grid;
     gap: 12px;
@@ -47,7 +54,7 @@
     align-items: center;
     gap: 10px;
   }
-  label i {
+  label > i {
     font-size: 22px;
     color: var(--primary);
   }
