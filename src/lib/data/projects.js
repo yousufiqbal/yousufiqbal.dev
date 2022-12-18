@@ -20,12 +20,12 @@ export const projects = [
     tags: ['open-source', 'beta']
   },
   {
-    name: 'Local Food Panda',
+    name: 'Food Gaynda',
     description: 'After getting frustating from high deduction rates from foodpanda. I decided to build in app, so that every restaurant, food-shop and home-shef can host their version of foodpanda themselves, ending the monopoly. Just they have to hire a rider. This comes with four panel: rider, admin, operator and user panels.',
     tags: ['closed-source', 'wip']
   },
   {
-    name: 'Ride',
+    name: 'Ride Hailing',
     description: 'Just to test coding skills. I decided to make an app like Bykea or inDrive. The goal isn\'t to alternate them but just to see if this can be achieved and it felt quite promosing.',
     tags: ['closed-source', 'wip']
   },
