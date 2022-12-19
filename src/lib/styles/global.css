@@ -17,7 +17,7 @@ p {
 }
 
 em {
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .card {
@@ -37,7 +37,7 @@ em {
 
 h2 {
   /* color: var(--primary); */
-  font-weight: 500;
+  font-weight: bold;
   font-size: 26px;
   /* line-height: 1; */
 }

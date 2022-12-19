@@ -8,6 +8,7 @@
   export let links = [
     { name: 'Home', href: '/', icon: 'i-ri:home-3-line' },
     { name: 'Services', href: '/services', icon: 'i-ri:list-check-2' },
+    { name: 'Blogs', href: '/blogs', icon: 'i-ri:article-line' },
     { name: 'Projects', href: '/projects', icon: 'i-ri:briefcase-2-line' },
     { name: 'Contact', href: '/contact', icon: 'i-ri:mail-send-line' },
   ]
@@ -135,15 +136,15 @@
     display: grid;
     gap: 5px;
     justify-items: center;
-    border-right: 1px solid var(--border);
+    /* border-right: 1px solid var(--border); */
     border-top: 1px solid var(--border);
     font-size: 12px;
     text-transform: uppercase;
-    transition: color 500ms;
+    transition: color 300ms;
   }
-  .navigation a:last-child {
+  /* .navigation a:last-child {
     border-right: none;
-  }
+  } */
   .navigation a:hover {
     border-top-color: var(--primary);
   }
@@ -170,7 +171,7 @@
       padding: 15px 20px;
     }
     .navigation span {
-      transition: color 500ms;
+      transition: color 300ms;
     }
     .navigation a:hover span {
       color: var(--primary);
