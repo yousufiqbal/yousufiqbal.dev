@@ -1,6 +1,5 @@
 <script lang="ts">
   import Button from "$lib/components/Button.svelte";
-  import Content from "$lib/components/Content.svelte";
   import Field from "$lib/components/Field.svelte";
   import Form from "$lib/components/Form.svelte";
   import Layout from "$lib/components/Layout.svelte";
@@ -75,7 +74,7 @@
     </div>
 
     <div slot="related">
-      <Title title="Services" above="Things I Do" />
+      <Title title="Services" above="Things I Do" icon="i-ri:list-check-2" />
       <Services />
     </div>
 
