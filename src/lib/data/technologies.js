@@ -8,6 +8,10 @@ export const technologies = [
     description: 'SvelteKit doesn\'t compromise on SEO, progressive enhancement or the initial load experience — but unlike traditional server-rendered apps, navigation is instantaneous for that app-like feel.',
   },
   {
+    name: 'Shopify',
+    description: 'Shopify is an all-in-one commerce platform that makes it easy to launch your dream business and start selling to your customers, wherever they are.',
+  },
+  {
     name: 'HTML',
     description: 'The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.',
   },
