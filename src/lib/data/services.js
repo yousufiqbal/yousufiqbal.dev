@@ -1,22 +1,27 @@
 export const services = [
   {
-    name: 'Business / Company Website',
-    description: 'Showcasing the services you provide or products you sell, testimonials, location of your office, etc. to the digital world is quite needy nowadays. Business or company websites serves this purpose at its best.',
+    name: 'Design Files to Website Development',
+    description: 'Let Me Turn Your Vision into a Stunning, User-Friendly, and High-Performance Website that Impresses Your Audience and Achieves Your Goals. Figma, XD, PSD and all other design files are supported',
+    urlName: 'design-files-to-website-development'
   },
   {
-    name: 'E-Commerce Website',
-    description: 'Whether you manufacture or buy-and-sell, "e-commerce" websites are best way of selling products and earning. Keeping performance and seo in mind. E-commerce websites are designed to sell products effectively and efficiently.',
+    name: 'E-Commerce Website with Shopify',
+    description: 'Sell More Online with a Custom E-Commerce Website Built on Shopify - Get a Stunning, User-Friendly, and High-Converting Store that Maximizes Your Sales and Customer Satisfaction.',
+    urlName: 'e-commerce-website-with-shopify'
   },
   {
     name: 'Custom Web Application',
-    description: 'If you have an idea, popped out to you only, and you want to digitalize it by making a web app, then, I\'m at your service. After extensive documentation and discussion. I can (AlhamduLILLAH) design a custom web-app for you at custom rates.',
+    description: 'Streamline Your Business with Custom Web Application Development - Get a Tailored, User-Friendly, and Scalable Solution that Automates Your Processes and Boosts Your Efficiency.',
+    urlName: 'custom-web-application'
   },
   {
-    name: 'Personal Website',
-    description: 'Personal website allows you to potray your personality, including but not limited to, your education, portfolio, experiences & testimonials. It\'s like a digital resume with interactivity.',
+    name: 'Personal or Portfolio Website',
+    description: 'Stand Out Online with a Custom Personal or Portfolio Website - Showcase Your Skills, Personality, and Achievements with a Stunning, User-Friendly, and High-Impact Website.',
+    urlName: 'personal-or-portfolio-website'
   },
   {
     name: 'Non-Profit Website',
-    description: 'If you need a website for a non-profit company or group busy in Muslim welfare. I can design your project for free after field work discussions.',
+    description: 'Make a Difference with a Free Custom Non-Profit Website - Get a Powerful, User-Friendly, and Result-Driven Platform that Spreads Your Message, Attracts Donors, and Supports Your Cause.',
+    urlName: 'non-profit-website'
   },
 ]

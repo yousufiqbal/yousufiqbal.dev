@@ -4,8 +4,8 @@
   let salam = 'Assalam-u-Alaekum'
 </script>
 
-<div class="hero-wrapper">
-
+<section>
+  <div class="container">
     <div class="hero">
 
       <div class="left">
@@ -18,9 +18,14 @@
           <h1>I'm <span>Yousuf,</span></h1>
         </div>
         <p class="introduction">
-          Using modern technologies, I <em>design</em> and <em>develop</em> websites that are fast, responsive, and SEO friendly, just like this website. I develop:
+          I'm an <em>IBM</em> © Certified Full Stack Professional Developer & <em>Google</em> © Certified UX Designer. <br><br>
+          Using modern technologies, I design and develop websites that are fast, responsive, and SEO friendly, just like this website. I develop:
         </p>
         <div class="services">
+          <div>
+            <i><span class="i-ri:check-double-line"></span></i>
+            Design Files to Website
+          </div>
           <div>
             <i><span class="i-ri:check-double-line"></span></i>
             Personal / Business Websites
@@ -31,24 +36,24 @@
           </div>
           <div>
             <i><span class="i-ri:check-double-line"></span></i>
-            Custom Web Apps
+            Custom Web Apps & More
           </div>
         </div>
 
         <div class="buttons">
-          <Button name="See Projects" href="/projects" icon="i-ri:arrow-right-s-line" type="primary" />
+          <Button name="See Services" href="/services" icon="i-ri:arrow-right-s-line" type="primary" />
           <Button name="Hire Me" href="/contact" icon="i-ri:arrow-right-up-line" type="ghost" />
         </div>
 
       </div>
 
     </div>
-
-</div>
+  </div>
+</section>
 
 <style>
-  .hero-wrapper {
-    background-color: var(--surface);
+  section {
+    /* background-color: var(--surface); */
     /* border: 1px dashed red; */
     display: grid;
     place-items: center;

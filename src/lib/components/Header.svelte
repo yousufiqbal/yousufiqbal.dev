@@ -1,6 +1,6 @@
 <script>
   import { page } from '$app/stores';
-  import { dark } from '$lib/stores';
+  // import { dark } from '$lib/stores';
   import { fly } from 'svelte/transition';
 
   let scrollY = 0
@@ -13,36 +13,39 @@
     { name: 'Contact', href: '/contact', icon: 'i-ri:mail-send-line' },
   ]
 
-  const toggleTheme = () => {
-    $dark = !$dark
-    localStorage.setItem('theme', $dark ? 'dark' : 'light')
-    if ($dark) {
-      document.body.classList.remove('light')
-      document.body.classList.add('dark')
-    } else {
-      document.body.classList.remove('dark')
-      document.body.classList.add('light')
-    }
-  }
+  // const toggleTheme = () => {
+  //   $dark = !$dark
+  //   localStorage.setItem('theme', $dark ? 'dark' : 'light')
+  //   if ($dark) {
+  //     document.body.classList.remove('light')
+  //     document.body.classList.add('dark')
+  //   } else {
+    //     document.body.classList.remove('dark')
+    //     document.body.classList.add('light')
+    //   }
+    // }
+    
+  // <!-- <button class:none={scrollY != 0} aria-label="{$dark? 'light' : 'dark'} theme" on:click={toggleTheme} class="button">
+  //   {#key $dark}
+  //   <i in:fly={{y: -30, duration: 150}}>
+  //     <span class="{$dark? 'i-ri:moon-line' : 'i-ri:sun-line'}"></span>
+  //   </i>
+  //   {/key}
+  // </button> -->
 </script>
 
 <svelte:window bind:scrollY />
 
-<div  class="header-wrapper">
+<section>
 
   <div class:hide={scrollY != 0} class="header">
 
     <a class:none={scrollY != 0} aria-label="logo" href="/" class="logo">
       <i><span class="i-ri:blaze-line"></span></i>
     </a>
-    
-    <button class:none={scrollY != 0} aria-label="{$dark? 'light' : 'dark'} theme" on:click={toggleTheme} class="button">
-      {#key $dark}
-      <i in:fly={{y: -30, duration: 150}}>
-        <span class="{$dark? 'i-ri:moon-line' : 'i-ri:sun-line'}"></span>
-      </i>
-      {/key}
-    </button>
+    <a class:none={scrollY != 0} aria-label="theme" href="https://wa.me/923212503902?text=Hey%20Yousuf!%20I%20want%20to%20avail%20some%20of%20your%20service.%20Can%20you%20.." class="button">
+      <i><span class="i-ri:whatsapp-line"></span></i>
+    </a>
 
     <div class="navigation">
       {#each links as link}
@@ -55,7 +58,7 @@
 
   </div>
 
-</div>
+</section>
 
 <style>
   .header i {
@@ -78,7 +81,7 @@
       grid-area: auto;
     }
   }
-  .header-wrapper {
+  section {
     /* border-bottom: 1px solid var(--border); */
     background-color: var(--bg);
     /* box-shadow: 0 3px 10px 0 lightgray; */

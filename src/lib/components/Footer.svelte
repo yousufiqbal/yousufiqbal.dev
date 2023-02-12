@@ -9,12 +9,12 @@
   ]
   let otherLinks = [
     { name: 'Sitemap', href: '/sitemap.xml' },
-    { name: 'Privacy', href: '/privacy' },
-    { name: 'Twitter', href: '/' },
+    // { name: 'Privacy', href: '/privacy' },
+    { name: 'Twitter', href: 'https://twitter.com/yousufiqbal_dev' },
   ]
 </script>
 
-<div class="footer-wrapper">
+<section>
   <Container>
 
     <div class="footer">
@@ -37,10 +37,11 @@
     </div>
 
   </Container>
-</div>
+</section>
 
 <style>
-  .footer-wrapper {
+  section {
+    margin-top: auto;
     padding: 50px 0;
     background-color: var(--footer);
     color: var(--on-footer);

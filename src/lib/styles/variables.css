@@ -1,4 +1,4 @@
-.dark {
+/* .dark {
 
   --above-below: #e2e2e2;
   --primary: #ff6464;
@@ -21,9 +21,9 @@
   --radius: 5px;
   --shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 
-}
+} */
 
-.light {
+:root {
 
   --above-below: #747474;
   --primary: #ff2121;

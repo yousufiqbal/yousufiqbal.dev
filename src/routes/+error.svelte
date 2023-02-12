@@ -5,8 +5,8 @@
 </script>
 
 <Container --pd="30px">
-  <Title title="Ah.. An Error" above="404" icon="i-ri:error-warning-line" />
+  <Title title="Sorry. This is an Error" above="404" icon="i-ri:error-warning-line" />
   <Content>
-    <p>This page does not exist on my computer. <em>Apologies</em><br>Meanwhile you can browse links from top-bar.</p>
+    <p>This page does not exist on my computer. Meanwhile you can browse links from top-bar.</p>
   </Content>
 </Container>

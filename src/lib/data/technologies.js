@@ -5,7 +5,7 @@ export const technologies = [
   },
   {
     name: 'SvelteKit',
-    description: 'SvelteKit doesn\'t compromise on SEO, progressive enhancement or the initial load experience — but unlike traditional server-rendered apps, navigation is instantaneous for that app-like feel.',
+    description: 'SvelteKit doesn\'t compromise on SEO, progressive enhancement or the initial load experience — but unlike traditional server-rendered apps, navigation is instant for that app-like feel.',
   },
   {
     name: 'Shopify',

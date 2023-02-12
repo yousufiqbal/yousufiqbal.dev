@@ -1,5 +1,6 @@
 <script lang="ts">
   import { services } from "$lib/data/services";
+  import Button from "./Button.svelte";
 
   export let limit: number = Infinity
 </script>
@@ -15,6 +16,7 @@
     <p class="description">
       {service.description}
     </p>
+    <Button name="See Benefits & Pricing" type="outline" href="/services/{service.urlName}" />
   </div>
 
   {/if}

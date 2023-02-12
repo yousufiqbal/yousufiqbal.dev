@@ -2,7 +2,7 @@
   export let name: string
   export let icon = 'i-ri:arrow-right-s-line'
   export let href: null | string = null
-  export let type = 'primary'
+  export let type: "primary" | "secondary" | "outline" | "success" | "ghost" = 'primary'
 
   let element: string = href ? 'a' : 'button'
 </script>

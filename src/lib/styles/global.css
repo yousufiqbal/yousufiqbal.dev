@@ -1,7 +1,15 @@
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Sen', Verdana, sans-serif;
   color: var(--secondary);
   background-color: var(--bg);
+  min-height: 100vh;
+}
+
+body > div {
+  display: flex;
+  flex-direction: column;
 }
 
 button {
@@ -27,6 +35,11 @@ em {
   background-color: var(--bg);
   border-left: 2px solid var(--primary);
   /* border-bottom: 2px solid var(--primary); */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 @media (min-width: 700px) {
