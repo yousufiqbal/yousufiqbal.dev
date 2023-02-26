@@ -12,7 +12,10 @@
 
   <div class="card service">
     <!-- <i><span class="{service.icon}"></span></i> -->
-    <h2>{service.name}</h2>
+    <div>
+      <div class="subtitle">{service.subtitle}</div>
+      <h2>{service.title}</h2>
+    </div>
     <p class="description">
       {service.description}
     </p>
@@ -35,5 +38,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+  .subtitle {
+    margin-bottom: 5px;
+    color: var(--success);
+    font-weight: bold;
   }
 </style>

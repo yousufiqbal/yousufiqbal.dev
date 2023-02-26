@@ -18,21 +18,24 @@
           <h1>I'm <span>Yousuf,</span></h1>
         </div>
         <p class="introduction">
-          I'm an <em>IBM</em> © Certified Full Stack Professional Developer & <em>Google</em> © Certified UX Designer. <br><br>
-          Using modern technologies, I design and develop websites that are fast, responsive, and SEO friendly, just like this website. I develop:
+          I'm an <em>IBM</em> © Certified Full Stack Software Developer & <em>Google</em> © Certified UX Designer. My services include:
         </p>
         <div class="services">
           <div>
             <i><span class="i-ri:check-double-line"></span></i>
+            E-Commerce Websites
+          </div>
+          <div>
+            <i><span class="i-ri:check-double-line"></span></i>
             Design Files to Website
           </div>
-          <div>
+          <!-- <div>
             <i><span class="i-ri:check-double-line"></span></i>
             Personal / Business Websites
-          </div>
+          </div> -->
           <div>
             <i><span class="i-ri:check-double-line"></span></i>
-            E-Commerce Websites
+            Course Training Websites
           </div>
           <div>
             <i><span class="i-ri:check-double-line"></span></i>

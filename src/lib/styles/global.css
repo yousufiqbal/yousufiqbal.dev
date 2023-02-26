@@ -33,12 +33,12 @@ em {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   background-color: var(--bg);
-  border-left: 2px solid var(--primary);
+  /* border-left: 2px solid var(--primary); */
   /* border-bottom: 2px solid var(--primary); */
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 

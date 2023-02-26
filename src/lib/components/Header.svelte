@@ -1,7 +1,6 @@
 <script>
   import { page } from '$app/stores';
-  // import { dark } from '$lib/stores';
-  import { fly } from 'svelte/transition';
+    import { whatsapp } from '$lib/data/links';
 
   let scrollY = 0
 
@@ -12,26 +11,6 @@
     { name: 'Projects', href: '/projects', icon: 'i-ri:briefcase-2-line' },
     { name: 'Contact', href: '/contact', icon: 'i-ri:mail-send-line' },
   ]
-
-  // const toggleTheme = () => {
-  //   $dark = !$dark
-  //   localStorage.setItem('theme', $dark ? 'dark' : 'light')
-  //   if ($dark) {
-  //     document.body.classList.remove('light')
-  //     document.body.classList.add('dark')
-  //   } else {
-    //     document.body.classList.remove('dark')
-    //     document.body.classList.add('light')
-    //   }
-    // }
-    
-  // <!-- <button class:none={scrollY != 0} aria-label="{$dark? 'light' : 'dark'} theme" on:click={toggleTheme} class="button">
-  //   {#key $dark}
-  //   <i in:fly={{y: -30, duration: 150}}>
-  //     <span class="{$dark? 'i-ri:moon-line' : 'i-ri:sun-line'}"></span>
-  //   </i>
-  //   {/key}
-  // </button> -->
 </script>
 
 <svelte:window bind:scrollY />
@@ -43,7 +22,7 @@
     <a class:none={scrollY != 0} aria-label="logo" href="/" class="logo">
       <i><span class="i-ri:blaze-line"></span></i>
     </a>
-    <a class:none={scrollY != 0} aria-label="theme" href="https://wa.me/923212503902?text=Hey%20Yousuf!%20I%20want%20to%20avail%20some%20of%20your%20service.%20Can%20you%20.." class="button">
+    <a class:none={scrollY != 0} aria-label="whatsapp" class="button whatsapp" href="{whatsapp}">
       <i><span class="i-ri:whatsapp-line"></span></i>
     </a>
 
@@ -66,6 +45,9 @@
   }
   .navigation i {
     font-size: 22px;
+  }
+  .whatsapp {
+    color: green;
   }
   @media (max-width: 900px) {
     /* Hide top during scroll before 900px only */

@@ -31,3 +31,9 @@ export const trimObject = obj => {
     return acc;
   }, {});
 }
+
+export const titleCase = str => str
+  .split("-")
+  .filter(x => x.length > 0)
+  .map((x) => (x.charAt(0).toUpperCase() + x.slice(1)))
+  .join(" ");

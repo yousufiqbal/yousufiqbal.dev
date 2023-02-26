@@ -12,6 +12,10 @@ export const technologies = [
     description: 'Shopify is an all-in-one commerce platform that makes it easy to launch your dream business and start selling to your customers, wherever they are.',
   },
   {
+    name: 'Thinkific',
+    description: 'Thinkific is a cloud-based platform that enables course creation, customization, and management, as well as integrations with various marketing and payment platforms.',
+  },
+  {
     name: 'HTML',
     description: 'The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.',
   },

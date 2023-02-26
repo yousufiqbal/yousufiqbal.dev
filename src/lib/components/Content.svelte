@@ -8,11 +8,11 @@
     flex-direction: column;
     gap: 20px;
     margin-bottom: 40px;
-    max-width: 600px;
+    /* max-width: 600px; */
   }
   .content ol {
     display: grid;
-    gap: 20px;
+    gap: 10px;
     list-style-type: decimal;
     list-style-position: inside;
   }
@@ -25,8 +25,9 @@
     font-weight: 500;
   }
   .content h2 {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 26px;
+    margin-top: 20px;
   }
   .content a {
     display: inline-flex;
