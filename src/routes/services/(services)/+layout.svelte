@@ -9,9 +9,9 @@
   import { whatsapp } from "$lib/data/links";
   import { services } from "$lib/data/services";
 
-  let index = $page.url.pathname.lastIndexOf('/')
-  let urlName = $page.url.pathname.substr(index+1)
-  let service = services.filter(s => s.urlName == urlName)[0]
+  $: index = $page.url.pathname.lastIndexOf('/')
+  $: urlName = $page.url.pathname.substr(index+1)
+  $: service = services.filter(s => s.urlName == urlName)[0]
 </script>
 
 <Seo title="{service.title}" description={service.description} />
