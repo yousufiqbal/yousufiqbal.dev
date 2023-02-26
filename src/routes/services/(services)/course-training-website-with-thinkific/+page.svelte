@@ -18,5 +18,5 @@
 
 <h2>Pricing</h2>
 <p>
-  No advance payment is required. Pay upon satisfaction and completion. You only pay 100.00 for first course upload and 70.00 for subsequent courses.
+  No advance payment is required. Pay upon satisfaction and completion. You only pay $99.99 for first course upload and $69.99 for subsequent courses.
 </p>

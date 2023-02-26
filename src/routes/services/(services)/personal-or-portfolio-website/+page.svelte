@@ -4,7 +4,7 @@
 
 <h2>Pricing</h2>
 <p>
-  Pricing model is simple to grasp. You only pay $30.00 for first page and $20.00 for subsequent pages. No advance payment is required. Pay only when you are satisfied with complete website.
+  Pricing model is simple to grasp. You only pay $29.99 for first page and $19.99 for subsequent pages. No advance payment is required. Pay only when you are satisfied with complete website.
 </p>
 
 <h2>Source Code</h2>

@@ -9,7 +9,7 @@
 </p> -->
 
 <h2>Pricing</h2>
-<p>You don't have to pay a single penny until you are satisfied with your e-commerce website. So no advance payments and no worries. For a complete functional e-commerce website, you only have to pay $100.00 after completion</p>
+<p>You don't have to pay a single penny until you are satisfied with your e-commerce website. So no advance payments and no worries. For a complete functional e-commerce website, you only have to pay $99.99 after completion</p>
 
 <h2>Job Details</h2>
 <ol>
