@@ -1,7 +1,3 @@
-<script>
-  import { whatsapp } from "$lib/data/links";
-</script>
-
 <p>
   Shopify is the most popular e-commerce platform for developing your own e-commerce website. It's 2023 and, in addition to your brick and mortar store, you can get orders from the whole world through your website and fulfull them easily.
 </p>
@@ -29,8 +25,3 @@
   You can also integrate Facebook or Instagram to your store. So your products remain sync with them and get more orders. You can also integrate other apps. Other services have their own charges, but they are relatively cheap.
 </p>
 
-<h2>Contact Me</h2>
-<p>
-  So if you're ready to bring your store to an e-commerce website, contact me today for a free consultation. I would be happy to answer any questions you have.
-  You can contact me through <a href="{whatsapp}">WhatsApp</a> or through the <a href="/contact">'Contact'</a> page.
-</p>

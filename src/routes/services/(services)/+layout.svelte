@@ -20,12 +20,18 @@
   <Layout>
 
     <div slot="main">
-      <Title icon="i-ri:arrow-left-right-line" title="{service.title}" above="{service.subtitle}" typeEffect={true} />
+      <Title title="{service.title}" above="{service.subtitle}" typeEffect={true} />
       
       <Content>
         <img src="/{service.urlName}.jpg" alt="">
   
         <slot></slot>
+
+        <h2>Contact Me</h2>
+        <p>
+          Contact me today for a free consultation. I would be happy to answer any questions you have even if you don't want to work with me. <br><br>
+          You can contact me through <a href="{whatsapp}">WhatsApp</a> or through the <a href="/contact">'Contact'</a> page.
+        </p>
       </Content>
 
       <div class="buttons">
