@@ -18,7 +18,7 @@
           <h1>I'm <span>Yousuf,</span></h1>
         </div>
         <p class="introduction">
-          I'm an <em>IBM</em> © Certified Full Stack Software Developer & <em>Google</em> © Certified UX Designer. My services include:
+          I'm an <em><a href="https://www.credly.com/badges/96a89200-f2f9-4c0a-bd97-8a6fdde8c2cc/public_url">IBM</a></em> © Certified Full Stack Software Developer & <em>Google</em> © Certified UX Designer. My services include:
         </p>
         <div class="services">
           <div>
@@ -55,6 +55,10 @@
 </section>
 
 <style>
+  .introduction a {
+    text-decoration: underline;
+    color: var(--success);
+  }
   section {
     /* background-color: var(--surface); */
     /* border: 1px dashed red; */
@@ -132,7 +136,7 @@
   }
   .services i {
     font-size: 22px;
-    color: var(--primary);
+    color: var(--success);
   }
   .services > div {
     /* border: 1px dashed blue; */
