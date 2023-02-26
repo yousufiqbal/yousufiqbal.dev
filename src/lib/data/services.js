@@ -17,15 +17,15 @@ export const services = [
     description: 'Let me turn your vision into a stunning, user-friendly, and high-performance website that impresses your audience and achieves your goals. Figma, XD, PSD and all other design files are supported',
     urlName: 'convert-design-files-to-websites',
   },
-  {
-    title: 'Custom Web Application',
-    subtitle: 'Price depends on project scale',
-    description: 'Streamline your business with custom web application development - get a tailored, user-friendly, and scalable solution that automates your processes and boosts your efficiency.',
-    urlName: 'custom-web-application',
-  },
+  // {
+  //   title: 'Custom Web Application',
+  //   subtitle: 'Price depends on project scale',
+  //   description: 'Streamline your business with custom web application development - get a tailored, user-friendly, and scalable solution that automates your processes and boosts your efficiency.',
+  //   urlName: 'custom-web-application',
+  // },
   {
     title: 'Personal or Portfolio Website',
-    subtitle: 'Starting from $100.00',
+    subtitle: 'Starting from $30.00',
     description: 'Stand out online with a custom personal or portfolio website - showcase your skills, personality, and achievements with a stunning, user-friendly, and high-impact website.',
     urlName: 'personal-or-portfolio-website',
   },

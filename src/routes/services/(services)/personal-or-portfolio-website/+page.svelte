@@ -1,6 +1,6 @@
-<p>With <em>10+ years</em> of web development experience, I can convert your design files into a beautiful, functional, and high-performance website that exceeds your expectations. </p>
+<p>Stand out online with a custom personal or portfolio website - showcase your skills, personality, and achievements with a stunning, user-friendly, and high-impact website.</p>
 
-<p>I take the time to understand your needs, goals, and preferences, and I use my technical skills to bring your designs to life in a way that is user-friendly, optimized for search engines, and mobile-responsive.</p>
+<p>Hire Me! and develop your personal or business website that speaks your brand tone and personality.</p>
 
 <h2>Pricing</h2>
 <p>
@@ -12,7 +12,6 @@
   Many developers in the industry charge more money for handing over source code, but I'm not of them. I not only hand you over the source code but also give you complete rights of copying and distribution.
 </p>
 
-
 <h2>Free Things</h2>
 <ol>
   <li>Free 100 GB Hosting powered by Netlify</li>
@@ -20,8 +19,3 @@
   <li>Free SSL Certificate powered by Cloudflare</li>
   <li>Free Website Upload & Setup</li>
 </ol>
-
-<h2>What should you have?</h2>
-<p>
-  You just have to have design files from which I will create your website. These files can be from any online/offline design software of your choice.
-</p>
