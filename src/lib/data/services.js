@@ -24,10 +24,10 @@ export const services = [
   //   urlName: 'custom-web-application',
   // },
   {
-    title: 'Personal or Portfolio Website',
+    title: 'Business or Portfolio Website',
     subtitle: 'Starting from $29.99',
     description: 'Stand out online with a custom personal or portfolio website - showcase your skills, personality, and achievements with a stunning, user-friendly, and high-impact website.',
-    urlName: 'personal-or-portfolio-website',
+    urlName: 'business-or-portfolio-website',
   },
   // {
   //   title: 'Non-Profit Website',
