@@ -6,6 +6,11 @@
   import Header from '$lib/components/Header.svelte';
   // import { dark } from '$lib/stores';
   import { onMount } from 'svelte';
+  import { dev } from '$app/environment';
+  import { inject } from '@vercel/analytics';
+ 
+  inject({ mode: dev ? 'development' : 'production' });
+
 
   // const setTheme = () => {
   //   let theme = localStorage.getItem('theme') || 'light'
