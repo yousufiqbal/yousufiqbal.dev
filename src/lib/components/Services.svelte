@@ -19,7 +19,9 @@
     <p class="description">
       {service.description}
     </p>
+    {#if service.urlName}
     <Button name="See Benefits & Pricing" type="outline" href="/services/{service.urlName}" />
+    {/if}
   </div>
 
   {/if}

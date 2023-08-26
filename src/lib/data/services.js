@@ -1,34 +1,42 @@
 export const services = [
   {
-    title: 'E-Commerce Website with Shopify',
-    subtitle: 'Starting from $99.99',
-    description: 'Sell more online with a custom e-commerce website built on Shopify - get a stunning, user-friendly, and high-converting store that maximizes your sales and customer satisfaction.',
-    urlName: 'e-commerce-website-with-shopify',
+    title: 'Company, Business or Portfolio Website (Static)',
+    subtitle: 'Starting from 35,0000',
+    description: 'Static website showcasing your company, business or portfolio. Best for display your services, customer-support, testimonial and benefits. Best for displaying your academics, qualification, experiences and certificates to the world.',
   },
   {
-    title: 'Course Training Website with Thinkific',
-    subtitle: 'Starting from $99.99',
-    description: 'A professional-looking course training website is key to standing out in the crowded online course market. Let me help you make a great first impression with a well-designed Thinkific course training website.',
-    urlName: 'course-training-website-with-thinkific',
+    title: 'Company, Business or Portfolio Website (Dynamic)',
+    subtitle: 'Starting from 70,000',
+    description: 'Display you academics or company portolfio to the world. CMS allows you to easily add, remove content yourself. This allows you to add any number of content to your website.',
   },
   {
-    title: 'Convert Design Files To Websites',
-    subtitle: 'Starting from $29.99',
-    description: 'Let me turn your vision into a stunning, user-friendly, and high-performance website that impresses your audience and achieves your goals. Figma, XD, PSD and all other design files are supported',
-    urlName: 'convert-design-files-to-websites',
+    title: 'Content Management System, Small-Scale (Dynamic)',
+    subtitle: 'Starting from 70,000',
+    description: 'Convert you small-scale business idea into a reality. CMS systems allow you add, remove content from website yourself. They open a whole world of extensive customizations.',
   },
+  {
+    title: 'Content Management System, Medium-Scale (Dynamic)',
+    subtitle: 'Starting from 140,000',
+    description: 'Convert you medium-scale business idea into a reality. CMS systems allow you add, remove content from website yourself. They open a whole world of extensive customizations.',
+  },
+  {
+    title: 'Content Management System, Large-Scale (Dynamic)',
+    subtitle: 'Contact for price',
+    description: 'Convert you large-scale business idea into a reality. CMS systems allow you add, remove content from website yourself. They open a whole world of extensive customizations.',
+  },
+  // {
+  //   title: 'Convert Design Files To Websites',
+  //   subtitle: 'Starting from $29.99',
+  //   description: 'Let me turn your vision into a stunning, user-friendly, and high-performance website that impresses your audience and achieves your goals. Figma, XD, PSD and all other design files are supported',
+  //   urlName: 'convert-design-files-to-websites',
+  // },
   // {
   //   title: 'Custom Web Application',
   //   subtitle: 'Price depends on project scale',
   //   description: 'Streamline your business with custom web application development - get a tailored, user-friendly, and scalable solution that automates your processes and boosts your efficiency.',
   //   urlName: 'custom-web-application',
   // },
-  {
-    title: 'Business or Portfolio Website',
-    subtitle: 'Starting from $29.99',
-    description: 'Stand out online with a custom personal or portfolio website - showcase your skills, personality, and achievements with a stunning, user-friendly, and high-impact website.',
-    urlName: 'business-or-portfolio-website',
-  },
+
   // {
   //   title: 'Non-Profit Website',
   //   subtitle: 'Free $0.00',
