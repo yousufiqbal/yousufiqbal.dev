@@ -11,7 +11,7 @@
 
   $: index = $page.url.pathname.lastIndexOf('/')
   $: urlName = $page.url.pathname.substr(index+1)
-  $: service = services.filter(s => s.urlName == urlName)[0]
+  // $: service = services.filter(s => s.urlName == urlName)[0]
 </script>
 
 <Seo title="{service.title}" description={service.description} />
