@@ -1,7 +1,7 @@
 export const services = [
   {
     title: 'Company, Business or Portfolio Website (Static)',
-    subtitle: 'Starting From Rs. 35,0000',
+    subtitle: 'Starting From Rs. 35,000',
     description: 'Static website showcasing your company, business or portfolio. Best for display your services, customer-support, testimonial and benefits. Best for displaying your academics, qualification, experiences and certificates to the world.',
   },
   {
