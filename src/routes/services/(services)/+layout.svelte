@@ -23,7 +23,7 @@
       <Title title="{service.title}" above="{service.subtitle}" typeEffect={true} />
       
       <Content>
-        <img src="/{service.urlName}.jpg" alt="">
+        <!-- <img src="/{service.urlName}.jpg" alt=""> -->
   
         <slot></slot>
 
