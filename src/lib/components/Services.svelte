@@ -19,9 +19,7 @@
     <p class="description">
       {service.description}
     </p>
-    {#if service.urlName}
-    <Button name="See Benefits & Pricing" type="outline" href="/services/{service.urlName}" />
-    {/if}
+    <Button name="Contact Me" type="outline" href="/contact" />
   </div>
 
   {/if}
@@ -40,6 +38,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+  p {
+    /* border: 1px dashed red; */
+    flex: 1;
   }
   .subtitle {
     margin-bottom: 5px;
