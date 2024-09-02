@@ -8,14 +8,6 @@ export const technologies = [
     description: 'SvelteKit doesn\'t compromise on SEO, progressive enhancement or the initial load experience — but unlike traditional server-rendered apps, navigation is instant for that app-like feel.',
   },
   {
-    name: 'Shopify',
-    description: 'Shopify is an all-in-one commerce platform that makes it easy to launch your dream business and start selling to your customers, wherever they are.',
-  },
-  {
-    name: 'Thinkific',
-    description: 'Thinkific is a cloud-based platform that enables course creation, customization, and management, as well as integrations with various marketing and payment platforms.',
-  },
-  {
     name: 'HTML',
     description: 'The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.',
   },
@@ -34,9 +26,5 @@ export const technologies = [
   {
     name: 'MySQL',
     description: 'MySQL is an open-source relational database management system. As with other relational databases, MySQL stores data in tables made up of rows and columns.',
-  },
-  {
-    name: 'VS Code',
-    description: 'Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js',
-  },
+  }
 ]
