@@ -23,23 +23,19 @@
         <div class="services">
           <div>
             <i><span class="i-ri:check-double-line"></span></i>
-            E-Commerce Websites
+            Custom Web Apps
           </div>
           <div>
             <i><span class="i-ri:check-double-line"></span></i>
-            Design Files to Website
-          </div>
-          <!-- <div>
-            <i><span class="i-ri:check-double-line"></span></i>
-            Personal / Business Websites
-          </div> -->
-          <div>
-            <i><span class="i-ri:check-double-line"></span></i>
-            Course Training Websites
+            Content Management Systems
           </div>
           <div>
             <i><span class="i-ri:check-double-line"></span></i>
-            Custom Web Apps & More
+            Company & Business Websites
+          </div>
+          <div>
+            <i><span class="i-ri:check-double-line"></span></i>
+            E-Commerce Websites & Marketing
           </div>
         </div>
 
