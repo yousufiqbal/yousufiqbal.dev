@@ -1,7 +1,7 @@
 export const services = [
   {
     title: 'Custom Web Application',
-    subtitle: 'Price depends on project scale',
+    subtitle: 'Contact For Pricing',
     description: 'Streamline your business with custom web application development - get a tailored, user-friendly, and scalable solution that automates your processes and boosts your efficiency.',
     urlName: 'custom-web-application',
   },
