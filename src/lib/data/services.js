@@ -24,7 +24,7 @@ export const services = [
   {
     title: 'Non-Profit Website',
     subtitle: 'Free ',
-    description: 'Make a difference with a free custom non-profit website - get a powerful, user-friendly, and result-driven platform that spreads your message, attracts donors, and supports your cause.',
+    description: 'We are here for here after. For non-profits, with projects that are beneficial for this Muslim ummah. I am open to volunteer and put my two cents in your institution needs',
     urlName: 'non-profit-website',
   },
 ]
