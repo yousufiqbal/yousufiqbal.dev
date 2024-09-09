@@ -26,7 +26,7 @@
   const sendMessage = async () => {
     try {
       wait = 'Sending..'
-      await fetch('/api/contact', {
+      await fetch('/api/send-message', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json;charset=utf-8'
