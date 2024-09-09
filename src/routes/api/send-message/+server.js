@@ -9,11 +9,16 @@ export const POST = async ({ request }) => {
     const client = await request.json()
 
     let transporter = nodemailer.createTransport({
-      service: 'Outlook365',
-      auth: {
+      host: 'smtp-mail.outlook.com',
+        port: 587,
+        secure: false,
+        auth: {
         user: 'yousufiqbalhashim@outlook.com',
         pass: OUTLOOK_PWD
-      },
+        },
+        tls: {
+            ciphers: 'SSLv3'
+        }
     });
 
     try {
@@ -36,7 +41,6 @@ export const POST = async ({ request }) => {
       });
     
       if (dev) console.log("Message sent: %s", info.messageId);
-
       return json({ message: 'Email sent' })
       
     } catch (err) {
