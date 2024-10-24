@@ -5,6 +5,7 @@ import sveltePreprocess from 'svelte-preprocess'
 const config = {
 	preprocess: [sveltePreprocess()],
 	kit: {
+		csrf: false,
 		adapter: adapter()
 	}
 };
