@@ -58,7 +58,7 @@
   <Layout>
 
     <div slot="main">
-      <Title  icon="i-ri:mail-send-line" title="Contact" above="Get In Touch" />
+      <Title  icon="i-ri:mail-send-line" title="Contact"  />
       <p style="margin-bottom: 40px;">I try responing to every message unless it is considered spam by everyone.</p>
       <Form>
         <Field {touched} error={errors.name} bind:value={client.name} label="Your Name" icon="i-ri:user-3-line" placeholder="How do I call you?" />

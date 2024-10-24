@@ -1,5 +1,5 @@
 import { dev } from '$app/environment';
-import { OUTLOOK_PWD } from '$env/static/private';
+import { pb } from '$lib/database/db';
 import { error, json } from '@sveltejs/kit'
 import nodemailer from 'nodemailer'
 
@@ -8,20 +8,17 @@ export const POST = async ({ request }) => {
 
     const client = await request.json()
 
-    const sendEmail = async () => {
-      let transporter = nodemailer.createTransport({
-        host: 'smtp-mail.outlook.com',
-          port: 587,
-          secure: false,
-          auth: {
-          user: 'yousufiqbalhashim@outlook.com',
-          pass: OUTLOOK_PWD
-          },
-          tls: {
-              ciphers: 'SSLv3'
-          }
-      });
-  
+    const smtp = await pb.collection('smtp').getOne('v6wggv7py2kp62h')
+    const transporter = nodemailer.createTransport({
+        host: smtp.host,
+        port: smtp.port,
+        secure: false,
+        auth: {
+            user: smtp.username,
+            pass: smtp.password
+        }
+    });
+    
       try {
   
         let info = await transporter.sendMail({
@@ -49,8 +46,4 @@ export const POST = async ({ request }) => {
         if (dev) console.log(err)
         throw error(403, 'Cannot send email')
       }
-    }
-
-    await sendEmail()
-  
 }

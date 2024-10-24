@@ -5,7 +5,6 @@ import Cards from "$lib/components/Cards.svelte";
 import Meta from "$lib/components/Meta.svelte";
     import Subtitle from "$lib/components/Subtitle.svelte";
   import Title from "$lib/components/Title.svelte";
-    import { services } from "$lib/data/services";
 
     export let data
 </script>

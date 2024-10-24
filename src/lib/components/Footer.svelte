@@ -9,7 +9,6 @@
   ]
   let otherLinks = [
     { name: 'Sitemap', href: '/sitemap.xml' },
-    // { name: 'Privacy', href: '/privacy' },
     { name: 'Twitter', href: 'https://twitter.com/yousufiqbal_dev' },
   ]
 </script>
