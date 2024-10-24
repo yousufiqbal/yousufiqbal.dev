@@ -6,7 +6,7 @@
 <div class="subtitle">
   {#if icon}
   <!-- <p>{}</p> -->
-  <img src="{icon}" alt="{icon}">
+  <img width="20" src="{icon}" alt="{icon}">
   {/if}
   <h2>{subtitle}</h2>
 </div>
@@ -17,9 +17,6 @@
     display: flex;
     gap: 15px;
     margin-bottom: 20px;
-  }
-  img {
-    width: 20px;
   }
   h2 {
     text-transform: capitalize;
