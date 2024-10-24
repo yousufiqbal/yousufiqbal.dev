@@ -17,7 +17,7 @@
   <li>Domain Registration & Integration</li>
   <li>Customer Support Email Setup via ZOHO</li>
   <li>Store Setup & Theme Customization</li>
-  <li>25 Products Listing (SEO Optimized)</li>
+  <li>25 Products Listing (Meta Optimized)</li>
   <li>Payment Integration</li>
   <li>Google Analytics Integration</li>
 </ol>

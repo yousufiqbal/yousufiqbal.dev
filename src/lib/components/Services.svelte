@@ -1,19 +1,19 @@
 <script lang="ts">
-  import { services } from "$lib/data/services";
-  import Button from "./Button.svelte";
+  import type { PageData } from "./$types";
+  import Button from "$lib/components/Button.svelte";
+  import { page } from "$app/stores";
 
-  export let limit: number = Infinity
+  export let data: PageData
 </script>
 
 <div class="services">
 
-  {#each services as service, index}
-  {#if (index+1) <= limit}
+  {#each $page.data.services as service}
 
   <div class="card service">
     <!-- <i><span class="{service.icon}"></span></i> -->
     <div>
-      <div class="subtitle">{service.subtitle}</div>
+      <div class="subtitle">{service.name}</div>
       <h2>{service.title}</h2>
     </div>
     <p class="description">
@@ -22,7 +22,6 @@
     <Button name="Contact Me" type="outline" href="/contact" />
   </div>
 
-  {/if}
   {/each}
 
 </div>

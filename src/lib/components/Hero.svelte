@@ -51,6 +51,9 @@
 </section>
 
 <style>
+  p {
+    line-height: 1.5;
+  }
   .introduction a {
     text-decoration: underline;
     color: var(--success);

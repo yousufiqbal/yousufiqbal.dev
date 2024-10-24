@@ -1,6 +1,5 @@
 <script>
   import { page } from '$app/stores';
-    import { whatsapp } from '$lib/data/links';
 
   let scrollY = 0
 
@@ -22,7 +21,7 @@
     <a class:none={scrollY != 0} aria-label="logo" href="/" class="logo">
       <i><span class="i-ri:blaze-line"></span></i>
     </a>
-    <a class:none={scrollY != 0} aria-label="whatsapp" class="button whatsapp" href="{whatsapp}">
+    <a class:none={scrollY != 0} aria-label="whatsapp" class="button whatsapp" href="https://wa.me/923212503902?text=Hey%20Yousuf!%20I%20want%20to%20avail%20one%20of%20your%20service">
       <i><span class="i-ri:whatsapp-line"></span></i>
     </a>
 

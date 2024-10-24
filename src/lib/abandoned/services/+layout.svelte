@@ -3,8 +3,8 @@
   import Button from "$lib/components/Button.svelte";
   import Content from "$lib/components/Content.svelte";
   import Layout from "$lib/components/Layout.svelte";
-  import Seo from "$lib/components/Seo.svelte";
-  import Services from "$lib/components/Services.svelte";
+  import Meta from "$lib/components/Meta.svelte";
+  import Services from "../../../routes/services/Services.svelte";
   import Title from "$lib/components/Title.svelte";
   import { whatsapp } from "$lib/data/links";
   import { services } from "$lib/data/services";
@@ -14,13 +14,13 @@
   $: service = services.filter(s => s.urlName == urlName)[0]
 </script>
 
-<Seo title="{service.title}" description={service.description} />
+<Meta title="{service.title}" description={service.description} />
 
 <section>
   <Layout>
 
     <div slot="main">
-      <Title title="{service.title}" above="{service.subtitle}" typeEffect={true} />
+      <Title title="{service.title}" above="{service.subtitle}" ={true} />
       
       <Content>
         <!-- <img src="/{service.urlName}.jpg" alt=""> -->

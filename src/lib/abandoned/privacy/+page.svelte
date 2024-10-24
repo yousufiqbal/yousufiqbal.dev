@@ -2,15 +2,15 @@
   import Button from "$lib/components/Button.svelte";
   import Container from "$lib/components/Container.svelte";
   import Content from "$lib/components/Content.svelte";
-  import Seo from "$lib/components/Seo.svelte";
+  import Meta from "$lib/components/Meta.svelte";
   import Title from "$lib/components/Title.svelte";
 </script>
 
-<Seo title="Privacy" description="All privacy policies related to client and common users" />
+<Meta title="Privacy" description="All privacy policies related to client and common users" />
 
 <Container --pd="50px 30px">
   <Button type="outline" name="Go Back Home" href="/" --mb="40px" icon="i-ri:home-3-line" />
-  <Title typeEffect icon="i-ri:git-repository-private-line" title="Privacy" above="Policies" />
+  <Title  icon="i-ri:git-repository-private-line" title="Privacy" above="Policies" />
 
   <Content>
     <h2>Clients Related</h2>

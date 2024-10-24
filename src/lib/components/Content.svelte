@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     /* max-width: 600px; */
   }
   .content ol {
@@ -36,5 +36,11 @@
   }
   .content a:hover {
     color: var(--success);
+  }
+  .content p {
+    line-height: 1.5;
+  }
+  .content em {
+    font-weight: bold;
   }
 </style>

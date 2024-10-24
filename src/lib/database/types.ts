@@ -94,7 +94,7 @@ export type SmtpRecord = {
 
 export type TechsRecord = {
 	description?: HTMLString
-	icon?: string
+	icon_url?: string
 	name?: string
 }
 

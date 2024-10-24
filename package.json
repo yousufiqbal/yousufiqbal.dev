@@ -5,12 +5,14 @@
 	"scripts": {
 		"dev": "vite dev --host",
 		"build": "vite build",
+		"typegen": "pocketbase-typegen --env --out=./src/lib/database/types.ts",
 		"preview": "vite preview --host",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
 		"lint": "eslint ."
 	},
 	"devDependencies": {
+		"@iconify-json/logos": "^1.2.3",
 		"@iconify-json/ri": "^1.1.4",
 		"@sveltejs/adapter-auto": "^1.0.0",
 		"@sveltejs/kit": "^1.0.0",

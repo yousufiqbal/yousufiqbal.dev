@@ -6,11 +6,11 @@
   import Title from "$lib/components/Title.svelte";
   import { isEmpty } from '$lib/utils.js'
   import { goto } from "$app/navigation";
-  import Seo from "$lib/components/Seo.svelte";
+  import Meta from "$lib/components/Meta.svelte";
   import { validateContactForm } from "$lib/validations";
   import Loading from "$lib/components/Loading.svelte";
   import Section from "$lib/components/Section.svelte";
-    import Services from "$lib/components/Services.svelte";
+    // import Services from "../services/Services.svelte";
 
   let wait: null | string = null
 
@@ -51,14 +51,14 @@
   $: errors = validateContactForm(client)
 </script>
 
-<Seo title="Contact" description="Contact me to avail any web development services and for other queries" />
+<Meta title="Contact" description="Contact me to avail any web development services and for other queries" />
 
 <Section>
   
   <Layout>
 
     <div slot="main">
-      <Title typeEffect icon="i-ri:mail-send-line" title="Contact" above="Get In Touch" />
+      <Title  icon="i-ri:mail-send-line" title="Contact" above="Get In Touch" />
       <p style="margin-bottom: 40px;">I try responing to every message unless it is considered spam by everyone.</p>
       <Form>
         <Field {touched} error={errors.name} bind:value={client.name} label="Your Name" icon="i-ri:user-3-line" placeholder="How do I call you?" />
@@ -75,7 +75,7 @@
 
     <div slot="related">
       <Title title="Services" above="Things I Do" icon="i-ri:list-check-2" />
-      <Services />
+      <!-- <Services /> -->
     </div>
 
   </Layout>

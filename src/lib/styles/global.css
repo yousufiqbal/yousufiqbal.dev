@@ -20,37 +20,3 @@ i {
   display: flex;
 }
 
-p {
-  line-height: 1.5;
-}
-
-em {
-  font-weight: bold;
-}
-
-.card {
-  padding: 20px;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  background-color: var(--bg);
-  /* border-left: 2px solid var(--primary); */
-  /* border-bottom: 2px solid var(--primary); */
-}
-
-.container {
-  max-width: 1150px;
-  margin: 0 auto;
-}
-
-@media (min-width: 700px) {
-  .card {
-    padding: 30px;
-  }
-}
-
-h2 {
-  /* color: var(--primary); */
-  font-weight: bold;
-  font-size: 26px;
-  /* line-height: 1; */
-}
