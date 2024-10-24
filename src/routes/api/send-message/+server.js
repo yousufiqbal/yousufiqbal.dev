@@ -9,6 +9,7 @@ export const POST = async ({ request }) => {
     const client = await request.json()
 
     const smtp = await pb.collection('smtp').getOne('v6wggv7py2kp62h')
+    // console.log(smtp)
     const transporter = nodemailer.createTransport({
         host: smtp.host,
         port: smtp.port,
