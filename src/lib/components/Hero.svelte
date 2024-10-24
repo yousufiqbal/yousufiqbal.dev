@@ -18,7 +18,7 @@
           <h1>I'm <span>Yousuf,</span></h1>
         </div>
         <p class="introduction">
-          I'm an <em><a href="https://www.credly.com/badges/96a89200-f2f9-4c0a-bd97-8a6fdde8c2cc/public_url">IBM</a></em> © Certified Full Stack Software Developer & <em><a href="https://www.credly.com/badges/3d2725f7-e9ca-4d40-8306-c2b94d3a3b42">Google</a></em> © Certified Digital Marketting & E-Commerce Expert. My services include:
+          I'm an <em><a href="https://www.credly.com/badges/96a89200-f2f9-4c0a-bd97-8a6fdde8c2cc/public_url">IBM</a></em> © Certified Full Stack Software Developer & <em><a href="https://www.credly.com/badges/3d2725f7-e9ca-4d40-8306-c2b94d3a3b42">Google</a></em> © Certified Digital Marketing & E-Commerce Expert. My services include:
         </p>
         <div class="services">
           <div>
