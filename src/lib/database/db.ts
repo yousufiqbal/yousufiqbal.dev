@@ -1,4 +1,4 @@
 import PocketBase from 'pocketbase'
 import { TypedPocketBase } from "./types"
 
-export const pb = new PocketBase('http://139.59.102.118:8091/') as TypedPocketBase
+export const pb = new PocketBase('https://pb.yousufiqbal.dev/') as TypedPocketBase
