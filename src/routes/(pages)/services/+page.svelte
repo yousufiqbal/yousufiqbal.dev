@@ -1,12 +1,12 @@
 <script>
   import Card from "$lib/components/Card.svelte";
-import Cards from "$lib/components/Cards.svelte";
-    import Content from "$lib/components/Content.svelte";
-import Meta from "$lib/components/Meta.svelte";
-    import Subtitle from "$lib/components/Subtitle.svelte";
+  import Cards from "$lib/components/Cards.svelte";
+  import Content from "$lib/components/Content.svelte";
+  import Meta from "$lib/components/Meta.svelte";
+  import Subtitle from "$lib/components/Subtitle.svelte";
   import Title from "$lib/components/Title.svelte";
 
-    export let data
+  export let data
 </script>
 
 <Meta title="Services" description="List of services that I provide" />
@@ -29,5 +29,4 @@ import Meta from "$lib/components/Meta.svelte";
   {/each}
   
 </Cards>
-
 {/each}
