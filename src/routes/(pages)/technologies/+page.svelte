@@ -19,11 +19,7 @@
   {#each data.techs as tech}
   <Card>
     <Subtitle subtitle={tech.name} icon={tech.icon_url} />
-    <Content>
-      <p class="description">
-        {@html tech.description}
-      </p>
-    </Content>
+    <Content>{@html tech.description}</Content>
   </Card>
   {/each}
 
