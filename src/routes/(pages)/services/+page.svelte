@@ -11,15 +11,23 @@ import Meta from "$lib/components/Meta.svelte";
 
 <Meta title="Services" description="List of services that I provide" />
 
-<Title icon="i-ri:list-check-2" title="Services" />
+{#each data.categories as category}
+<Title icon="i-ri:list-check-2" title="{category.name}" />
+
 
 <Cards>
 
-  {#each data.services as service}
+  {#each category?.expand?.services_via_category_id as service}
   <Card>
     <Subtitle subtitle="{service.name}" />
     <Content>{@html service.description}</Content>
   </Card>
+  {:else}
+  <Content>
+    <p>No Services</p>
+  </Content>
   {/each}
   
 </Cards>
+
+{/each}

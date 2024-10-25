@@ -3,10 +3,10 @@ import { pb } from '$lib/database/db';
 /** @type {import('./$types').PageLoad} */
 export async function load() {
 
-    const services = await pb.collection('services').getFullList({
-        expand: 'categories'
+    const categories = await pb.collection('categories').getFullList({
+        expand: 'services_via_category_id'
     })
-    console.log(services)
+    console.dir(categories, { depth: null })
 
-    return { services };
+    return { categories };
 }
