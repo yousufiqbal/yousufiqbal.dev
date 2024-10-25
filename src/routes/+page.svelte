@@ -41,7 +41,7 @@
     </Card>  
     {/each}
   </Cards>
-  <Button type="secondary" name="See All Projects" href="/projects" --mb="70px" />
+  <Button type="secondary" name="See All Products" href="/products" --mb="70px" />
   
   <!-- Technologies -->
   <Title icon="i-ri:stack-line" title="Technologies" />

@@ -14,7 +14,7 @@
   onMount(async () => {
     
     // Prealoading..
-    const links = ['/', '/services', '/contact', '/projects']
+    const links = ['/', '/services', '/contact', '/products']
     for (const link of links) await preloadData(link)
 
   })
