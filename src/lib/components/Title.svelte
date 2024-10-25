@@ -16,11 +16,12 @@
   .title {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: var(--mb, 40px);
   }
   h1 {
-    font-size: 40px;
+    font-size: clamp(2rem, 1rem + 2vw, 2.7rem);
+    font-weight: bold
   }
   i {
     color: var(--primary);
