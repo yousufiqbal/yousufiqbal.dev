@@ -22,6 +22,6 @@
     text-transform: capitalize;
     font-weight: bold;
     font-size: 24px;
-    line-height: 1;
+    line-height: 1.3;
   }
 </style>
