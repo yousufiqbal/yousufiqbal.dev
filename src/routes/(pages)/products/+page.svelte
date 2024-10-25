@@ -9,18 +9,18 @@
   export let data
 </script>
 
-<Meta title="Projects" description="List of projects I've worked on, or, I'm working on" />
+<Meta title="Products" description="List of products I've worked on, or, I'm working on" />
 
-<Title icon="i-ri:briefcase-2-line" title="Projects" above="My Works" />
+<Title icon="i-ri:briefcase-2-line" title="Products" />
 
 <Cards>
 
-  {#each data.projects as project}
+  {#each data.products as product}
   <Card>
-    <Subtitle subtitle={project.name} />
+    <Subtitle subtitle={product.name} />
     <Content>
       <p class="description">
-        {@html project.description}
+        {@html product.description}
       </p>
     </Content>
   </Card>

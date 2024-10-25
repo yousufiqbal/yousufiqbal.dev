@@ -7,7 +7,7 @@
     { name: 'Home', href: '/', icon: 'i-ri:home-3-line' },
     { name: 'Services', href: '/services', icon: 'i-ri:list-check-2' },
     // { name: 'Blogs', href: '/blogs', icon: 'i-ri:article-line' },
-    { name: 'Projects', href: '/projects', icon: 'i-ri:briefcase-2-line' },
+    { name: 'Products', href: '/products', icon: 'i-ri:briefcase-2-line' },
     { name: 'Contact', href: '/contact', icon: 'i-ri:mail-send-line' },
   ]
 </script>

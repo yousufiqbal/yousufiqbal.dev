@@ -31,13 +31,13 @@
   </Cards>
   <Button type="secondary" name="See All Services" href="/services" --mb="70px" />
 
-  <!-- Projects -->
-  <Title icon="i-ri:briefcase-2-line" title="Projects" />
+  <!-- Products -->
+  <Title icon="i-ri:briefcase-2-line" title="Products" />
   <Cards>
-    {#each data.projects as project}
+    {#each data.products as product}
     <Card>
-      <Subtitle subtitle="{project.name}" />
-      <Content>{@html project.description}</Content>
+      <Subtitle subtitle="{product.name}" />
+      <Content>{@html product.description}</Content>
     </Card>  
     {/each}
   </Cards>
