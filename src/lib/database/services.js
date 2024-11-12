@@ -6,6 +6,10 @@ export default [
                 title: 'Manager.io Accounting Software (Cloud)',
                 description: 'Offer cloud-based hosting and maintenance for Manager.io, an efficient accounting software solution. This service ensures secure access to your financial data from anywhere, provides regular updates and backups, and offers ongoing support to help streamline your accounting processes and improve overall financial management'
             },
+            {
+                title: 'ERPNext Software on Cloud',
+                description: 'Implement and host ERPNext, a comprehensive open-source ERP solution, on the cloud for seamless access and scalability. This service includes setup, customization to fit your business processes, and ongoing maintenance, allowing you to streamline operations, manage resources efficiently, and enhance overall productivity from anywhere.'
+            },
         ]
     },
     {
@@ -16,7 +20,7 @@ export default [
                 description: 'Develop tailored web applications to meet your specific business needs, enhancing efficiency and functionality. This service includes gathering requirements, designing user-friendly interfaces, and implementing robust features that align with your goals, ensuring a solution that scales as your business grows.',
             },
             {
-                title: 'Content Management Systems',
+                title: 'Content Management Systems (CMS)',
                 description: 'Implement a user-friendly CMS that allows you to easily create, manage, and update website content without technical expertise. This service includes selecting the right platform, customizing templates, and training users, empowering your team to maintain an engaging online presence efficiently.',
             },
             {
@@ -51,6 +55,18 @@ export default [
             {
                 title: 'Shopify Store Development',
                 description: 'Build and customize your Shopify store to create a unique online shopping experience. This service includes designing the layout, integrating necessary apps, optimizing product pages, and setting up payment gateways, ensuring your store is visually appealing and fully functional for seamless customer transactions.',
+            },
+            {
+                title: 'Company Registration in UK',
+                description: 'Assist with the registration of your business in the UK, guiding you through the legal requirements and paperwork necessary to establish a company. This service includes choosing the right business structure, preparing documents, and submitting your application to Companies House, ensuring a smooth and compliant registration process.',
+            },
+            {
+                title: 'Trademark Registration in UK',
+                description: 'Provide services for registering a business address in the UK, ensuring compliance with legal requirements. This includes offering a registered office address for your company, handling official correspondence, and maintaining privacy while establishing a professional presence for your business.',
+            },
+            {
+                title: 'Business Address Registration in the UK',
+                description: 'Help businesses protect their brand identity by navigating the trademark registration process in the UK. This service includes conducting thorough trademark searches, preparing and filing applications, and providing guidance on trademark classes, ensuring your intellectual property is legally protected and recognized.',
             },
         ]
     },
@@ -110,6 +126,10 @@ export default [
             {
                 title: 'Website Security',
                 description: 'Implement robust security measures to protect your website from DDoS attacks. This includes monitoring traffic patterns, deploying firewalls, and utilizing advanced mitigation strategies to ensure your site remains accessible and secure.',
+            },
+            {
+                title: 'Managed Hosting',
+                description: 'Provide expert-managed hosting services that ensure your website runs smoothly and securely. This includes server setup, regular updates, performance monitoring, security enhancements, and technical support, allowing you to focus on your business while we handle the technical aspects of hosting.',
             },
         ]
     },
