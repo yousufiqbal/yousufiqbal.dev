@@ -10,7 +10,7 @@
   import { validateContactForm } from "$lib/validations";
   import Loading from "$lib/components/Loading.svelte";
   import Section from "$lib/components/Section.svelte";
-    // import Services from "../services/Services.svelte";
+  import Services from "$lib/components/Services.svelte";
 
   let wait: null | string = null
 
@@ -74,8 +74,8 @@
     </div>
 
     <div slot="related">
-      <Title title="Services" above="Things I Do" icon="i-ri:list-check-2" />
-      <!-- <Services /> -->
+      <!-- <Title title="Services" icon="i-ri:list-check-2" />
+      <Services /> -->
     </div>
 
   </Layout>

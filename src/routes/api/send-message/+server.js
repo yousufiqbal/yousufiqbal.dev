@@ -1,5 +1,5 @@
 import { dev } from '$app/environment';
-import { pb } from '$lib/database/db';
+import { SMTP_PASSWORD } from '$env/static/private';
 import { error, json } from '@sveltejs/kit'
 import nodemailer from 'nodemailer'
 
@@ -8,23 +8,22 @@ export const POST = async ({ request }) => {
 
     const client = await request.json()
 
-    const smtp = await pb.collection('smtp').getOne('v6wggv7py2kp62h')
     // console.log(smtp)
     const transporter = nodemailer.createTransport({
-        host: smtp.host,
-        port: smtp.port,
+        host: 'smtp-relay.brevo.com',
+        port: 587,
         secure: false,
         auth: {
-            user: smtp.username,
-            pass: smtp.password
+            user: '7b8818005@smtp-brevo.com',
+            pass: SMTP_PASSWORD
         }
     });
     
       try {
   
         let info = await transporter.sendMail({
-          from: { name: 'My Website', address: smtp.from_verified_email },
-          to: smtp.to_email,
+          from: { name: 'My Website', address: 'contact@yousufiqbal.dev' },
+          to: 'contact@yousufiqbal.dev',
           replyTo: client.email,
           subject: `${client.name} from ${client.email}`,
           text: client.message,
